@@ -1,0 +1,316 @@
+{
+  "acquisition_values": {
+    "b000-a0": 0,
+    "b000-a1": 1,
+    "b000-a2": 0,
+    "b001-a0": 0,
+    "b001-a1": 1,
+    "b001-a2": 0,
+    "b002-a0": 0,
+    "b002-a1": 0,
+    "b002-a2": 0,
+    "b003-a0": 0,
+    "b003-a1": 1,
+    "b003-a2": 0,
+    "b004-a0": 1,
+    "b004-a1": 1,
+    "b004-a2": 0,
+    "b005-a0": 1,
+    "b005-a1": 1,
+    "b005-a2": 1,
+    "b006-a0": 0,
+    "b006-a1": 1,
+    "b006-a2": 1,
+    "b007-a0": 0,
+    "b007-a1": 0,
+    "b007-a2": 0,
+    "b008-a0": 1,
+    "b008-a1": 1,
+    "b008-a2": 0,
+    "b009-a0": 1,
+    "b009-a1": 1,
+    "b009-a2": 1
+  },
+  "cases": [
+    {
+      "acquisitions": [
+        "b000-a0"
+      ],
+      "base_id": "b000",
+      "condition": "single",
+      "y": 1
+    },
+    {
+      "acquisitions": [
+        "b000-a0",
+        "b000-a0",
+        "b000-a0"
+      ],
+      "base_id": "b000",
+      "condition": "replay",
+      "y": 1
+    },
+    {
+      "acquisitions": [
+        "b000-a0",
+        "b000-a1",
+        "b000-a2"
+      ],
+      "base_id": "b000",
+      "condition": "independent",
+      "y": 1
+    },
+    {
+      "acquisitions": [
+        "b001-a0"
+      ],
+      "base_id": "b001",
+      "condition": "single",
+      "y": 0
+    },
+    {
+      "acquisitions": [
+        "b001-a0",
+        "b001-a0",
+        "b001-a0"
+      ],
+      "base_id": "b001",
+      "condition": "replay",
+      "y": 0
+    },
+    {
+      "acquisitions": [
+        "b001-a0",
+        "b001-a1",
+        "b001-a2"
+      ],
+      "base_id": "b001",
+      "condition": "independent",
+      "y": 0
+    },
+    {
+      "acquisitions": [
+        "b002-a0"
+      ],
+      "base_id": "b002",
+      "condition": "single",
+      "y": 0
+    },
+    {
+      "acquisitions": [
+        "b002-a0",
+        "b002-a0",
+        "b002-a0"
+      ],
+      "base_id": "b002",
+      "condition": "replay",
+      "y": 0
+    },
+    {
+      "acquisitions": [
+        "b002-a0",
+        "b002-a1",
+        "b002-a2"
+      ],
+      "base_id": "b002",
+      "condition": "independent",
+      "y": 0
+    },
+    {
+      "acquisitions": [
+        "b003-a0"
+      ],
+      "base_id": "b003",
+      "condition": "single",
+      "y": 1
+    },
+    {
+      "acquisitions": [
+        "b003-a0",
+        "b003-a0",
+        "b003-a0"
+      ],
+      "base_id": "b003",
+      "condition": "replay",
+      "y": 1
+    },
+    {
+      "acquisitions": [
+        "b003-a0",
+        "b003-a1",
+        "b003-a2"
+      ],
+      "base_id": "b003",
+      "condition": "independent",
+      "y": 1
+    },
+    {
+      "acquisitions": [
+        "b004-a0"
+      ],
+      "base_id": "b004",
+      "condition": "single",
+      "y": 0
+    },
+    {
+      "acquisitions": [
+        "b004-a0",
+        "b004-a0",
+        "b004-a0"
+      ],
+      "base_id": "b004",
+      "condition": "replay",
+      "y": 0
+    },
+    {
+      "acquisitions": [
+        "b004-a0",
+        "b004-a1",
+        "b004-a2"
+      ],
+      "base_id": "b004",
+      "condition": "independent",
+      "y": 0
+    },
+    {
+      "acquisitions": [
+        "b005-a0"
+      ],
+      "base_id": "b005",
+      "condition": "single",
+      "y": 1
+    },
+    {
+      "acquisitions": [
+        "b005-a0",
+        "b005-a0",
+        "b005-a0"
+      ],
+      "base_id": "b005",
+      "condition": "replay",
+      "y": 1
+    },
+    {
+      "acquisitions": [
+        "b005-a0",
+        "b005-a1",
+        "b005-a2"
+      ],
+      "base_id": "b005",
+      "condition": "independent",
+      "y": 1
+    },
+    {
+      "acquisitions": [
+        "b006-a0"
+      ],
+      "base_id": "b006",
+      "condition": "single",
+      "y": 1
+    },
+    {
+      "acquisitions": [
+        "b006-a0",
+        "b006-a0",
+        "b006-a0"
+      ],
+      "base_id": "b006",
+      "condition": "replay",
+      "y": 1
+    },
+    {
+      "acquisitions": [
+        "b006-a0",
+        "b006-a1",
+        "b006-a2"
+      ],
+      "base_id": "b006",
+      "condition": "independent",
+      "y": 1
+    },
+    {
+      "acquisitions": [
+        "b007-a0"
+      ],
+      "base_id": "b007",
+      "condition": "single",
+      "y": 0
+    },
+    {
+      "acquisitions": [
+        "b007-a0",
+        "b007-a0",
+        "b007-a0"
+      ],
+      "base_id": "b007",
+      "condition": "replay",
+      "y": 0
+    },
+    {
+      "acquisitions": [
+        "b007-a0",
+        "b007-a1",
+        "b007-a2"
+      ],
+      "base_id": "b007",
+      "condition": "independent",
+      "y": 0
+    },
+    {
+      "acquisitions": [
+        "b008-a0"
+      ],
+      "base_id": "b008",
+      "condition": "single",
+      "y": 0
+    },
+    {
+      "acquisitions": [
+        "b008-a0",
+        "b008-a0",
+        "b008-a0"
+      ],
+      "base_id": "b008",
+      "condition": "replay",
+      "y": 0
+    },
+    {
+      "acquisitions": [
+        "b008-a0",
+        "b008-a1",
+        "b008-a2"
+      ],
+      "base_id": "b008",
+      "condition": "independent",
+      "y": 0
+    },
+    {
+      "acquisitions": [
+        "b009-a0"
+      ],
+      "base_id": "b009",
+      "condition": "single",
+      "y": 1
+    },
+    {
+      "acquisitions": [
+        "b009-a0",
+        "b009-a0",
+        "b009-a0"
+      ],
+      "base_id": "b009",
+      "condition": "replay",
+      "y": 1
+    },
+    {
+      "acquisitions": [
+        "b009-a0",
+        "b009-a1",
+        "b009-a2"
+      ],
+      "base_id": "b009",
+      "condition": "independent",
+      "y": 1
+    }
+  ]
+}

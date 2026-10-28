@@ -1,0 +1,48 @@
+{
+  "description": "Three distinct acquisitions with byte-identical positive payloads",
+  "included_in_pilot_metrics": false,
+  "methods": {
+    "hash": {
+      "groups": [
+        [
+          0,
+          1,
+          2
+        ]
+      ],
+      "probability": 0.75,
+      "status": "ok"
+    },
+    "lineage": {
+      "groups": [
+        [
+          0
+        ],
+        [
+          1
+        ],
+        [
+          2
+        ]
+      ],
+      "probability": 0.9642857142857143,
+      "status": "ok"
+    },
+    "naive": {
+      "groups": [
+        [
+          0
+        ],
+        [
+          1
+        ],
+        [
+          2
+        ]
+      ],
+      "probability": 0.9642857142857143,
+      "status": "ok"
+    }
+  },
+  "oracle_posterior": 0.9642857142857143
+}

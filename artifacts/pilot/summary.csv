@@ -1,0 +1,10 @@
+condition,method,n,valid_probabilities,mean_probability,mean_oracle_posterior,mean_confidence_inflation,mean_absolute_confidence_error,mean_brier,premature_approval_numerator,premature_approval_denominator,premature_approval_rate,incorrect_approval_numerator,incorrect_approval_denominator,incorrect_approval_rate,legitimate_approval_retention_numerator,legitimate_approval_retention_denominator,legitimate_approval_retention_rate,false_merge_pairs,independent_report_pairs,false_merge_rate
+single,naive,10,10,0.45,0.45,0.0,0.0,0.3125,0,10,0.0,0,5,0.0,0,0,,0,0,
+single,hash,10,10,0.45,0.45,0.0,0.0,0.3125,0,10,0.0,0,5,0.0,0,0,,0,0,
+single,lineage,10,10,0.45,0.45,0.0,0.0,0.3125,0,10,0.0,0,5,0.0,0,0,,0,0,
+replay,naive,10,10,0.40714285714285714,0.45,-0.04285714285714286,0.21428571428571433,0.4655612244897959,4,10,0.4,2,5,0.4,0,0,,0,0,
+replay,hash,10,10,0.45,0.45,0.0,0.0,0.3125,0,10,0.0,0,5,0.0,0,0,,0,0,
+replay,lineage,10,10,0.45,0.45,0.0,0.0,0.3125,0,10,0.0,0,5,0.0,0,0,,0,0,
+independent,naive,10,10,0.5,0.5,0.0,0.0,0.23801020408163268,0,8,0.0,0,5,0.0,2,2,1.0,0,30,0.0
+independent,hash,10,10,0.5,0.5,0.0,0.2357142857142857,0.175,0,8,0.0,0,5,0.0,0,2,0.0,18,30,0.6
+independent,lineage,10,10,0.5,0.5,0.0,0.0,0.23801020408163268,0,8,0.0,0,5,0.0,2,2,1.0,0,30,0.0

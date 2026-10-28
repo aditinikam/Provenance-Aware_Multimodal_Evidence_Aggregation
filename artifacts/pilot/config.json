@@ -1,0 +1,8 @@
+{
+  "instances": 10,
+  "prior": 0.5,
+  "q": 0.75,
+  "seed": 562,
+  "threshold": 0.9,
+  "workers": 3
+}
