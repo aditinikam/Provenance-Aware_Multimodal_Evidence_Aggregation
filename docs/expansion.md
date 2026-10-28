@@ -8,3 +8,9 @@
 6. Add related views only after specifying their joint likelihood/dependence model. Until then report descriptive behavior without the independence oracle. Multi-root summaries need overlap-aware accounting before inclusion.
 
 Acceptance checks: transformation lineage invariance, no truth leakage, independent positive-control retention, identical-independent false merges, invalid-lineage abstention, extraction versus counting error decomposition, and reproducibility from frozen outputs. Only real-model runs can test the research hypothesis. The offline pilot supplies no empirical evidence of LLM susceptibility or defense efficacy.
+
+## Milestone status — October 28, 2026
+
+Completed offline: stage 2 raster cards, resize/JPEG/crop operations, parameterized ancestry, signal audits and contact sheets; stage 3's synthetic image-to-record ancestry fixture; and an offline pixel-matching baseline calibrated on disjoint roots. This does not complete real extraction or reconciliation. The experiment remains ten base instances, with calibration and constructed controls reported separately.
+
+Review `artifacts/transformations/` and README's extraction boundary and matching limitations next. Real-model adapters, empirical instruction-only comparisons, 100-instance scaling, uncertainty estimates, related views, and multi-root aggregation remain deferred until separately requested. Preserve the original offline pilot and frozen calibration/evaluation separation when proceeding.

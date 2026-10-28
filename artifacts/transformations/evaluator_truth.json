@@ -1,0 +1,624 @@
+{
+  "acquisition_values": {
+    "b000-a0": 0,
+    "b000-a1": 1,
+    "b000-a2": 0,
+    "b001-a0": 0,
+    "b001-a1": 1,
+    "b001-a2": 0,
+    "b002-a0": 0,
+    "b002-a1": 0,
+    "b002-a2": 0,
+    "b003-a0": 0,
+    "b003-a1": 1,
+    "b003-a2": 0,
+    "b004-a0": 1,
+    "b004-a1": 1,
+    "b004-a2": 0,
+    "b005-a0": 1,
+    "b005-a1": 1,
+    "b005-a2": 1,
+    "b006-a0": 0,
+    "b006-a1": 1,
+    "b006-a2": 1,
+    "b007-a0": 0,
+    "b007-a1": 0,
+    "b007-a2": 0,
+    "b008-a0": 1,
+    "b008-a1": 1,
+    "b008-a2": 0,
+    "b009-a0": 1,
+    "b009-a1": 1,
+    "b009-a2": 1,
+    "control-identical_independent-0": 1,
+    "control-identical_independent-1": 1,
+    "control-identical_independent-2": 1,
+    "control-similar_independent-0": 1,
+    "control-similar_independent-1": 1,
+    "control-similar_independent-2": 1
+  },
+  "evaluation_assignments": [
+    {
+      "acquisitions": [
+        "b000-a0"
+      ],
+      "base_id": "b000",
+      "condition": "single_raster",
+      "y": 1
+    },
+    {
+      "acquisitions": [
+        "b000-a0",
+        "b000-a0",
+        "b000-a0"
+      ],
+      "base_id": "b000",
+      "condition": "exact_replay",
+      "y": 1
+    },
+    {
+      "acquisitions": [
+        "b000-a0",
+        "b000-a0",
+        "b000-a0"
+      ],
+      "base_id": "b000",
+      "condition": "resized_jpeg",
+      "y": 1
+    },
+    {
+      "acquisitions": [
+        "b000-a0",
+        "b000-a0",
+        "b000-a0"
+      ],
+      "base_id": "b000",
+      "condition": "cropped_replay",
+      "y": 1
+    },
+    {
+      "acquisitions": [
+        "b000-a0",
+        "b000-a0",
+        "b000-a0"
+      ],
+      "base_id": "b000",
+      "condition": "cross_modal",
+      "y": 1
+    },
+    {
+      "acquisitions": [
+        "b000-a0",
+        "b000-a1",
+        "b000-a2"
+      ],
+      "base_id": "b000",
+      "condition": "independent_raster",
+      "y": 1
+    },
+    {
+      "acquisitions": [
+        "b001-a0"
+      ],
+      "base_id": "b001",
+      "condition": "single_raster",
+      "y": 0
+    },
+    {
+      "acquisitions": [
+        "b001-a0",
+        "b001-a0",
+        "b001-a0"
+      ],
+      "base_id": "b001",
+      "condition": "exact_replay",
+      "y": 0
+    },
+    {
+      "acquisitions": [
+        "b001-a0",
+        "b001-a0",
+        "b001-a0"
+      ],
+      "base_id": "b001",
+      "condition": "resized_jpeg",
+      "y": 0
+    },
+    {
+      "acquisitions": [
+        "b001-a0",
+        "b001-a0",
+        "b001-a0"
+      ],
+      "base_id": "b001",
+      "condition": "cropped_replay",
+      "y": 0
+    },
+    {
+      "acquisitions": [
+        "b001-a0",
+        "b001-a0",
+        "b001-a0"
+      ],
+      "base_id": "b001",
+      "condition": "cross_modal",
+      "y": 0
+    },
+    {
+      "acquisitions": [
+        "b001-a0",
+        "b001-a1",
+        "b001-a2"
+      ],
+      "base_id": "b001",
+      "condition": "independent_raster",
+      "y": 0
+    },
+    {
+      "acquisitions": [
+        "b002-a0"
+      ],
+      "base_id": "b002",
+      "condition": "single_raster",
+      "y": 0
+    },
+    {
+      "acquisitions": [
+        "b002-a0",
+        "b002-a0",
+        "b002-a0"
+      ],
+      "base_id": "b002",
+      "condition": "exact_replay",
+      "y": 0
+    },
+    {
+      "acquisitions": [
+        "b002-a0",
+        "b002-a0",
+        "b002-a0"
+      ],
+      "base_id": "b002",
+      "condition": "resized_jpeg",
+      "y": 0
+    },
+    {
+      "acquisitions": [
+        "b002-a0",
+        "b002-a0",
+        "b002-a0"
+      ],
+      "base_id": "b002",
+      "condition": "cropped_replay",
+      "y": 0
+    },
+    {
+      "acquisitions": [
+        "b002-a0",
+        "b002-a0",
+        "b002-a0"
+      ],
+      "base_id": "b002",
+      "condition": "cross_modal",
+      "y": 0
+    },
+    {
+      "acquisitions": [
+        "b002-a0",
+        "b002-a1",
+        "b002-a2"
+      ],
+      "base_id": "b002",
+      "condition": "independent_raster",
+      "y": 0
+    },
+    {
+      "acquisitions": [
+        "b003-a0"
+      ],
+      "base_id": "b003",
+      "condition": "single_raster",
+      "y": 1
+    },
+    {
+      "acquisitions": [
+        "b003-a0",
+        "b003-a0",
+        "b003-a0"
+      ],
+      "base_id": "b003",
+      "condition": "exact_replay",
+      "y": 1
+    },
+    {
+      "acquisitions": [
+        "b003-a0",
+        "b003-a0",
+        "b003-a0"
+      ],
+      "base_id": "b003",
+      "condition": "resized_jpeg",
+      "y": 1
+    },
+    {
+      "acquisitions": [
+        "b003-a0",
+        "b003-a0",
+        "b003-a0"
+      ],
+      "base_id": "b003",
+      "condition": "cropped_replay",
+      "y": 1
+    },
+    {
+      "acquisitions": [
+        "b003-a0",
+        "b003-a0",
+        "b003-a0"
+      ],
+      "base_id": "b003",
+      "condition": "cross_modal",
+      "y": 1
+    },
+    {
+      "acquisitions": [
+        "b003-a0",
+        "b003-a1",
+        "b003-a2"
+      ],
+      "base_id": "b003",
+      "condition": "independent_raster",
+      "y": 1
+    },
+    {
+      "acquisitions": [
+        "b004-a0"
+      ],
+      "base_id": "b004",
+      "condition": "single_raster",
+      "y": 0
+    },
+    {
+      "acquisitions": [
+        "b004-a0",
+        "b004-a0",
+        "b004-a0"
+      ],
+      "base_id": "b004",
+      "condition": "exact_replay",
+      "y": 0
+    },
+    {
+      "acquisitions": [
+        "b004-a0",
+        "b004-a0",
+        "b004-a0"
+      ],
+      "base_id": "b004",
+      "condition": "resized_jpeg",
+      "y": 0
+    },
+    {
+      "acquisitions": [
+        "b004-a0",
+        "b004-a0",
+        "b004-a0"
+      ],
+      "base_id": "b004",
+      "condition": "cropped_replay",
+      "y": 0
+    },
+    {
+      "acquisitions": [
+        "b004-a0",
+        "b004-a0",
+        "b004-a0"
+      ],
+      "base_id": "b004",
+      "condition": "cross_modal",
+      "y": 0
+    },
+    {
+      "acquisitions": [
+        "b004-a0",
+        "b004-a1",
+        "b004-a2"
+      ],
+      "base_id": "b004",
+      "condition": "independent_raster",
+      "y": 0
+    },
+    {
+      "acquisitions": [
+        "b005-a0"
+      ],
+      "base_id": "b005",
+      "condition": "single_raster",
+      "y": 1
+    },
+    {
+      "acquisitions": [
+        "b005-a0",
+        "b005-a0",
+        "b005-a0"
+      ],
+      "base_id": "b005",
+      "condition": "exact_replay",
+      "y": 1
+    },
+    {
+      "acquisitions": [
+        "b005-a0",
+        "b005-a0",
+        "b005-a0"
+      ],
+      "base_id": "b005",
+      "condition": "resized_jpeg",
+      "y": 1
+    },
+    {
+      "acquisitions": [
+        "b005-a0",
+        "b005-a0",
+        "b005-a0"
+      ],
+      "base_id": "b005",
+      "condition": "cropped_replay",
+      "y": 1
+    },
+    {
+      "acquisitions": [
+        "b005-a0",
+        "b005-a0",
+        "b005-a0"
+      ],
+      "base_id": "b005",
+      "condition": "cross_modal",
+      "y": 1
+    },
+    {
+      "acquisitions": [
+        "b005-a0",
+        "b005-a1",
+        "b005-a2"
+      ],
+      "base_id": "b005",
+      "condition": "independent_raster",
+      "y": 1
+    },
+    {
+      "acquisitions": [
+        "b006-a0"
+      ],
+      "base_id": "b006",
+      "condition": "single_raster",
+      "y": 1
+    },
+    {
+      "acquisitions": [
+        "b006-a0",
+        "b006-a0",
+        "b006-a0"
+      ],
+      "base_id": "b006",
+      "condition": "exact_replay",
+      "y": 1
+    },
+    {
+      "acquisitions": [
+        "b006-a0",
+        "b006-a0",
+        "b006-a0"
+      ],
+      "base_id": "b006",
+      "condition": "resized_jpeg",
+      "y": 1
+    },
+    {
+      "acquisitions": [
+        "b006-a0",
+        "b006-a0",
+        "b006-a0"
+      ],
+      "base_id": "b006",
+      "condition": "cropped_replay",
+      "y": 1
+    },
+    {
+      "acquisitions": [
+        "b006-a0",
+        "b006-a0",
+        "b006-a0"
+      ],
+      "base_id": "b006",
+      "condition": "cross_modal",
+      "y": 1
+    },
+    {
+      "acquisitions": [
+        "b006-a0",
+        "b006-a1",
+        "b006-a2"
+      ],
+      "base_id": "b006",
+      "condition": "independent_raster",
+      "y": 1
+    },
+    {
+      "acquisitions": [
+        "b007-a0"
+      ],
+      "base_id": "b007",
+      "condition": "single_raster",
+      "y": 0
+    },
+    {
+      "acquisitions": [
+        "b007-a0",
+        "b007-a0",
+        "b007-a0"
+      ],
+      "base_id": "b007",
+      "condition": "exact_replay",
+      "y": 0
+    },
+    {
+      "acquisitions": [
+        "b007-a0",
+        "b007-a0",
+        "b007-a0"
+      ],
+      "base_id": "b007",
+      "condition": "resized_jpeg",
+      "y": 0
+    },
+    {
+      "acquisitions": [
+        "b007-a0",
+        "b007-a0",
+        "b007-a0"
+      ],
+      "base_id": "b007",
+      "condition": "cropped_replay",
+      "y": 0
+    },
+    {
+      "acquisitions": [
+        "b007-a0",
+        "b007-a0",
+        "b007-a0"
+      ],
+      "base_id": "b007",
+      "condition": "cross_modal",
+      "y": 0
+    },
+    {
+      "acquisitions": [
+        "b007-a0",
+        "b007-a1",
+        "b007-a2"
+      ],
+      "base_id": "b007",
+      "condition": "independent_raster",
+      "y": 0
+    },
+    {
+      "acquisitions": [
+        "b008-a0"
+      ],
+      "base_id": "b008",
+      "condition": "single_raster",
+      "y": 0
+    },
+    {
+      "acquisitions": [
+        "b008-a0",
+        "b008-a0",
+        "b008-a0"
+      ],
+      "base_id": "b008",
+      "condition": "exact_replay",
+      "y": 0
+    },
+    {
+      "acquisitions": [
+        "b008-a0",
+        "b008-a0",
+        "b008-a0"
+      ],
+      "base_id": "b008",
+      "condition": "resized_jpeg",
+      "y": 0
+    },
+    {
+      "acquisitions": [
+        "b008-a0",
+        "b008-a0",
+        "b008-a0"
+      ],
+      "base_id": "b008",
+      "condition": "cropped_replay",
+      "y": 0
+    },
+    {
+      "acquisitions": [
+        "b008-a0",
+        "b008-a0",
+        "b008-a0"
+      ],
+      "base_id": "b008",
+      "condition": "cross_modal",
+      "y": 0
+    },
+    {
+      "acquisitions": [
+        "b008-a0",
+        "b008-a1",
+        "b008-a2"
+      ],
+      "base_id": "b008",
+      "condition": "independent_raster",
+      "y": 0
+    },
+    {
+      "acquisitions": [
+        "b009-a0"
+      ],
+      "base_id": "b009",
+      "condition": "single_raster",
+      "y": 1
+    },
+    {
+      "acquisitions": [
+        "b009-a0",
+        "b009-a0",
+        "b009-a0"
+      ],
+      "base_id": "b009",
+      "condition": "exact_replay",
+      "y": 1
+    },
+    {
+      "acquisitions": [
+        "b009-a0",
+        "b009-a0",
+        "b009-a0"
+      ],
+      "base_id": "b009",
+      "condition": "resized_jpeg",
+      "y": 1
+    },
+    {
+      "acquisitions": [
+        "b009-a0",
+        "b009-a0",
+        "b009-a0"
+      ],
+      "base_id": "b009",
+      "condition": "cropped_replay",
+      "y": 1
+    },
+    {
+      "acquisitions": [
+        "b009-a0",
+        "b009-a0",
+        "b009-a0"
+      ],
+      "base_id": "b009",
+      "condition": "cross_modal",
+      "y": 1
+    },
+    {
+      "acquisitions": [
+        "b009-a0",
+        "b009-a1",
+        "b009-a2"
+      ],
+      "base_id": "b009",
+      "condition": "independent_raster",
+      "y": 1
+    }
+  ],
+  "mode": "mock_software_diagnostic_no_vision_extraction",
+  "note": "Constructed controls have no sampled hidden state and no Brier or incorrect-approval metric."
+}

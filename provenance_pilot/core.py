@@ -1,5 +1,5 @@
 """Trusted metadata and model-visible inputs contain no benchmark truth."""
-from dataclasses import dataclass, asdict
+from dataclasses import dataclass, asdict, field
 from fractions import Fraction
 from hashlib import sha256
 from typing import Protocol
@@ -17,6 +17,7 @@ class Evidence:
     parent_ids: tuple[str, ...]
     operation: str
     modality: str
+    parameters: dict = field(default_factory=dict)
 
 
 class Registry:
@@ -57,16 +58,21 @@ class Registry:
             return roots
         return visit(evidence_id, set())
 
-    def derive(self, key, parents, operation, modality):
+    def derive(self, key, parents, operation, modality, parameters=None):
         if operation == 'acquire':
             raise ProvenanceError('derivation cannot mint acquisition')
         roots = set()
         for parent in parents:
             roots.update(self.validate(parent))
-        return self.add(Evidence(key, tuple(sorted(roots)), tuple(parents), operation, modality))
+        return self.add(Evidence(key, tuple(sorted(roots)), tuple(parents), operation, modality, dict(parameters or {})))
 
     def export(self):
-        return [asdict(n) for n in self.nodes.values()]
+        rows = [asdict(n) for n in self.nodes.values()]
+        # Preserve the original pilot serialization for parameterless operations.
+        for row in rows:
+            if not row["parameters"]:
+                del row["parameters"]
+        return rows
 
 
 def posterior(values, prior=0.5, q=0.75):
@@ -147,7 +153,8 @@ def estimate(method, reports, registry=None, prior=0.5, q=0.75):
         for group in groups.values():
             claims = {reports[i].value for i in group}
             if len(claims) != 1:
-                raise ProvenanceError('conflicting interpretations require reconciliation')
+                # Grouping succeeded: retain it even when interpretation abstains.
+                return Estimate(None, list(groups.values()), 'abstain: conflicting interpretations require reconciliation')
             values.append(claims.pop())
         return Estimate(posterior(values, prior, q), list(groups.values()))
     except ProvenanceError as exc:
