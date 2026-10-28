@@ -1,0 +1,22 @@
+{
+  "calibration_roots": 12,
+  "calibration_seed": 1562,
+  "crop_box": [
+    100,
+    45,
+    220,
+    158
+  ],
+  "instances": 10,
+  "jpeg_quality": 45,
+  "mode": "mock_software_diagnostic_no_vision_extraction",
+  "prior": 0.5,
+  "q": 0.75,
+  "resize": [
+    192,
+    108
+  ],
+  "seed": 562,
+  "threshold": 0.9,
+  "workers": 3
+}

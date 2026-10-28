@@ -9,6 +9,9 @@ description = "Offline software diagnostics for provenance-aware evidence aggreg
 requires-python = ">=3.10"
 dependencies = []
 
+[project.optional-dependencies]
+images = ["Pillow==12.3.0"]
+
 [project.scripts]
 provenance-pilot = "provenance_pilot.__main__:main"
 

@@ -64,3 +64,71 @@ Replay rows also include direction-normalized copy weight `(a*logit(p)/log(q/(1-
 Eight test groups cover Bayes hand calculations, replay invariance, paired acquisitions, routing, hash false merges, distinct-root retention, invalid/cyclic provenance, derivation roots, multi-root and conflict abstention, gate/config checks, input separation, empty denominators, and complete deterministic reproduction.
 
 This validates software mechanics and evaluation accounting only. It does not validate perception, captioning, instruction following, model calibration, reconciliation, resistance to prompt injection, or benefits with real models. Related views require an explicit dependence model. Root identity alone never proves statistical independence in the real world. See the expansion plan before increasing scale.
+
+## Offline raster transformation milestone
+
+The original pilot above is unchanged. A separate optional experiment now implements raster rendering, transformations, synthetic image-to-record conversions, and perceptual matching. **It still uses mock fixture readings, not visual extraction or a real model.** It is restricted to ten evaluation base instances.
+
+### Run and dependencies
+
+Pillow **12.3.0** is the sole optional image dependency (`images` extra in `pyproject.toml`). The current workspace has an ignored `.venv` created from the already-installed bundled Python with system site packages; no packages or models were downloaded. From this checkout, run:
+
+```sh
+.venv/bin/python -m provenance_pilot.transformations --output artifacts/transformations-review
+.venv/bin/python -m unittest discover -s tests -v
+```
+
+Choose a new or empty output directory on each run. The transformation command refuses nonempty directories to prevent stale output files. The delivered run is under `artifacts/transformations/`.
+
+On another machine, use an existing Python environment containing Pillow 12.3.0, then run `python -m provenance_pilot.transformations`. If needed, provision Pillow from a local wheelhouse with `python -m pip install --no-index --find-links /path/to/wheels Pillow==12.3.0`. No runtime network access is used. The `.venv` is local and not portable or committed. Without Pillow, the original pilot/tests remain usable; unittest discovery explicitly skips the optional transformation module. Use the Pillow environment to run all **18 tests**.
+
+Files: `imaging.py` handles raster rendering/validation, `matching.py` handles perceptual calibration and inference, and `transformations.py` orchestrates this experiment. `configs/transformations.json` fixes seeds and operation parameters. The original oracle, lineage logic, and metric definitions are shared.
+
+### Artifact and extraction boundaries
+
+Every existing evaluation acquisition additionally renders a 320x180 PNG with a large seven-segment 0/1 glyph. This is a raster card generated from the same observation, not a rasterization of the original SVG layout. Derivatives include a 192x108 Lanczos resize; JPEG quality 45 with no chroma subsampling; and a crop of that JPEG using `(left, top, right, bottom) = (100,45,220,158)`. The crop contains the entire signal region. New registry entries include actual parent IDs, modality, operation parameters, and inherited roots. The registry's optional parameters field preserves the original pilot's parameterless serialization.
+
+`synthetic_image_to_record` uses the fixture reading associated with its cropped-image parent to create a labeled JSON record. It does **not** decode pixels or call a vision model. The worker API receives evidence bytes and an explicit observed `fixture_reading`; worker claims simply retain it. Readings are observation values, not the hidden state Y. No hidden states, oracle answers, or evaluator signal checks are supplied to workers. `evaluator_truth.json`, results, calibration labels, and signal audits are evaluator/harness data, not worker inputs.
+
+All hashes are computed from actual PNG/JPEG/JSON payload bytes, excluding report envelopes. Worker routing preserves the payload and acquisition roots. Synthetic conversion records label their mock origin inside the payload. Image originals and contact sheets have visible mock labels; tight crops can omit those labels, so keep the dataset README/manifest with exported artifacts.
+
+### Signal-preservation validation
+
+Separate evaluator code opens the **encoded image bytes**, checks that the tracked glyph ROI stays in bounds and is at least 24x36 native pixels, then samples 3x3 pixel patches at all seven segment centers. Expected active segments must have mean luminance >=190 and inactive segments <=110. ROI coordinates are propagated through resizing/cropping. Expected segments come from the observation fixture only for this audit; the measured pixels never generate a worker claim.
+
+These known-geometry checks test signal preservation, not general OCR, semantic readability, or model perception. They do not establish that every glyph edge survives. Tests reject a crop that cuts the signal, an excessively small resize, incorrect expected glyphs, and a blacked-out glyph. Inspect `contact_sheet.png` alongside `signal_checks.jsonl` to check the ten first acquisitions visually; `controls_contact_sheet.png` shows independent-lookalike controls. All evaluation/control images and calibration images receive checks, including those not shown on the main sheet.
+
+### Conditions, calibration, and controls
+
+Six paired evaluation conditions use the same ten base instances and generated sensor observations as the original pilot:
+
+| Condition | Evidence presented |
+|---|---|
+| `single_raster` | One original PNG |
+| `exact_replay` | Same PNG routed three times |
+| `resized_jpeg` | Original, resized PNG, and JPEG from one root |
+| `cropped_replay` | Original, JPEG, and JPEG crop from one root |
+| `cross_modal` | Original PNG, crop, and synthetic structured record from one root |
+| `independent_raster` | Three original PNGs from three distinct acquisitions |
+
+The three original methods are joined by `perceptual`: a **full-frame 16x16 RGB thumbnail**, mean absolute channel distance on [0,1], and connected-component grouping of image pairs at or below a calibrated threshold. It receives image bytes and modalities, not roots or truth. It cannot match a JSON record to an image; unsupported modality pairs are counted and left unmerged. Conflicting claims in a matched group cause abstention. Trusted lineage retains its invalid/unknown/multi-root and conflicting-interpretation abstentions.
+
+Calibration uses 12 additional roots named `cal-*`, seed 1562, separate from evaluation's `b*-a*` roots and seed 562. Their binary observation appearances are sampled for matching fixtures, without hidden states or a Bayesian score. Each has four raster variants, giving 72 same-root and 1,056 independent pairs. Candidate thresholds are all calibration pair distances plus -1 (no matches); minimize the mean of pairwise false-negative and false-positive rates, breaking ties toward the smaller threshold. Threshold selection uses calibration labels only and finishes before evaluation. It is a pairwise objective; inference's connected components can additionally create transitive merges.
+
+The frozen threshold is **0.006352124183006534**, with calibration balanced pair error **0.306818**. All calibration artifacts, labels, distances, provenance, and signal checks are exported so the selection can be recomputed. Exact reproduction is tested in the same environment; raster bytes may differ across Pillow, font, or JPEG codec builds. `environment.json` records Python, Pillow, and JPEG codec versions.
+
+Three explicitly constructed controls live in `controls.jsonl`, outside the 240 sampled evaluation rows and their summaries:
+
+- Different-looking variants of one root: resize and crop change appearance without new acquisitions.
+- Similar-looking independent roots: three positive observations with nuisance border/background variations; distinct bytes. The fixed matcher separates this particular control (zero false merges); visual similarity need not exceed its threshold.
+- Byte-identical independent roots: three positive observations rendered identically. Both hash and perceptual matching merge all three independent pairs, while lineage retains three readings.
+
+Independent controls are analytic assignments of three positive observations, not extra sampled hidden states. They have no Brier score or incorrect-approval result. Their posterior is the oracle conditional on those distinct positive readings (27/28).
+
+### Outputs and verified diagnostics
+
+`artifacts/transformations/` includes raster/SVG/JSON evidence, contact sheets, `artifacts.jsonl` with paths and payload hashes, `provenance.jsonl`, worker inputs, separate evaluator truth, signal audits, frozen calibration and its evidence, 240 per-instance evaluations, 12 control evaluations, 24 summary rows, configuration/environment records, and a SHA-256 manifest. Every summary is a mock diagnostic. New matching metrics count false-split pairs among same-root report pairs, false-merge pairs among independent report pairs, abstentions, and unsupported-modality pairs. Empty pair denominators are null, as with the original decision metrics.
+
+Verified locally: both CLI commands run; all 18 tests pass; the original pilot's tracked output artifacts are unchanged; the new output tree reproduces byte-for-byte across two fresh directories; all 144 evaluation/control and 48 calibration raster checks pass; corrected contact sheets were visually inspected.
+
+With this seed, lineage matches the oracle throughout. Hashing leaves all transformed representations separate. Perceptual matching consolidates the resize/JPEG condition, misses crop and cross-modal relationships, and merges identical independent observations. These are behaviors of explicit software rules, not evidence about LLMs or robust multimodal matching. Actual perception, instruction following, reconciliation, natural-image generalization, and statistical efficacy remain untested. Stop here for design review before expanding scope.

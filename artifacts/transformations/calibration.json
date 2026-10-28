@@ -1,0 +1,6795 @@
+{
+  "balanced_error": 0.3068181818181818,
+  "false_merges": 120,
+  "false_splits": 36,
+  "feature": "16x16 full-frame RGB mean absolute distance, range 0..1",
+  "independent_pairs": 1056,
+  "mode": "mock_software_diagnostic",
+  "objective": "balanced pair error; smallest threshold breaks ties",
+  "pairs": [
+    {
+      "distance": 0.001807598039215685,
+      "left": "cal-000-png",
+      "right": "cal-000-resize",
+      "same_root": true
+    },
+    {
+      "distance": 0.003313929738562085,
+      "left": "cal-000-png",
+      "right": "cal-000-jpeg",
+      "same_root": true
+    },
+    {
+      "distance": 0.3845996732026144,
+      "left": "cal-000-png",
+      "right": "cal-000-crop",
+      "same_root": true
+    },
+    {
+      "distance": 0.01535947712418301,
+      "left": "cal-000-png",
+      "right": "cal-001-png",
+      "same_root": false
+    },
+    {
+      "distance": 0.01627859477124183,
+      "left": "cal-000-png",
+      "right": "cal-001-resize",
+      "same_root": false
+    },
+    {
+      "distance": 0.014440359477124206,
+      "left": "cal-000-png",
+      "right": "cal-001-jpeg",
+      "same_root": false
+    },
+    {
+      "distance": 0.3842116013071895,
+      "left": "cal-000-png",
+      "right": "cal-001-crop",
+      "same_root": false
+    },
+    {
+      "distance": 0.029626225490196088,
+      "left": "cal-000-png",
+      "right": "cal-002-png",
+      "same_root": false
+    },
+    {
+      "distance": 0.030514705882352947,
+      "left": "cal-000-png",
+      "right": "cal-002-resize",
+      "same_root": false
+    },
+    {
+      "distance": 0.029452614379084977,
+      "left": "cal-000-png",
+      "right": "cal-002-jpeg",
+      "same_root": false
+    },
+    {
+      "distance": 0.38421670751633985,
+      "left": "cal-000-png",
+      "right": "cal-002-crop",
+      "same_root": false
+    },
+    {
+      "distance": 0.01713643790849673,
+      "left": "cal-000-png",
+      "right": "cal-003-png",
+      "same_root": false
+    },
+    {
+      "distance": 0.01862234477124183,
+      "left": "cal-000-png",
+      "right": "cal-003-resize",
+      "same_root": false
+    },
+    {
+      "distance": 0.02008272058823529,
+      "left": "cal-000-png",
+      "right": "cal-003-jpeg",
+      "same_root": false
+    },
+    {
+      "distance": 0.33771956699346406,
+      "left": "cal-000-png",
+      "right": "cal-003-crop",
+      "same_root": false
+    },
+    {
+      "distance": 0.03247038398692811,
+      "left": "cal-000-png",
+      "right": "cal-004-png",
+      "same_root": false
+    },
+    {
+      "distance": 0.033078022875816994,
+      "left": "cal-000-png",
+      "right": "cal-004-resize",
+      "same_root": false
+    },
+    {
+      "distance": 0.03123978758169937,
+      "left": "cal-000-png",
+      "right": "cal-004-jpeg",
+      "same_root": false
+    },
+    {
+      "distance": 0.3373314950980392,
+      "left": "cal-000-png",
+      "right": "cal-004-crop",
+      "same_root": false
+    },
+    {
+      "distance": 0.04667585784313726,
+      "left": "cal-000-png",
+      "right": "cal-005-png",
+      "same_root": false
+    },
+    {
+      "distance": 0.047257965686274515,
+      "left": "cal-000-png",
+      "right": "cal-005-resize",
+      "same_root": false
+    },
+    {
+      "distance": 0.04614481209150328,
+      "left": "cal-000-png",
+      "right": "cal-005-jpeg",
+      "same_root": false
+    },
+    {
+      "distance": 0.3373314950980392,
+      "left": "cal-000-png",
+      "right": "cal-005-crop",
+      "same_root": false
+    },
+    {
+      "distance": 0.01713643790849673,
+      "left": "cal-000-png",
+      "right": "cal-006-png",
+      "same_root": false
+    },
+    {
+      "distance": 0.01862234477124183,
+      "left": "cal-000-png",
+      "right": "cal-006-resize",
+      "same_root": false
+    },
+    {
+      "distance": 0.02008272058823529,
+      "left": "cal-000-png",
+      "right": "cal-006-jpeg",
+      "same_root": false
+    },
+    {
+      "distance": 0.33771956699346406,
+      "left": "cal-000-png",
+      "right": "cal-006-crop",
+      "same_root": false
+    },
+    {
+      "distance": 0.03247038398692811,
+      "left": "cal-000-png",
+      "right": "cal-007-png",
+      "same_root": false
+    },
+    {
+      "distance": 0.033078022875816994,
+      "left": "cal-000-png",
+      "right": "cal-007-resize",
+      "same_root": false
+    },
+    {
+      "distance": 0.03123978758169937,
+      "left": "cal-000-png",
+      "right": "cal-007-jpeg",
+      "same_root": false
+    },
+    {
+      "distance": 0.3373314950980392,
+      "left": "cal-000-png",
+      "right": "cal-007-crop",
+      "same_root": false
+    },
+    {
+      "distance": 0.04667585784313726,
+      "left": "cal-000-png",
+      "right": "cal-008-png",
+      "same_root": false
+    },
+    {
+      "distance": 0.047257965686274515,
+      "left": "cal-000-png",
+      "right": "cal-008-resize",
+      "same_root": false
+    },
+    {
+      "distance": 0.04614481209150328,
+      "left": "cal-000-png",
+      "right": "cal-008-jpeg",
+      "same_root": false
+    },
+    {
+      "distance": 0.3373314950980392,
+      "left": "cal-000-png",
+      "right": "cal-008-crop",
+      "same_root": false
+    },
+    {
+      "distance": 0.01713643790849673,
+      "left": "cal-000-png",
+      "right": "cal-009-png",
+      "same_root": false
+    },
+    {
+      "distance": 0.01862234477124183,
+      "left": "cal-000-png",
+      "right": "cal-009-resize",
+      "same_root": false
+    },
+    {
+      "distance": 0.02008272058823529,
+      "left": "cal-000-png",
+      "right": "cal-009-jpeg",
+      "same_root": false
+    },
+    {
+      "distance": 0.33771956699346406,
+      "left": "cal-000-png",
+      "right": "cal-009-crop",
+      "same_root": false
+    },
+    {
+      "distance": 0.03247038398692811,
+      "left": "cal-000-png",
+      "right": "cal-010-png",
+      "same_root": false
+    },
+    {
+      "distance": 0.033078022875816994,
+      "left": "cal-000-png",
+      "right": "cal-010-resize",
+      "same_root": false
+    },
+    {
+      "distance": 0.03123978758169937,
+      "left": "cal-000-png",
+      "right": "cal-010-jpeg",
+      "same_root": false
+    },
+    {
+      "distance": 0.3373314950980392,
+      "left": "cal-000-png",
+      "right": "cal-010-crop",
+      "same_root": false
+    },
+    {
+      "distance": 0.04667585784313726,
+      "left": "cal-000-png",
+      "right": "cal-011-png",
+      "same_root": false
+    },
+    {
+      "distance": 0.047257965686274515,
+      "left": "cal-000-png",
+      "right": "cal-011-resize",
+      "same_root": false
+    },
+    {
+      "distance": 0.04614481209150328,
+      "left": "cal-000-png",
+      "right": "cal-011-jpeg",
+      "same_root": false
+    },
+    {
+      "distance": 0.3373314950980392,
+      "left": "cal-000-png",
+      "right": "cal-011-crop",
+      "same_root": false
+    },
+    {
+      "distance": 0.0039879493464052215,
+      "left": "cal-000-resize",
+      "right": "cal-000-jpeg",
+      "same_root": true
+    },
+    {
+      "distance": 0.38434436274509803,
+      "left": "cal-000-resize",
+      "right": "cal-000-crop",
+      "same_root": true
+    },
+    {
+      "distance": 0.014062500000000004,
+      "left": "cal-000-resize",
+      "right": "cal-001-png",
+      "same_root": false
+    },
+    {
+      "distance": 0.014470996732026146,
+      "left": "cal-000-resize",
+      "right": "cal-001-resize",
+      "same_root": false
+    },
+    {
+      "distance": 0.013041258169934664,
+      "left": "cal-000-resize",
+      "right": "cal-001-jpeg",
+      "same_root": false
+    },
+    {
+      "distance": 0.3839562908496732,
+      "left": "cal-000-resize",
+      "right": "cal-001-crop",
+      "same_root": false
+    },
+    {
+      "distance": 0.028257761437908507,
+      "left": "cal-000-resize",
+      "right": "cal-002-png",
+      "same_root": false
+    },
+    {
+      "distance": 0.028707107843137264,
+      "left": "cal-000-resize",
+      "right": "cal-002-resize",
+      "same_root": false
+    },
+    {
+      "distance": 0.027910539215686286,
+      "left": "cal-000-resize",
+      "right": "cal-002-jpeg",
+      "same_root": false
+    },
+    {
+      "distance": 0.38395118464052286,
+      "left": "cal-000-resize",
+      "right": "cal-002-crop",
+      "same_root": false
+    },
+    {
+      "distance": 0.018944035947712417,
+      "left": "cal-000-resize",
+      "right": "cal-003-png",
+      "same_root": false
+    },
+    {
+      "distance": 0.01691687091503268,
+      "left": "cal-000-resize",
+      "right": "cal-003-resize",
+      "same_root": false
+    },
+    {
+      "distance": 0.020797589869281038,
+      "left": "cal-000-resize",
+      "right": "cal-003-jpeg",
+      "same_root": false
+    },
+    {
+      "distance": 0.3375051062091503,
+      "left": "cal-000-resize",
+      "right": "cal-003-crop",
+      "same_root": false
+    },
+    {
+      "distance": 0.031173406862745102,
+      "left": "cal-000-resize",
+      "right": "cal-004-png",
+      "same_root": false
+    },
+    {
+      "distance": 0.03137254901960785,
+      "left": "cal-000-resize",
+      "right": "cal-004-resize",
+      "same_root": false
+    },
+    {
+      "distance": 0.02988153594771244,
+      "left": "cal-000-resize",
+      "right": "cal-004-jpeg",
+      "same_root": false
+    },
+    {
+      "distance": 0.33711703431372547,
+      "left": "cal-000-resize",
+      "right": "cal-004-crop",
+      "same_root": false
+    },
+    {
+      "distance": 0.045307393790849686,
+      "left": "cal-000-resize",
+      "right": "cal-005-png",
+      "same_root": false
+    },
+    {
+      "distance": 0.04555249183006537,
+      "left": "cal-000-resize",
+      "right": "cal-005-resize",
+      "same_root": false
+    },
+    {
+      "distance": 0.044643586601307204,
+      "left": "cal-000-resize",
+      "right": "cal-005-jpeg",
+      "same_root": false
+    },
+    {
+      "distance": 0.3371068218954248,
+      "left": "cal-000-resize",
+      "right": "cal-005-crop",
+      "same_root": false
+    },
+    {
+      "distance": 0.018944035947712417,
+      "left": "cal-000-resize",
+      "right": "cal-006-png",
+      "same_root": false
+    },
+    {
+      "distance": 0.01691687091503268,
+      "left": "cal-000-resize",
+      "right": "cal-006-resize",
+      "same_root": false
+    },
+    {
+      "distance": 0.020797589869281038,
+      "left": "cal-000-resize",
+      "right": "cal-006-jpeg",
+      "same_root": false
+    },
+    {
+      "distance": 0.3375051062091503,
+      "left": "cal-000-resize",
+      "right": "cal-006-crop",
+      "same_root": false
+    },
+    {
+      "distance": 0.031173406862745102,
+      "left": "cal-000-resize",
+      "right": "cal-007-png",
+      "same_root": false
+    },
+    {
+      "distance": 0.03137254901960785,
+      "left": "cal-000-resize",
+      "right": "cal-007-resize",
+      "same_root": false
+    },
+    {
+      "distance": 0.02988153594771244,
+      "left": "cal-000-resize",
+      "right": "cal-007-jpeg",
+      "same_root": false
+    },
+    {
+      "distance": 0.33711703431372547,
+      "left": "cal-000-resize",
+      "right": "cal-007-crop",
+      "same_root": false
+    },
+    {
+      "distance": 0.045307393790849686,
+      "left": "cal-000-resize",
+      "right": "cal-008-png",
+      "same_root": false
+    },
+    {
+      "distance": 0.04555249183006537,
+      "left": "cal-000-resize",
+      "right": "cal-008-resize",
+      "same_root": false
+    },
+    {
+      "distance": 0.044643586601307204,
+      "left": "cal-000-resize",
+      "right": "cal-008-jpeg",
+      "same_root": false
+    },
+    {
+      "distance": 0.3371068218954248,
+      "left": "cal-000-resize",
+      "right": "cal-008-crop",
+      "same_root": false
+    },
+    {
+      "distance": 0.018944035947712417,
+      "left": "cal-000-resize",
+      "right": "cal-009-png",
+      "same_root": false
+    },
+    {
+      "distance": 0.01691687091503268,
+      "left": "cal-000-resize",
+      "right": "cal-009-resize",
+      "same_root": false
+    },
+    {
+      "distance": 0.020797589869281038,
+      "left": "cal-000-resize",
+      "right": "cal-009-jpeg",
+      "same_root": false
+    },
+    {
+      "distance": 0.3375051062091503,
+      "left": "cal-000-resize",
+      "right": "cal-009-crop",
+      "same_root": false
+    },
+    {
+      "distance": 0.031173406862745102,
+      "left": "cal-000-resize",
+      "right": "cal-010-png",
+      "same_root": false
+    },
+    {
+      "distance": 0.03137254901960785,
+      "left": "cal-000-resize",
+      "right": "cal-010-resize",
+      "same_root": false
+    },
+    {
+      "distance": 0.02988153594771244,
+      "left": "cal-000-resize",
+      "right": "cal-010-jpeg",
+      "same_root": false
+    },
+    {
+      "distance": 0.33711703431372547,
+      "left": "cal-000-resize",
+      "right": "cal-010-crop",
+      "same_root": false
+    },
+    {
+      "distance": 0.045307393790849686,
+      "left": "cal-000-resize",
+      "right": "cal-011-png",
+      "same_root": false
+    },
+    {
+      "distance": 0.04555249183006537,
+      "left": "cal-000-resize",
+      "right": "cal-011-resize",
+      "same_root": false
+    },
+    {
+      "distance": 0.044643586601307204,
+      "left": "cal-000-resize",
+      "right": "cal-011-jpeg",
+      "same_root": false
+    },
+    {
+      "distance": 0.3371068218954248,
+      "left": "cal-000-resize",
+      "right": "cal-011-crop",
+      "same_root": false
+    },
+    {
+      "distance": 0.38568729575163396,
+      "left": "cal-000-jpeg",
+      "right": "cal-000-crop",
+      "same_root": true
+    },
+    {
+      "distance": 0.017509191176470585,
+      "left": "cal-000-jpeg",
+      "right": "cal-001-png",
+      "same_root": false
+    },
+    {
+      "distance": 0.018203635620915027,
+      "left": "cal-000-jpeg",
+      "right": "cal-001-resize",
+      "same_root": false
+    },
+    {
+      "distance": 0.016069240196078447,
+      "left": "cal-000-jpeg",
+      "right": "cal-001-jpeg",
+      "same_root": false
+    },
+    {
+      "distance": 0.3852992238562091,
+      "left": "cal-000-jpeg",
+      "right": "cal-001-crop",
+      "same_root": false
+    },
+    {
+      "distance": 0.0315921160130719,
+      "left": "cal-000-jpeg",
+      "right": "cal-002-png",
+      "same_root": false
+    },
+    {
+      "distance": 0.03239889705882353,
+      "left": "cal-000-jpeg",
+      "right": "cal-002-resize",
+      "same_root": false
+    },
+    {
+      "distance": 0.03108149509803922,
+      "left": "cal-000-jpeg",
+      "right": "cal-002-jpeg",
+      "same_root": false
+    },
+    {
+      "distance": 0.3853043300653594,
+      "left": "cal-000-jpeg",
+      "right": "cal-002-crop",
+      "same_root": false
+    },
+    {
+      "distance": 0.020338031045751628,
+      "left": "cal-000-jpeg",
+      "right": "cal-003-png",
+      "same_root": false
+    },
+    {
+      "distance": 0.02073120915032679,
+      "left": "cal-000-jpeg",
+      "right": "cal-003-resize",
+      "same_root": false
+    },
+    {
+      "distance": 0.017034313725490195,
+      "left": "cal-000-jpeg",
+      "right": "cal-003-jpeg",
+      "same_root": false
+    },
+    {
+      "distance": 0.3388174019607843,
+      "left": "cal-000-jpeg",
+      "right": "cal-003-crop",
+      "same_root": false
+    },
+    {
+      "distance": 0.034517973856209146,
+      "left": "cal-000-jpeg",
+      "right": "cal-004-png",
+      "same_root": false
+    },
+    {
+      "distance": 0.03494178921568627,
+      "left": "cal-000-jpeg",
+      "right": "cal-004-resize",
+      "same_root": false
+    },
+    {
+      "distance": 0.03304227941176472,
+      "left": "cal-000-jpeg",
+      "right": "cal-004-jpeg",
+      "same_root": false
+    },
+    {
+      "distance": 0.3384293300653594,
+      "left": "cal-000-jpeg",
+      "right": "cal-004-crop",
+      "same_root": false
+    },
+    {
+      "distance": 0.04854983660130719,
+      "left": "cal-000-jpeg",
+      "right": "cal-005-png",
+      "same_root": false
+    },
+    {
+      "distance": 0.04909109477124183,
+      "left": "cal-000-jpeg",
+      "right": "cal-005-resize",
+      "same_root": false
+    },
+    {
+      "distance": 0.04793709150326798,
+      "left": "cal-000-jpeg",
+      "right": "cal-005-jpeg",
+      "same_root": false
+    },
+    {
+      "distance": 0.3384293300653594,
+      "left": "cal-000-jpeg",
+      "right": "cal-005-crop",
+      "same_root": false
+    },
+    {
+      "distance": 0.020338031045751628,
+      "left": "cal-000-jpeg",
+      "right": "cal-006-png",
+      "same_root": false
+    },
+    {
+      "distance": 0.02073120915032679,
+      "left": "cal-000-jpeg",
+      "right": "cal-006-resize",
+      "same_root": false
+    },
+    {
+      "distance": 0.017034313725490195,
+      "left": "cal-000-jpeg",
+      "right": "cal-006-jpeg",
+      "same_root": false
+    },
+    {
+      "distance": 0.3388174019607843,
+      "left": "cal-000-jpeg",
+      "right": "cal-006-crop",
+      "same_root": false
+    },
+    {
+      "distance": 0.034517973856209146,
+      "left": "cal-000-jpeg",
+      "right": "cal-007-png",
+      "same_root": false
+    },
+    {
+      "distance": 0.03494178921568627,
+      "left": "cal-000-jpeg",
+      "right": "cal-007-resize",
+      "same_root": false
+    },
+    {
+      "distance": 0.03304227941176472,
+      "left": "cal-000-jpeg",
+      "right": "cal-007-jpeg",
+      "same_root": false
+    },
+    {
+      "distance": 0.3384293300653594,
+      "left": "cal-000-jpeg",
+      "right": "cal-007-crop",
+      "same_root": false
+    },
+    {
+      "distance": 0.04854983660130719,
+      "left": "cal-000-jpeg",
+      "right": "cal-008-png",
+      "same_root": false
+    },
+    {
+      "distance": 0.04909109477124183,
+      "left": "cal-000-jpeg",
+      "right": "cal-008-resize",
+      "same_root": false
+    },
+    {
+      "distance": 0.04793709150326798,
+      "left": "cal-000-jpeg",
+      "right": "cal-008-jpeg",
+      "same_root": false
+    },
+    {
+      "distance": 0.3384293300653594,
+      "left": "cal-000-jpeg",
+      "right": "cal-008-crop",
+      "same_root": false
+    },
+    {
+      "distance": 0.020338031045751628,
+      "left": "cal-000-jpeg",
+      "right": "cal-009-png",
+      "same_root": false
+    },
+    {
+      "distance": 0.02073120915032679,
+      "left": "cal-000-jpeg",
+      "right": "cal-009-resize",
+      "same_root": false
+    },
+    {
+      "distance": 0.017034313725490195,
+      "left": "cal-000-jpeg",
+      "right": "cal-009-jpeg",
+      "same_root": false
+    },
+    {
+      "distance": 0.3388174019607843,
+      "left": "cal-000-jpeg",
+      "right": "cal-009-crop",
+      "same_root": false
+    },
+    {
+      "distance": 0.034517973856209146,
+      "left": "cal-000-jpeg",
+      "right": "cal-010-png",
+      "same_root": false
+    },
+    {
+      "distance": 0.03494178921568627,
+      "left": "cal-000-jpeg",
+      "right": "cal-010-resize",
+      "same_root": false
+    },
+    {
+      "distance": 0.03304227941176472,
+      "left": "cal-000-jpeg",
+      "right": "cal-010-jpeg",
+      "same_root": false
+    },
+    {
+      "distance": 0.3384293300653594,
+      "left": "cal-000-jpeg",
+      "right": "cal-010-crop",
+      "same_root": false
+    },
+    {
+      "distance": 0.04854983660130719,
+      "left": "cal-000-jpeg",
+      "right": "cal-011-png",
+      "same_root": false
+    },
+    {
+      "distance": 0.04909109477124183,
+      "left": "cal-000-jpeg",
+      "right": "cal-011-resize",
+      "same_root": false
+    },
+    {
+      "distance": 0.04793709150326798,
+      "left": "cal-000-jpeg",
+      "right": "cal-011-jpeg",
+      "same_root": false
+    },
+    {
+      "distance": 0.3384293300653594,
+      "left": "cal-000-jpeg",
+      "right": "cal-011-crop",
+      "same_root": false
+    },
+    {
+      "distance": 0.3808415032679739,
+      "left": "cal-000-crop",
+      "right": "cal-001-png",
+      "same_root": false
+    },
+    {
+      "distance": 0.38056576797385616,
+      "left": "cal-000-crop",
+      "right": "cal-001-resize",
+      "same_root": false
+    },
+    {
+      "distance": 0.38380310457516337,
+      "left": "cal-000-crop",
+      "right": "cal-001-jpeg",
+      "same_root": false
+    },
+    {
+      "distance": 0.002920751633986931,
+      "left": "cal-000-crop",
+      "right": "cal-001-crop",
+      "same_root": false
+    },
+    {
+      "distance": 0.3770424836601307,
+      "left": "cal-000-crop",
+      "right": "cal-002-png",
+      "same_root": false
+    },
+    {
+      "distance": 0.3767871732026144,
+      "left": "cal-000-crop",
+      "right": "cal-002-resize",
+      "same_root": false
+    },
+    {
+      "distance": 0.37834967320261437,
+      "left": "cal-000-crop",
+      "right": "cal-002-jpeg",
+      "same_root": false
+    },
+    {
+      "distance": 0.004600694444444448,
+      "left": "cal-000-crop",
+      "right": "cal-002-crop",
+      "same_root": false
+    },
+    {
+      "distance": 0.40143995098039215,
+      "left": "cal-000-crop",
+      "right": "cal-003-png",
+      "same_root": false
+    },
+    {
+      "distance": 0.40096507352941174,
+      "left": "cal-000-crop",
+      "right": "cal-003-resize",
+      "same_root": false
+    },
+    {
+      "distance": 0.40249693627450983,
+      "left": "cal-000-crop",
+      "right": "cal-003-jpeg",
+      "same_root": false
+    },
+    {
+      "distance": 0.07248263888888888,
+      "left": "cal-000-crop",
+      "right": "cal-003-crop",
+      "same_root": false
+    },
+    {
+      "distance": 0.3976664624183006,
+      "left": "cal-000-crop",
+      "right": "cal-004-png",
+      "same_root": false
+    },
+    {
+      "distance": 0.39719158496732027,
+      "left": "cal-000-crop",
+      "right": "cal-004-resize",
+      "same_root": false
+    },
+    {
+      "distance": 0.40056168300653594,
+      "left": "cal-000-crop",
+      "right": "cal-004-jpeg",
+      "same_root": false
+    },
+    {
+      "distance": 0.07540339052287581,
+      "left": "cal-000-crop",
+      "right": "cal-004-crop",
+      "same_root": false
+    },
+    {
+      "distance": 0.39386744281045755,
+      "left": "cal-000-crop",
+      "right": "cal-005-png",
+      "same_root": false
+    },
+    {
+      "distance": 0.39341809640522873,
+      "left": "cal-000-crop",
+      "right": "cal-005-resize",
+      "same_root": false
+    },
+    {
+      "distance": 0.3951235702614379,
+      "left": "cal-000-crop",
+      "right": "cal-005-jpeg",
+      "same_root": false
+    },
+    {
+      "distance": 0.07706801470588236,
+      "left": "cal-000-crop",
+      "right": "cal-005-crop",
+      "same_root": false
+    },
+    {
+      "distance": 0.40143995098039215,
+      "left": "cal-000-crop",
+      "right": "cal-006-png",
+      "same_root": false
+    },
+    {
+      "distance": 0.40096507352941174,
+      "left": "cal-000-crop",
+      "right": "cal-006-resize",
+      "same_root": false
+    },
+    {
+      "distance": 0.40249693627450983,
+      "left": "cal-000-crop",
+      "right": "cal-006-jpeg",
+      "same_root": false
+    },
+    {
+      "distance": 0.07248263888888888,
+      "left": "cal-000-crop",
+      "right": "cal-006-crop",
+      "same_root": false
+    },
+    {
+      "distance": 0.3976664624183006,
+      "left": "cal-000-crop",
+      "right": "cal-007-png",
+      "same_root": false
+    },
+    {
+      "distance": 0.39719158496732027,
+      "left": "cal-000-crop",
+      "right": "cal-007-resize",
+      "same_root": false
+    },
+    {
+      "distance": 0.40056168300653594,
+      "left": "cal-000-crop",
+      "right": "cal-007-jpeg",
+      "same_root": false
+    },
+    {
+      "distance": 0.07540339052287581,
+      "left": "cal-000-crop",
+      "right": "cal-007-crop",
+      "same_root": false
+    },
+    {
+      "distance": 0.39386744281045755,
+      "left": "cal-000-crop",
+      "right": "cal-008-png",
+      "same_root": false
+    },
+    {
+      "distance": 0.39341809640522873,
+      "left": "cal-000-crop",
+      "right": "cal-008-resize",
+      "same_root": false
+    },
+    {
+      "distance": 0.3951235702614379,
+      "left": "cal-000-crop",
+      "right": "cal-008-jpeg",
+      "same_root": false
+    },
+    {
+      "distance": 0.07706801470588236,
+      "left": "cal-000-crop",
+      "right": "cal-008-crop",
+      "same_root": false
+    },
+    {
+      "distance": 0.40143995098039215,
+      "left": "cal-000-crop",
+      "right": "cal-009-png",
+      "same_root": false
+    },
+    {
+      "distance": 0.40096507352941174,
+      "left": "cal-000-crop",
+      "right": "cal-009-resize",
+      "same_root": false
+    },
+    {
+      "distance": 0.40249693627450983,
+      "left": "cal-000-crop",
+      "right": "cal-009-jpeg",
+      "same_root": false
+    },
+    {
+      "distance": 0.07248263888888888,
+      "left": "cal-000-crop",
+      "right": "cal-009-crop",
+      "same_root": false
+    },
+    {
+      "distance": 0.3976664624183006,
+      "left": "cal-000-crop",
+      "right": "cal-010-png",
+      "same_root": false
+    },
+    {
+      "distance": 0.39719158496732027,
+      "left": "cal-000-crop",
+      "right": "cal-010-resize",
+      "same_root": false
+    },
+    {
+      "distance": 0.40056168300653594,
+      "left": "cal-000-crop",
+      "right": "cal-010-jpeg",
+      "same_root": false
+    },
+    {
+      "distance": 0.07540339052287581,
+      "left": "cal-000-crop",
+      "right": "cal-010-crop",
+      "same_root": false
+    },
+    {
+      "distance": 0.39386744281045755,
+      "left": "cal-000-crop",
+      "right": "cal-011-png",
+      "same_root": false
+    },
+    {
+      "distance": 0.39341809640522873,
+      "left": "cal-000-crop",
+      "right": "cal-011-resize",
+      "same_root": false
+    },
+    {
+      "distance": 0.3951235702614379,
+      "left": "cal-000-crop",
+      "right": "cal-011-jpeg",
+      "same_root": false
+    },
+    {
+      "distance": 0.07706801470588236,
+      "left": "cal-000-crop",
+      "right": "cal-011-crop",
+      "same_root": false
+    },
+    {
+      "distance": 0.0009599673202614358,
+      "left": "cal-001-png",
+      "right": "cal-001-resize",
+      "same_root": true
+    },
+    {
+      "distance": 0.005872140522875817,
+      "left": "cal-001-png",
+      "right": "cal-001-jpeg",
+      "same_root": true
+    },
+    {
+      "distance": 0.3804432189542484,
+      "left": "cal-001-png",
+      "right": "cal-001-crop",
+      "same_root": true
+    },
+    {
+      "distance": 0.014266748366013077,
+      "left": "cal-001-png",
+      "right": "cal-002-png",
+      "same_root": false
+    },
+    {
+      "distance": 0.015155228758169938,
+      "left": "cal-001-png",
+      "right": "cal-002-resize",
+      "same_root": false
+    },
+    {
+      "distance": 0.014113562091503275,
+      "left": "cal-001-png",
+      "right": "cal-002-jpeg",
+      "same_root": false
+    },
+    {
+      "distance": 0.3803972630718954,
+      "left": "cal-001-png",
+      "right": "cal-002-crop",
+      "same_root": false
+    },
+    {
+      "distance": 0.03249591503267974,
+      "left": "cal-001-png",
+      "right": "cal-003-png",
+      "same_root": false
+    },
+    {
+      "distance": 0.03087724673202615,
+      "left": "cal-001-png",
+      "right": "cal-003-resize",
+      "same_root": false
+    },
+    {
+      "distance": 0.03428819444444444,
+      "left": "cal-001-png",
+      "right": "cal-003-jpeg",
+      "same_root": false
+    },
+    {
+      "distance": 0.33428819444444446,
+      "left": "cal-001-png",
+      "right": "cal-003-crop",
+      "same_root": false
+    },
+    {
+      "distance": 0.01712111928104575,
+      "left": "cal-001-png",
+      "right": "cal-004-png",
+      "same_root": false
+    },
+    {
+      "distance": 0.017769607843137254,
+      "left": "cal-001-png",
+      "right": "cal-004-resize",
+      "same_root": false
+    },
+    {
+      "distance": 0.022681781045751633,
+      "left": "cal-001-png",
+      "right": "cal-004-jpeg",
+      "same_root": false
+    },
+    {
+      "distance": 0.33388991013071895,
+      "left": "cal-001-png",
+      "right": "cal-004-crop",
+      "same_root": false
+    },
+    {
+      "distance": 0.03132659313725491,
+      "left": "cal-001-png",
+      "right": "cal-005-png",
+      "same_root": false
+    },
+    {
+      "distance": 0.03190870098039216,
+      "left": "cal-001-png",
+      "right": "cal-005-resize",
+      "same_root": false
+    },
+    {
+      "distance": 0.030815972222222227,
+      "left": "cal-001-png",
+      "right": "cal-005-jpeg",
+      "same_root": false
+    },
+    {
+      "distance": 0.33383884803921565,
+      "left": "cal-001-png",
+      "right": "cal-005-crop",
+      "same_root": false
+    },
+    {
+      "distance": 0.03249591503267974,
+      "left": "cal-001-png",
+      "right": "cal-006-png",
+      "same_root": false
+    },
+    {
+      "distance": 0.03087724673202615,
+      "left": "cal-001-png",
+      "right": "cal-006-resize",
+      "same_root": false
+    },
+    {
+      "distance": 0.03428819444444444,
+      "left": "cal-001-png",
+      "right": "cal-006-jpeg",
+      "same_root": false
+    },
+    {
+      "distance": 0.33428819444444446,
+      "left": "cal-001-png",
+      "right": "cal-006-crop",
+      "same_root": false
+    },
+    {
+      "distance": 0.01712111928104575,
+      "left": "cal-001-png",
+      "right": "cal-007-png",
+      "same_root": false
+    },
+    {
+      "distance": 0.017769607843137254,
+      "left": "cal-001-png",
+      "right": "cal-007-resize",
+      "same_root": false
+    },
+    {
+      "distance": 0.022681781045751633,
+      "left": "cal-001-png",
+      "right": "cal-007-jpeg",
+      "same_root": false
+    },
+    {
+      "distance": 0.33388991013071895,
+      "left": "cal-001-png",
+      "right": "cal-007-crop",
+      "same_root": false
+    },
+    {
+      "distance": 0.03132659313725491,
+      "left": "cal-001-png",
+      "right": "cal-008-png",
+      "same_root": false
+    },
+    {
+      "distance": 0.03190870098039216,
+      "left": "cal-001-png",
+      "right": "cal-008-resize",
+      "same_root": false
+    },
+    {
+      "distance": 0.030815972222222227,
+      "left": "cal-001-png",
+      "right": "cal-008-jpeg",
+      "same_root": false
+    },
+    {
+      "distance": 0.33383884803921565,
+      "left": "cal-001-png",
+      "right": "cal-008-crop",
+      "same_root": false
+    },
+    {
+      "distance": 0.03249591503267974,
+      "left": "cal-001-png",
+      "right": "cal-009-png",
+      "same_root": false
+    },
+    {
+      "distance": 0.03087724673202615,
+      "left": "cal-001-png",
+      "right": "cal-009-resize",
+      "same_root": false
+    },
+    {
+      "distance": 0.03428819444444444,
+      "left": "cal-001-png",
+      "right": "cal-009-jpeg",
+      "same_root": false
+    },
+    {
+      "distance": 0.33428819444444446,
+      "left": "cal-001-png",
+      "right": "cal-009-crop",
+      "same_root": false
+    },
+    {
+      "distance": 0.01712111928104575,
+      "left": "cal-001-png",
+      "right": "cal-010-png",
+      "same_root": false
+    },
+    {
+      "distance": 0.017769607843137254,
+      "left": "cal-001-png",
+      "right": "cal-010-resize",
+      "same_root": false
+    },
+    {
+      "distance": 0.022681781045751633,
+      "left": "cal-001-png",
+      "right": "cal-010-jpeg",
+      "same_root": false
+    },
+    {
+      "distance": 0.33388991013071895,
+      "left": "cal-001-png",
+      "right": "cal-010-crop",
+      "same_root": false
+    },
+    {
+      "distance": 0.03132659313725491,
+      "left": "cal-001-png",
+      "right": "cal-011-png",
+      "same_root": false
+    },
+    {
+      "distance": 0.03190870098039216,
+      "left": "cal-001-png",
+      "right": "cal-011-resize",
+      "same_root": false
+    },
+    {
+      "distance": 0.030815972222222227,
+      "left": "cal-001-png",
+      "right": "cal-011-jpeg",
+      "same_root": false
+    },
+    {
+      "distance": 0.33383884803921565,
+      "left": "cal-001-png",
+      "right": "cal-011-crop",
+      "same_root": false
+    },
+    {
+      "distance": 0.006280637254901959,
+      "left": "cal-001-resize",
+      "right": "cal-001-jpeg",
+      "same_root": true
+    },
+    {
+      "distance": 0.3801674836601307,
+      "left": "cal-001-resize",
+      "right": "cal-001-crop",
+      "same_root": true
+    },
+    {
+      "distance": 0.01378676470588236,
+      "left": "cal-001-resize",
+      "right": "cal-002-png",
+      "same_root": false
+    },
+    {
+      "distance": 0.014236111111111116,
+      "left": "cal-001-resize",
+      "right": "cal-002-resize",
+      "same_root": false
+    },
+    {
+      "distance": 0.013470179738562101,
+      "left": "cal-001-resize",
+      "right": "cal-002-jpeg",
+      "same_root": false
+    },
+    {
+      "distance": 0.3801113153594771,
+      "left": "cal-001-resize",
+      "right": "cal-002-crop",
+      "same_root": false
+    },
+    {
+      "distance": 0.03341503267973856,
+      "left": "cal-001-resize",
+      "right": "cal-003-png",
+      "same_root": false
+    },
+    {
+      "distance": 0.03138786764705883,
+      "left": "cal-001-resize",
+      "right": "cal-003-resize",
+      "same_root": false
+    },
+    {
+      "distance": 0.0350234885620915,
+      "left": "cal-001-resize",
+      "right": "cal-003-jpeg",
+      "same_root": false
+    },
+    {
+      "distance": 0.3340635212418301,
+      "left": "cal-001-resize",
+      "right": "cal-003-crop",
+      "same_root": false
+    },
+    {
+      "distance": 0.018081086601307188,
+      "left": "cal-001-resize",
+      "right": "cal-004-png",
+      "same_root": false
+    },
+    {
+      "distance": 0.016921977124183005,
+      "left": "cal-001-resize",
+      "right": "cal-004-resize",
+      "same_root": false
+    },
+    {
+      "distance": 0.02313112745098039,
+      "left": "cal-001-resize",
+      "right": "cal-004-jpeg",
+      "same_root": false
+    },
+    {
+      "distance": 0.33366523692810457,
+      "left": "cal-001-resize",
+      "right": "cal-004-crop",
+      "same_root": false
+    },
+    {
+      "distance": 0.03085682189542484,
+      "left": "cal-001-resize",
+      "right": "cal-005-png",
+      "same_root": false
+    },
+    {
+      "distance": 0.031101919934640527,
+      "left": "cal-001-resize",
+      "right": "cal-005-resize",
+      "same_root": false
+    },
+    {
+      "distance": 0.03022365196078432,
+      "left": "cal-001-resize",
+      "right": "cal-005-jpeg",
+      "same_root": false
+    },
+    {
+      "distance": 0.33360396241830065,
+      "left": "cal-001-resize",
+      "right": "cal-005-crop",
+      "same_root": false
+    },
+    {
+      "distance": 0.03341503267973856,
+      "left": "cal-001-resize",
+      "right": "cal-006-png",
+      "same_root": false
+    },
+    {
+      "distance": 0.03138786764705883,
+      "left": "cal-001-resize",
+      "right": "cal-006-resize",
+      "same_root": false
+    },
+    {
+      "distance": 0.0350234885620915,
+      "left": "cal-001-resize",
+      "right": "cal-006-jpeg",
+      "same_root": false
+    },
+    {
+      "distance": 0.3340635212418301,
+      "left": "cal-001-resize",
+      "right": "cal-006-crop",
+      "same_root": false
+    },
+    {
+      "distance": 0.018081086601307188,
+      "left": "cal-001-resize",
+      "right": "cal-007-png",
+      "same_root": false
+    },
+    {
+      "distance": 0.016921977124183005,
+      "left": "cal-001-resize",
+      "right": "cal-007-resize",
+      "same_root": false
+    },
+    {
+      "distance": 0.02313112745098039,
+      "left": "cal-001-resize",
+      "right": "cal-007-jpeg",
+      "same_root": false
+    },
+    {
+      "distance": 0.33366523692810457,
+      "left": "cal-001-resize",
+      "right": "cal-007-crop",
+      "same_root": false
+    },
+    {
+      "distance": 0.03085682189542484,
+      "left": "cal-001-resize",
+      "right": "cal-008-png",
+      "same_root": false
+    },
+    {
+      "distance": 0.031101919934640527,
+      "left": "cal-001-resize",
+      "right": "cal-008-resize",
+      "same_root": false
+    },
+    {
+      "distance": 0.03022365196078432,
+      "left": "cal-001-resize",
+      "right": "cal-008-jpeg",
+      "same_root": false
+    },
+    {
+      "distance": 0.33360396241830065,
+      "left": "cal-001-resize",
+      "right": "cal-008-crop",
+      "same_root": false
+    },
+    {
+      "distance": 0.03341503267973856,
+      "left": "cal-001-resize",
+      "right": "cal-009-png",
+      "same_root": false
+    },
+    {
+      "distance": 0.03138786764705883,
+      "left": "cal-001-resize",
+      "right": "cal-009-resize",
+      "same_root": false
+    },
+    {
+      "distance": 0.0350234885620915,
+      "left": "cal-001-resize",
+      "right": "cal-009-jpeg",
+      "same_root": false
+    },
+    {
+      "distance": 0.3340635212418301,
+      "left": "cal-001-resize",
+      "right": "cal-009-crop",
+      "same_root": false
+    },
+    {
+      "distance": 0.018081086601307188,
+      "left": "cal-001-resize",
+      "right": "cal-010-png",
+      "same_root": false
+    },
+    {
+      "distance": 0.016921977124183005,
+      "left": "cal-001-resize",
+      "right": "cal-010-resize",
+      "same_root": false
+    },
+    {
+      "distance": 0.02313112745098039,
+      "left": "cal-001-resize",
+      "right": "cal-010-jpeg",
+      "same_root": false
+    },
+    {
+      "distance": 0.33366523692810457,
+      "left": "cal-001-resize",
+      "right": "cal-010-crop",
+      "same_root": false
+    },
+    {
+      "distance": 0.03085682189542484,
+      "left": "cal-001-resize",
+      "right": "cal-011-png",
+      "same_root": false
+    },
+    {
+      "distance": 0.031101919934640527,
+      "left": "cal-001-resize",
+      "right": "cal-011-resize",
+      "same_root": false
+    },
+    {
+      "distance": 0.03022365196078432,
+      "left": "cal-001-resize",
+      "right": "cal-011-jpeg",
+      "same_root": false
+    },
+    {
+      "distance": 0.33360396241830065,
+      "left": "cal-001-resize",
+      "right": "cal-011-crop",
+      "same_root": false
+    },
+    {
+      "distance": 0.3834048202614379,
+      "left": "cal-001-jpeg",
+      "right": "cal-001-crop",
+      "same_root": true
+    },
+    {
+      "distance": 0.019372957516339873,
+      "left": "cal-001-jpeg",
+      "right": "cal-002-png",
+      "same_root": false
+    },
+    {
+      "distance": 0.020179738562091504,
+      "left": "cal-001-jpeg",
+      "right": "cal-002-resize",
+      "same_root": false
+    },
+    {
+      "distance": 0.017708333333333343,
+      "left": "cal-001-jpeg",
+      "right": "cal-002-jpeg",
+      "same_root": false
+    },
+    {
+      "distance": 0.383358864379085,
+      "left": "cal-001-jpeg",
+      "right": "cal-002-crop",
+      "same_root": false
+    },
+    {
+      "distance": 0.031433823529411785,
+      "left": "cal-001-jpeg",
+      "right": "cal-003-png",
+      "same_root": false
+    },
+    {
+      "distance": 0.02975388071895427,
+      "left": "cal-001-jpeg",
+      "right": "cal-003-resize",
+      "same_root": false
+    },
+    {
+      "distance": 0.0329810049019608,
+      "left": "cal-001-jpeg",
+      "right": "cal-003-jpeg",
+      "same_root": false
+    },
+    {
+      "distance": 0.33688214869281047,
+      "left": "cal-001-jpeg",
+      "right": "cal-003-crop",
+      "same_root": false
+    },
+    {
+      "distance": 0.022850285947712417,
+      "left": "cal-001-jpeg",
+      "right": "cal-004-png",
+      "same_root": false
+    },
+    {
+      "distance": 0.02298815359477124,
+      "left": "cal-001-jpeg",
+      "right": "cal-004-resize",
+      "same_root": false
+    },
+    {
+      "distance": 0.016983251633986927,
+      "left": "cal-001-jpeg",
+      "right": "cal-004-jpeg",
+      "same_root": false
+    },
+    {
+      "distance": 0.336483864379085,
+      "left": "cal-001-jpeg",
+      "right": "cal-004-crop",
+      "same_root": false
+    },
+    {
+      "distance": 0.03631025326797386,
+      "left": "cal-001-jpeg",
+      "right": "cal-005-png",
+      "same_root": false
+    },
+    {
+      "distance": 0.0368515114379085,
+      "left": "cal-001-jpeg",
+      "right": "cal-005-resize",
+      "same_root": false
+    },
+    {
+      "distance": 0.03453329248366014,
+      "left": "cal-001-jpeg",
+      "right": "cal-005-jpeg",
+      "same_root": false
+    },
+    {
+      "distance": 0.3364328022875817,
+      "left": "cal-001-jpeg",
+      "right": "cal-005-crop",
+      "same_root": false
+    },
+    {
+      "distance": 0.031433823529411785,
+      "left": "cal-001-jpeg",
+      "right": "cal-006-png",
+      "same_root": false
+    },
+    {
+      "distance": 0.02975388071895427,
+      "left": "cal-001-jpeg",
+      "right": "cal-006-resize",
+      "same_root": false
+    },
+    {
+      "distance": 0.0329810049019608,
+      "left": "cal-001-jpeg",
+      "right": "cal-006-jpeg",
+      "same_root": false
+    },
+    {
+      "distance": 0.33688214869281047,
+      "left": "cal-001-jpeg",
+      "right": "cal-006-crop",
+      "same_root": false
+    },
+    {
+      "distance": 0.022850285947712417,
+      "left": "cal-001-jpeg",
+      "right": "cal-007-png",
+      "same_root": false
+    },
+    {
+      "distance": 0.02298815359477124,
+      "left": "cal-001-jpeg",
+      "right": "cal-007-resize",
+      "same_root": false
+    },
+    {
+      "distance": 0.016983251633986927,
+      "left": "cal-001-jpeg",
+      "right": "cal-007-jpeg",
+      "same_root": false
+    },
+    {
+      "distance": 0.336483864379085,
+      "left": "cal-001-jpeg",
+      "right": "cal-007-crop",
+      "same_root": false
+    },
+    {
+      "distance": 0.03631025326797386,
+      "left": "cal-001-jpeg",
+      "right": "cal-008-png",
+      "same_root": false
+    },
+    {
+      "distance": 0.0368515114379085,
+      "left": "cal-001-jpeg",
+      "right": "cal-008-resize",
+      "same_root": false
+    },
+    {
+      "distance": 0.03453329248366014,
+      "left": "cal-001-jpeg",
+      "right": "cal-008-jpeg",
+      "same_root": false
+    },
+    {
+      "distance": 0.3364328022875817,
+      "left": "cal-001-jpeg",
+      "right": "cal-008-crop",
+      "same_root": false
+    },
+    {
+      "distance": 0.031433823529411785,
+      "left": "cal-001-jpeg",
+      "right": "cal-009-png",
+      "same_root": false
+    },
+    {
+      "distance": 0.02975388071895427,
+      "left": "cal-001-jpeg",
+      "right": "cal-009-resize",
+      "same_root": false
+    },
+    {
+      "distance": 0.0329810049019608,
+      "left": "cal-001-jpeg",
+      "right": "cal-009-jpeg",
+      "same_root": false
+    },
+    {
+      "distance": 0.33688214869281047,
+      "left": "cal-001-jpeg",
+      "right": "cal-009-crop",
+      "same_root": false
+    },
+    {
+      "distance": 0.022850285947712417,
+      "left": "cal-001-jpeg",
+      "right": "cal-010-png",
+      "same_root": false
+    },
+    {
+      "distance": 0.02298815359477124,
+      "left": "cal-001-jpeg",
+      "right": "cal-010-resize",
+      "same_root": false
+    },
+    {
+      "distance": 0.016983251633986927,
+      "left": "cal-001-jpeg",
+      "right": "cal-010-jpeg",
+      "same_root": false
+    },
+    {
+      "distance": 0.336483864379085,
+      "left": "cal-001-jpeg",
+      "right": "cal-010-crop",
+      "same_root": false
+    },
+    {
+      "distance": 0.03631025326797386,
+      "left": "cal-001-jpeg",
+      "right": "cal-011-png",
+      "same_root": false
+    },
+    {
+      "distance": 0.0368515114379085,
+      "left": "cal-001-jpeg",
+      "right": "cal-011-resize",
+      "same_root": false
+    },
+    {
+      "distance": 0.03453329248366014,
+      "left": "cal-001-jpeg",
+      "right": "cal-011-jpeg",
+      "same_root": false
+    },
+    {
+      "distance": 0.3364328022875817,
+      "left": "cal-001-jpeg",
+      "right": "cal-011-crop",
+      "same_root": false
+    },
+    {
+      "distance": 0.3766441993464052,
+      "left": "cal-001-crop",
+      "right": "cal-002-png",
+      "same_root": false
+    },
+    {
+      "distance": 0.3763888888888889,
+      "left": "cal-001-crop",
+      "right": "cal-002-resize",
+      "same_root": false
+    },
+    {
+      "distance": 0.37795138888888885,
+      "left": "cal-001-crop",
+      "right": "cal-002-jpeg",
+      "same_root": false
+    },
+    {
+      "distance": 0.0032220179738562155,
+      "left": "cal-001-crop",
+      "right": "cal-002-crop",
+      "same_root": false
+    },
+    {
+      "distance": 0.4010518790849673,
+      "left": "cal-001-crop",
+      "right": "cal-003-png",
+      "same_root": false
+    },
+    {
+      "distance": 0.4005770016339869,
+      "left": "cal-001-crop",
+      "right": "cal-003-resize",
+      "same_root": false
+    },
+    {
+      "distance": 0.40210886437908494,
+      "left": "cal-001-crop",
+      "right": "cal-003-jpeg",
+      "same_root": false
+    },
+    {
+      "distance": 0.07540339052287581,
+      "left": "cal-001-crop",
+      "right": "cal-003-crop",
+      "same_root": false
+    },
+    {
+      "distance": 0.3972681781045752,
+      "left": "cal-001-crop",
+      "right": "cal-004-png",
+      "same_root": false
+    },
+    {
+      "distance": 0.3967933006535948,
+      "left": "cal-001-crop",
+      "right": "cal-004-resize",
+      "same_root": false
+    },
+    {
+      "distance": 0.4001633986928104,
+      "left": "cal-001-crop",
+      "right": "cal-004-jpeg",
+      "same_root": false
+    },
+    {
+      "distance": 0.07248263888888888,
+      "left": "cal-001-crop",
+      "right": "cal-004-crop",
+      "same_root": false
+    },
+    {
+      "distance": 0.39346915849673203,
+      "left": "cal-001-crop",
+      "right": "cal-005-png",
+      "same_root": false
+    },
+    {
+      "distance": 0.3930198120915032,
+      "left": "cal-001-crop",
+      "right": "cal-005-resize",
+      "same_root": false
+    },
+    {
+      "distance": 0.3947252859477124,
+      "left": "cal-001-crop",
+      "right": "cal-005-jpeg",
+      "same_root": false
+    },
+    {
+      "distance": 0.07568933823529413,
+      "left": "cal-001-crop",
+      "right": "cal-005-crop",
+      "same_root": false
+    },
+    {
+      "distance": 0.4010518790849673,
+      "left": "cal-001-crop",
+      "right": "cal-006-png",
+      "same_root": false
+    },
+    {
+      "distance": 0.4005770016339869,
+      "left": "cal-001-crop",
+      "right": "cal-006-resize",
+      "same_root": false
+    },
+    {
+      "distance": 0.40210886437908494,
+      "left": "cal-001-crop",
+      "right": "cal-006-jpeg",
+      "same_root": false
+    },
+    {
+      "distance": 0.07540339052287581,
+      "left": "cal-001-crop",
+      "right": "cal-006-crop",
+      "same_root": false
+    },
+    {
+      "distance": 0.3972681781045752,
+      "left": "cal-001-crop",
+      "right": "cal-007-png",
+      "same_root": false
+    },
+    {
+      "distance": 0.3967933006535948,
+      "left": "cal-001-crop",
+      "right": "cal-007-resize",
+      "same_root": false
+    },
+    {
+      "distance": 0.4001633986928104,
+      "left": "cal-001-crop",
+      "right": "cal-007-jpeg",
+      "same_root": false
+    },
+    {
+      "distance": 0.07248263888888888,
+      "left": "cal-001-crop",
+      "right": "cal-007-crop",
+      "same_root": false
+    },
+    {
+      "distance": 0.39346915849673203,
+      "left": "cal-001-crop",
+      "right": "cal-008-png",
+      "same_root": false
+    },
+    {
+      "distance": 0.3930198120915032,
+      "left": "cal-001-crop",
+      "right": "cal-008-resize",
+      "same_root": false
+    },
+    {
+      "distance": 0.3947252859477124,
+      "left": "cal-001-crop",
+      "right": "cal-008-jpeg",
+      "same_root": false
+    },
+    {
+      "distance": 0.07568933823529413,
+      "left": "cal-001-crop",
+      "right": "cal-008-crop",
+      "same_root": false
+    },
+    {
+      "distance": 0.4010518790849673,
+      "left": "cal-001-crop",
+      "right": "cal-009-png",
+      "same_root": false
+    },
+    {
+      "distance": 0.4005770016339869,
+      "left": "cal-001-crop",
+      "right": "cal-009-resize",
+      "same_root": false
+    },
+    {
+      "distance": 0.40210886437908494,
+      "left": "cal-001-crop",
+      "right": "cal-009-jpeg",
+      "same_root": false
+    },
+    {
+      "distance": 0.07540339052287581,
+      "left": "cal-001-crop",
+      "right": "cal-009-crop",
+      "same_root": false
+    },
+    {
+      "distance": 0.3972681781045752,
+      "left": "cal-001-crop",
+      "right": "cal-010-png",
+      "same_root": false
+    },
+    {
+      "distance": 0.3967933006535948,
+      "left": "cal-001-crop",
+      "right": "cal-010-resize",
+      "same_root": false
+    },
+    {
+      "distance": 0.4001633986928104,
+      "left": "cal-001-crop",
+      "right": "cal-010-jpeg",
+      "same_root": false
+    },
+    {
+      "distance": 0.07248263888888888,
+      "left": "cal-001-crop",
+      "right": "cal-010-crop",
+      "same_root": false
+    },
+    {
+      "distance": 0.39346915849673203,
+      "left": "cal-001-crop",
+      "right": "cal-011-png",
+      "same_root": false
+    },
+    {
+      "distance": 0.3930198120915032,
+      "left": "cal-001-crop",
+      "right": "cal-011-resize",
+      "same_root": false
+    },
+    {
+      "distance": 0.3947252859477124,
+      "left": "cal-001-crop",
+      "right": "cal-011-jpeg",
+      "same_root": false
+    },
+    {
+      "distance": 0.07568933823529413,
+      "left": "cal-001-crop",
+      "right": "cal-011-crop",
+      "same_root": false
+    },
+    {
+      "distance": 0.000939542483660129,
+      "left": "cal-002-png",
+      "right": "cal-002-resize",
+      "same_root": true
+    },
+    {
+      "distance": 0.003165849673202607,
+      "left": "cal-002-png",
+      "right": "cal-002-jpeg",
+      "same_root": true
+    },
+    {
+      "distance": 0.3765676062091503,
+      "left": "cal-002-png",
+      "right": "cal-002-crop",
+      "same_root": true
+    },
+    {
+      "distance": 0.04676266339869282,
+      "left": "cal-002-png",
+      "right": "cal-003-png",
+      "same_root": false
+    },
+    {
+      "distance": 0.045072508169934654,
+      "left": "cal-002-png",
+      "right": "cal-003-resize",
+      "same_root": false
+    },
+    {
+      "distance": 0.04838133169934641,
+      "left": "cal-002-png",
+      "right": "cal-003-jpeg",
+      "same_root": false
+    },
+    {
+      "distance": 0.3308670343137255,
+      "left": "cal-002-png",
+      "right": "cal-003-crop",
+      "same_root": false
+    },
+    {
+      "distance": 0.03138786764705883,
+      "left": "cal-002-png",
+      "right": "cal-004-png",
+      "same_root": false
+    },
+    {
+      "distance": 0.03060661764705883,
+      "left": "cal-002-png",
+      "right": "cal-004-resize",
+      "same_root": false
+    },
+    {
+      "distance": 0.036203022875817,
+      "left": "cal-002-png",
+      "right": "cal-004-jpeg",
+      "same_root": false
+    },
+    {
+      "distance": 0.33046875,
+      "left": "cal-002-png",
+      "right": "cal-004-crop",
+      "same_root": false
+    },
+    {
+      "distance": 0.01712111928104575,
+      "left": "cal-002-png",
+      "right": "cal-005-png",
+      "same_root": false
+    },
+    {
+      "distance": 0.017754289215686274,
+      "left": "cal-002-png",
+      "right": "cal-005-resize",
+      "same_root": false
+    },
+    {
+      "distance": 0.019909109477124175,
+      "left": "cal-002-png",
+      "right": "cal-005-jpeg",
+      "same_root": false
+    },
+    {
+      "distance": 0.33038705065359475,
+      "left": "cal-002-png",
+      "right": "cal-005-crop",
+      "same_root": false
+    },
+    {
+      "distance": 0.04676266339869282,
+      "left": "cal-002-png",
+      "right": "cal-006-png",
+      "same_root": false
+    },
+    {
+      "distance": 0.045072508169934654,
+      "left": "cal-002-png",
+      "right": "cal-006-resize",
+      "same_root": false
+    },
+    {
+      "distance": 0.04838133169934641,
+      "left": "cal-002-png",
+      "right": "cal-006-jpeg",
+      "same_root": false
+    },
+    {
+      "distance": 0.3308670343137255,
+      "left": "cal-002-png",
+      "right": "cal-006-crop",
+      "same_root": false
+    },
+    {
+      "distance": 0.03138786764705883,
+      "left": "cal-002-png",
+      "right": "cal-007-png",
+      "same_root": false
+    },
+    {
+      "distance": 0.03060661764705883,
+      "left": "cal-002-png",
+      "right": "cal-007-resize",
+      "same_root": false
+    },
+    {
+      "distance": 0.036203022875817,
+      "left": "cal-002-png",
+      "right": "cal-007-jpeg",
+      "same_root": false
+    },
+    {
+      "distance": 0.33046875,
+      "left": "cal-002-png",
+      "right": "cal-007-crop",
+      "same_root": false
+    },
+    {
+      "distance": 0.01712111928104575,
+      "left": "cal-002-png",
+      "right": "cal-008-png",
+      "same_root": false
+    },
+    {
+      "distance": 0.017754289215686274,
+      "left": "cal-002-png",
+      "right": "cal-008-resize",
+      "same_root": false
+    },
+    {
+      "distance": 0.019909109477124175,
+      "left": "cal-002-png",
+      "right": "cal-008-jpeg",
+      "same_root": false
+    },
+    {
+      "distance": 0.33038705065359475,
+      "left": "cal-002-png",
+      "right": "cal-008-crop",
+      "same_root": false
+    },
+    {
+      "distance": 0.04676266339869282,
+      "left": "cal-002-png",
+      "right": "cal-009-png",
+      "same_root": false
+    },
+    {
+      "distance": 0.045072508169934654,
+      "left": "cal-002-png",
+      "right": "cal-009-resize",
+      "same_root": false
+    },
+    {
+      "distance": 0.04838133169934641,
+      "left": "cal-002-png",
+      "right": "cal-009-jpeg",
+      "same_root": false
+    },
+    {
+      "distance": 0.3308670343137255,
+      "left": "cal-002-png",
+      "right": "cal-009-crop",
+      "same_root": false
+    },
+    {
+      "distance": 0.03138786764705883,
+      "left": "cal-002-png",
+      "right": "cal-010-png",
+      "same_root": false
+    },
+    {
+      "distance": 0.03060661764705883,
+      "left": "cal-002-png",
+      "right": "cal-010-resize",
+      "same_root": false
+    },
+    {
+      "distance": 0.036203022875817,
+      "left": "cal-002-png",
+      "right": "cal-010-jpeg",
+      "same_root": false
+    },
+    {
+      "distance": 0.33046875,
+      "left": "cal-002-png",
+      "right": "cal-010-crop",
+      "same_root": false
+    },
+    {
+      "distance": 0.01712111928104575,
+      "left": "cal-002-png",
+      "right": "cal-011-png",
+      "same_root": false
+    },
+    {
+      "distance": 0.017754289215686274,
+      "left": "cal-002-png",
+      "right": "cal-011-resize",
+      "same_root": false
+    },
+    {
+      "distance": 0.019909109477124175,
+      "left": "cal-002-png",
+      "right": "cal-011-jpeg",
+      "same_root": false
+    },
+    {
+      "distance": 0.33038705065359475,
+      "left": "cal-002-png",
+      "right": "cal-011-crop",
+      "same_root": false
+    },
+    {
+      "distance": 0.003145424836601299,
+      "left": "cal-002-resize",
+      "right": "cal-002-jpeg",
+      "same_root": true
+    },
+    {
+      "distance": 0.376312295751634,
+      "left": "cal-002-resize",
+      "right": "cal-002-crop",
+      "same_root": true
+    },
+    {
+      "distance": 0.04765114379084968,
+      "left": "cal-002-resize",
+      "right": "cal-003-png",
+      "same_root": false
+    },
+    {
+      "distance": 0.045623978758169946,
+      "left": "cal-002-resize",
+      "right": "cal-003-resize",
+      "same_root": false
+    },
+    {
+      "distance": 0.04922896241830065,
+      "left": "cal-002-resize",
+      "right": "cal-003-jpeg",
+      "same_root": false
+    },
+    {
+      "distance": 0.3307546977124183,
+      "left": "cal-002-resize",
+      "right": "cal-003-crop",
+      "same_root": false
+    },
+    {
+      "distance": 0.03227634803921569,
+      "left": "cal-002-resize",
+      "right": "cal-004-png",
+      "same_root": false
+    },
+    {
+      "distance": 0.03115808823529412,
+      "left": "cal-002-resize",
+      "right": "cal-004-resize",
+      "same_root": false
+    },
+    {
+      "distance": 0.03705065359477124,
+      "left": "cal-002-resize",
+      "right": "cal-004-jpeg",
+      "same_root": false
+    },
+    {
+      "distance": 0.33035641339869276,
+      "left": "cal-002-resize",
+      "right": "cal-004-crop",
+      "same_root": false
+    },
+    {
+      "distance": 0.01806066176470588,
+      "left": "cal-002-resize",
+      "right": "cal-005-png",
+      "same_root": false
+    },
+    {
+      "distance": 0.016927083333333332,
+      "left": "cal-002-resize",
+      "right": "cal-005-resize",
+      "same_root": false
+    },
+    {
+      "distance": 0.019939746732026135,
+      "left": "cal-002-resize",
+      "right": "cal-005-jpeg",
+      "same_root": false
+    },
+    {
+      "distance": 0.33027471405228753,
+      "left": "cal-002-resize",
+      "right": "cal-005-crop",
+      "same_root": false
+    },
+    {
+      "distance": 0.04765114379084968,
+      "left": "cal-002-resize",
+      "right": "cal-006-png",
+      "same_root": false
+    },
+    {
+      "distance": 0.045623978758169946,
+      "left": "cal-002-resize",
+      "right": "cal-006-resize",
+      "same_root": false
+    },
+    {
+      "distance": 0.04922896241830065,
+      "left": "cal-002-resize",
+      "right": "cal-006-jpeg",
+      "same_root": false
+    },
+    {
+      "distance": 0.3307546977124183,
+      "left": "cal-002-resize",
+      "right": "cal-006-crop",
+      "same_root": false
+    },
+    {
+      "distance": 0.03227634803921569,
+      "left": "cal-002-resize",
+      "right": "cal-007-png",
+      "same_root": false
+    },
+    {
+      "distance": 0.03115808823529412,
+      "left": "cal-002-resize",
+      "right": "cal-007-resize",
+      "same_root": false
+    },
+    {
+      "distance": 0.03705065359477124,
+      "left": "cal-002-resize",
+      "right": "cal-007-jpeg",
+      "same_root": false
+    },
+    {
+      "distance": 0.33035641339869276,
+      "left": "cal-002-resize",
+      "right": "cal-007-crop",
+      "same_root": false
+    },
+    {
+      "distance": 0.01806066176470588,
+      "left": "cal-002-resize",
+      "right": "cal-008-png",
+      "same_root": false
+    },
+    {
+      "distance": 0.016927083333333332,
+      "left": "cal-002-resize",
+      "right": "cal-008-resize",
+      "same_root": false
+    },
+    {
+      "distance": 0.019939746732026135,
+      "left": "cal-002-resize",
+      "right": "cal-008-jpeg",
+      "same_root": false
+    },
+    {
+      "distance": 0.33027471405228753,
+      "left": "cal-002-resize",
+      "right": "cal-008-crop",
+      "same_root": false
+    },
+    {
+      "distance": 0.04765114379084968,
+      "left": "cal-002-resize",
+      "right": "cal-009-png",
+      "same_root": false
+    },
+    {
+      "distance": 0.045623978758169946,
+      "left": "cal-002-resize",
+      "right": "cal-009-resize",
+      "same_root": false
+    },
+    {
+      "distance": 0.04922896241830065,
+      "left": "cal-002-resize",
+      "right": "cal-009-jpeg",
+      "same_root": false
+    },
+    {
+      "distance": 0.3307546977124183,
+      "left": "cal-002-resize",
+      "right": "cal-009-crop",
+      "same_root": false
+    },
+    {
+      "distance": 0.03227634803921569,
+      "left": "cal-002-resize",
+      "right": "cal-010-png",
+      "same_root": false
+    },
+    {
+      "distance": 0.03115808823529412,
+      "left": "cal-002-resize",
+      "right": "cal-010-resize",
+      "same_root": false
+    },
+    {
+      "distance": 0.03705065359477124,
+      "left": "cal-002-resize",
+      "right": "cal-010-jpeg",
+      "same_root": false
+    },
+    {
+      "distance": 0.33035641339869276,
+      "left": "cal-002-resize",
+      "right": "cal-010-crop",
+      "same_root": false
+    },
+    {
+      "distance": 0.01806066176470588,
+      "left": "cal-002-resize",
+      "right": "cal-011-png",
+      "same_root": false
+    },
+    {
+      "distance": 0.016927083333333332,
+      "left": "cal-002-resize",
+      "right": "cal-011-resize",
+      "same_root": false
+    },
+    {
+      "distance": 0.019939746732026135,
+      "left": "cal-002-resize",
+      "right": "cal-011-jpeg",
+      "same_root": false
+    },
+    {
+      "distance": 0.33027471405228753,
+      "left": "cal-002-resize",
+      "right": "cal-011-crop",
+      "same_root": false
+    },
+    {
+      "distance": 0.37787479575163396,
+      "left": "cal-002-jpeg",
+      "right": "cal-002-crop",
+      "same_root": true
+    },
+    {
+      "distance": 0.046497140522875825,
+      "left": "cal-002-jpeg",
+      "right": "cal-003-png",
+      "same_root": false
+    },
+    {
+      "distance": 0.044674223856209165,
+      "left": "cal-002-jpeg",
+      "right": "cal-003-resize",
+      "same_root": false
+    },
+    {
+      "distance": 0.048034109477124186,
+      "left": "cal-002-jpeg",
+      "right": "cal-003-jpeg",
+      "same_root": false
+    },
+    {
+      "distance": 0.33208231209150324,
+      "left": "cal-002-jpeg",
+      "right": "cal-003-crop",
+      "same_root": false
+    },
+    {
+      "distance": 0.03114276960784314,
+      "left": "cal-002-jpeg",
+      "right": "cal-004-png",
+      "same_root": false
+    },
+    {
+      "distance": 0.0302389705882353,
+      "left": "cal-002-jpeg",
+      "right": "cal-004-resize",
+      "same_root": false
+    },
+    {
+      "distance": 0.03469158496732027,
+      "left": "cal-002-jpeg",
+      "right": "cal-004-jpeg",
+      "same_root": false
+    },
+    {
+      "distance": 0.3316840277777778,
+      "left": "cal-002-jpeg",
+      "right": "cal-004-crop",
+      "same_root": false
+    },
+    {
+      "distance": 0.02017463235294117,
+      "left": "cal-002-jpeg",
+      "right": "cal-005-png",
+      "same_root": false
+    },
+    {
+      "distance": 0.01989889705882352,
+      "left": "cal-002-jpeg",
+      "right": "cal-005-resize",
+      "same_root": false
+    },
+    {
+      "distance": 0.016998570261437907,
+      "left": "cal-002-jpeg",
+      "right": "cal-005-jpeg",
+      "same_root": false
+    },
+    {
+      "distance": 0.33160232843137255,
+      "left": "cal-002-jpeg",
+      "right": "cal-005-crop",
+      "same_root": false
+    },
+    {
+      "distance": 0.046497140522875825,
+      "left": "cal-002-jpeg",
+      "right": "cal-006-png",
+      "same_root": false
+    },
+    {
+      "distance": 0.044674223856209165,
+      "left": "cal-002-jpeg",
+      "right": "cal-006-resize",
+      "same_root": false
+    },
+    {
+      "distance": 0.048034109477124186,
+      "left": "cal-002-jpeg",
+      "right": "cal-006-jpeg",
+      "same_root": false
+    },
+    {
+      "distance": 0.33208231209150324,
+      "left": "cal-002-jpeg",
+      "right": "cal-006-crop",
+      "same_root": false
+    },
+    {
+      "distance": 0.03114276960784314,
+      "left": "cal-002-jpeg",
+      "right": "cal-007-png",
+      "same_root": false
+    },
+    {
+      "distance": 0.0302389705882353,
+      "left": "cal-002-jpeg",
+      "right": "cal-007-resize",
+      "same_root": false
+    },
+    {
+      "distance": 0.03469158496732027,
+      "left": "cal-002-jpeg",
+      "right": "cal-007-jpeg",
+      "same_root": false
+    },
+    {
+      "distance": 0.3316840277777778,
+      "left": "cal-002-jpeg",
+      "right": "cal-007-crop",
+      "same_root": false
+    },
+    {
+      "distance": 0.02017463235294117,
+      "left": "cal-002-jpeg",
+      "right": "cal-008-png",
+      "same_root": false
+    },
+    {
+      "distance": 0.01989889705882352,
+      "left": "cal-002-jpeg",
+      "right": "cal-008-resize",
+      "same_root": false
+    },
+    {
+      "distance": 0.016998570261437907,
+      "left": "cal-002-jpeg",
+      "right": "cal-008-jpeg",
+      "same_root": false
+    },
+    {
+      "distance": 0.33160232843137255,
+      "left": "cal-002-jpeg",
+      "right": "cal-008-crop",
+      "same_root": false
+    },
+    {
+      "distance": 0.046497140522875825,
+      "left": "cal-002-jpeg",
+      "right": "cal-009-png",
+      "same_root": false
+    },
+    {
+      "distance": 0.044674223856209165,
+      "left": "cal-002-jpeg",
+      "right": "cal-009-resize",
+      "same_root": false
+    },
+    {
+      "distance": 0.048034109477124186,
+      "left": "cal-002-jpeg",
+      "right": "cal-009-jpeg",
+      "same_root": false
+    },
+    {
+      "distance": 0.33208231209150324,
+      "left": "cal-002-jpeg",
+      "right": "cal-009-crop",
+      "same_root": false
+    },
+    {
+      "distance": 0.03114276960784314,
+      "left": "cal-002-jpeg",
+      "right": "cal-010-png",
+      "same_root": false
+    },
+    {
+      "distance": 0.0302389705882353,
+      "left": "cal-002-jpeg",
+      "right": "cal-010-resize",
+      "same_root": false
+    },
+    {
+      "distance": 0.03469158496732027,
+      "left": "cal-002-jpeg",
+      "right": "cal-010-jpeg",
+      "same_root": false
+    },
+    {
+      "distance": 0.3316840277777778,
+      "left": "cal-002-jpeg",
+      "right": "cal-010-crop",
+      "same_root": false
+    },
+    {
+      "distance": 0.02017463235294117,
+      "left": "cal-002-jpeg",
+      "right": "cal-011-png",
+      "same_root": false
+    },
+    {
+      "distance": 0.01989889705882352,
+      "left": "cal-002-jpeg",
+      "right": "cal-011-resize",
+      "same_root": false
+    },
+    {
+      "distance": 0.016998570261437907,
+      "left": "cal-002-jpeg",
+      "right": "cal-011-jpeg",
+      "same_root": false
+    },
+    {
+      "distance": 0.33160232843137255,
+      "left": "cal-002-jpeg",
+      "right": "cal-011-crop",
+      "same_root": false
+    },
+    {
+      "distance": 0.40105698529411765,
+      "left": "cal-002-crop",
+      "right": "cal-003-png",
+      "same_root": false
+    },
+    {
+      "distance": 0.40057189542483657,
+      "left": "cal-002-crop",
+      "right": "cal-003-resize",
+      "same_root": false
+    },
+    {
+      "distance": 0.4021139705882353,
+      "left": "cal-002-crop",
+      "right": "cal-003-jpeg",
+      "same_root": false
+    },
+    {
+      "distance": 0.07704248366013072,
+      "left": "cal-002-crop",
+      "right": "cal-003-crop",
+      "same_root": false
+    },
+    {
+      "distance": 0.3972222222222222,
+      "left": "cal-002-crop",
+      "right": "cal-004-png",
+      "same_root": false
+    },
+    {
+      "distance": 0.39673713235294117,
+      "left": "cal-002-crop",
+      "right": "cal-004-resize",
+      "same_root": false
+    },
+    {
+      "distance": 0.40011744281045747,
+      "left": "cal-002-crop",
+      "right": "cal-004-jpeg",
+      "same_root": false
+    },
+    {
+      "distance": 0.07566380718954248,
+      "left": "cal-002-crop",
+      "right": "cal-004-crop",
+      "same_root": false
+    },
+    {
+      "distance": 0.39339256535947714,
+      "left": "cal-002-crop",
+      "right": "cal-005-png",
+      "same_root": false
+    },
+    {
+      "distance": 0.39294321895424833,
+      "left": "cal-002-crop",
+      "right": "cal-005-resize",
+      "same_root": false
+    },
+    {
+      "distance": 0.3946486928104575,
+      "left": "cal-002-crop",
+      "right": "cal-005-jpeg",
+      "same_root": false
+    },
+    {
+      "distance": 0.07251838235294118,
+      "left": "cal-002-crop",
+      "right": "cal-005-crop",
+      "same_root": false
+    },
+    {
+      "distance": 0.40105698529411765,
+      "left": "cal-002-crop",
+      "right": "cal-006-png",
+      "same_root": false
+    },
+    {
+      "distance": 0.40057189542483657,
+      "left": "cal-002-crop",
+      "right": "cal-006-resize",
+      "same_root": false
+    },
+    {
+      "distance": 0.4021139705882353,
+      "left": "cal-002-crop",
+      "right": "cal-006-jpeg",
+      "same_root": false
+    },
+    {
+      "distance": 0.07704248366013072,
+      "left": "cal-002-crop",
+      "right": "cal-006-crop",
+      "same_root": false
+    },
+    {
+      "distance": 0.3972222222222222,
+      "left": "cal-002-crop",
+      "right": "cal-007-png",
+      "same_root": false
+    },
+    {
+      "distance": 0.39673713235294117,
+      "left": "cal-002-crop",
+      "right": "cal-007-resize",
+      "same_root": false
+    },
+    {
+      "distance": 0.40011744281045747,
+      "left": "cal-002-crop",
+      "right": "cal-007-jpeg",
+      "same_root": false
+    },
+    {
+      "distance": 0.07566380718954248,
+      "left": "cal-002-crop",
+      "right": "cal-007-crop",
+      "same_root": false
+    },
+    {
+      "distance": 0.39339256535947714,
+      "left": "cal-002-crop",
+      "right": "cal-008-png",
+      "same_root": false
+    },
+    {
+      "distance": 0.39294321895424833,
+      "left": "cal-002-crop",
+      "right": "cal-008-resize",
+      "same_root": false
+    },
+    {
+      "distance": 0.3946486928104575,
+      "left": "cal-002-crop",
+      "right": "cal-008-jpeg",
+      "same_root": false
+    },
+    {
+      "distance": 0.07251838235294118,
+      "left": "cal-002-crop",
+      "right": "cal-008-crop",
+      "same_root": false
+    },
+    {
+      "distance": 0.40105698529411765,
+      "left": "cal-002-crop",
+      "right": "cal-009-png",
+      "same_root": false
+    },
+    {
+      "distance": 0.40057189542483657,
+      "left": "cal-002-crop",
+      "right": "cal-009-resize",
+      "same_root": false
+    },
+    {
+      "distance": 0.4021139705882353,
+      "left": "cal-002-crop",
+      "right": "cal-009-jpeg",
+      "same_root": false
+    },
+    {
+      "distance": 0.07704248366013072,
+      "left": "cal-002-crop",
+      "right": "cal-009-crop",
+      "same_root": false
+    },
+    {
+      "distance": 0.3972222222222222,
+      "left": "cal-002-crop",
+      "right": "cal-010-png",
+      "same_root": false
+    },
+    {
+      "distance": 0.39673713235294117,
+      "left": "cal-002-crop",
+      "right": "cal-010-resize",
+      "same_root": false
+    },
+    {
+      "distance": 0.40011744281045747,
+      "left": "cal-002-crop",
+      "right": "cal-010-jpeg",
+      "same_root": false
+    },
+    {
+      "distance": 0.07566380718954248,
+      "left": "cal-002-crop",
+      "right": "cal-010-crop",
+      "same_root": false
+    },
+    {
+      "distance": 0.39339256535947714,
+      "left": "cal-002-crop",
+      "right": "cal-011-png",
+      "same_root": false
+    },
+    {
+      "distance": 0.39294321895424833,
+      "left": "cal-002-crop",
+      "right": "cal-011-resize",
+      "same_root": false
+    },
+    {
+      "distance": 0.3946486928104575,
+      "left": "cal-002-crop",
+      "right": "cal-011-jpeg",
+      "same_root": false
+    },
+    {
+      "distance": 0.07251838235294118,
+      "left": "cal-002-crop",
+      "right": "cal-011-crop",
+      "same_root": false
+    },
+    {
+      "distance": 0.002027165032679737,
+      "left": "cal-003-png",
+      "right": "cal-003-resize",
+      "same_root": true
+    },
+    {
+      "distance": 0.00338541666666666,
+      "left": "cal-003-png",
+      "right": "cal-003-jpeg",
+      "same_root": true
+    },
+    {
+      "distance": 0.3479626225490196,
+      "left": "cal-003-png",
+      "right": "cal-003-crop",
+      "same_root": true
+    },
+    {
+      "distance": 0.01537479575163399,
+      "left": "cal-003-png",
+      "right": "cal-004-png",
+      "same_root": false
+    },
+    {
+      "distance": 0.016493055555555556,
+      "left": "cal-003-png",
+      "right": "cal-004-resize",
+      "same_root": false
+    },
+    {
+      "distance": 0.014542483660130742,
+      "left": "cal-003-png",
+      "right": "cal-004-jpeg",
+      "same_root": false
+    },
+    {
+      "distance": 0.34757455065359477,
+      "left": "cal-003-png",
+      "right": "cal-004-crop",
+      "same_root": false
+    },
+    {
+      "distance": 0.029641544117647068,
+      "left": "cal-003-png",
+      "right": "cal-005-png",
+      "same_root": false
+    },
+    {
+      "distance": 0.030724060457516345,
+      "left": "cal-003-png",
+      "right": "cal-005-resize",
+      "same_root": false
+    },
+    {
+      "distance": 0.029580269607843147,
+      "left": "cal-003-png",
+      "right": "cal-005-jpeg",
+      "same_root": false
+    },
+    {
+      "distance": 0.34757455065359477,
+      "left": "cal-003-png",
+      "right": "cal-005-crop",
+      "same_root": false
+    },
+    {
+      "distance": 0.0,
+      "left": "cal-003-png",
+      "right": "cal-006-png",
+      "same_root": false
+    },
+    {
+      "distance": 0.002027165032679737,
+      "left": "cal-003-png",
+      "right": "cal-006-resize",
+      "same_root": false
+    },
+    {
+      "distance": 0.00338541666666666,
+      "left": "cal-003-png",
+      "right": "cal-006-jpeg",
+      "same_root": false
+    },
+    {
+      "distance": 0.3479626225490196,
+      "left": "cal-003-png",
+      "right": "cal-006-crop",
+      "same_root": false
+    },
+    {
+      "distance": 0.01537479575163399,
+      "left": "cal-003-png",
+      "right": "cal-007-png",
+      "same_root": false
+    },
+    {
+      "distance": 0.016493055555555556,
+      "left": "cal-003-png",
+      "right": "cal-007-resize",
+      "same_root": false
+    },
+    {
+      "distance": 0.014542483660130742,
+      "left": "cal-003-png",
+      "right": "cal-007-jpeg",
+      "same_root": false
+    },
+    {
+      "distance": 0.34757455065359477,
+      "left": "cal-003-png",
+      "right": "cal-007-crop",
+      "same_root": false
+    },
+    {
+      "distance": 0.029641544117647068,
+      "left": "cal-003-png",
+      "right": "cal-008-png",
+      "same_root": false
+    },
+    {
+      "distance": 0.030724060457516345,
+      "left": "cal-003-png",
+      "right": "cal-008-resize",
+      "same_root": false
+    },
+    {
+      "distance": 0.029580269607843147,
+      "left": "cal-003-png",
+      "right": "cal-008-jpeg",
+      "same_root": false
+    },
+    {
+      "distance": 0.34757455065359477,
+      "left": "cal-003-png",
+      "right": "cal-008-crop",
+      "same_root": false
+    },
+    {
+      "distance": 0.0,
+      "left": "cal-003-png",
+      "right": "cal-009-png",
+      "same_root": false
+    },
+    {
+      "distance": 0.002027165032679737,
+      "left": "cal-003-png",
+      "right": "cal-009-resize",
+      "same_root": false
+    },
+    {
+      "distance": 0.00338541666666666,
+      "left": "cal-003-png",
+      "right": "cal-009-jpeg",
+      "same_root": false
+    },
+    {
+      "distance": 0.3479626225490196,
+      "left": "cal-003-png",
+      "right": "cal-009-crop",
+      "same_root": false
+    },
+    {
+      "distance": 0.01537479575163399,
+      "left": "cal-003-png",
+      "right": "cal-010-png",
+      "same_root": false
+    },
+    {
+      "distance": 0.016493055555555556,
+      "left": "cal-003-png",
+      "right": "cal-010-resize",
+      "same_root": false
+    },
+    {
+      "distance": 0.014542483660130742,
+      "left": "cal-003-png",
+      "right": "cal-010-jpeg",
+      "same_root": false
+    },
+    {
+      "distance": 0.34757455065359477,
+      "left": "cal-003-png",
+      "right": "cal-010-crop",
+      "same_root": false
+    },
+    {
+      "distance": 0.029641544117647068,
+      "left": "cal-003-png",
+      "right": "cal-011-png",
+      "same_root": false
+    },
+    {
+      "distance": 0.030724060457516345,
+      "left": "cal-003-png",
+      "right": "cal-011-resize",
+      "same_root": false
+    },
+    {
+      "distance": 0.029580269607843147,
+      "left": "cal-003-png",
+      "right": "cal-011-jpeg",
+      "same_root": false
+    },
+    {
+      "distance": 0.34757455065359477,
+      "left": "cal-003-png",
+      "right": "cal-011-crop",
+      "same_root": false
+    },
+    {
+      "distance": 0.004044117647058815,
+      "left": "cal-003-resize",
+      "right": "cal-003-jpeg",
+      "same_root": true
+    },
+    {
+      "distance": 0.34756944444444443,
+      "left": "cal-003-resize",
+      "right": "cal-003-crop",
+      "same_root": true
+    },
+    {
+      "distance": 0.014266748366013075,
+      "left": "cal-003-resize",
+      "right": "cal-004-png",
+      "same_root": false
+    },
+    {
+      "distance": 0.01446589052287582,
+      "left": "cal-003-resize",
+      "right": "cal-004-resize",
+      "same_root": false
+    },
+    {
+      "distance": 0.013117851307189565,
+      "left": "cal-003-resize",
+      "right": "cal-004-jpeg",
+      "same_root": false
+    },
+    {
+      "distance": 0.3471813725490196,
+      "left": "cal-003-resize",
+      "right": "cal-004-crop",
+      "same_root": false
+    },
+    {
+      "distance": 0.028431372549019618,
+      "left": "cal-003-resize",
+      "right": "cal-005-png",
+      "same_root": false
+    },
+    {
+      "distance": 0.02869689542483661,
+      "left": "cal-003-resize",
+      "right": "cal-005-resize",
+      "same_root": false
+    },
+    {
+      "distance": 0.027992238562091515,
+      "left": "cal-003-resize",
+      "right": "cal-005-jpeg",
+      "same_root": false
+    },
+    {
+      "distance": 0.34717116013071897,
+      "left": "cal-003-resize",
+      "right": "cal-005-crop",
+      "same_root": false
+    },
+    {
+      "distance": 0.002027165032679737,
+      "left": "cal-003-resize",
+      "right": "cal-006-png",
+      "same_root": false
+    },
+    {
+      "distance": 0.0,
+      "left": "cal-003-resize",
+      "right": "cal-006-resize",
+      "same_root": false
+    },
+    {
+      "distance": 0.004044117647058815,
+      "left": "cal-003-resize",
+      "right": "cal-006-jpeg",
+      "same_root": false
+    },
+    {
+      "distance": 0.34756944444444443,
+      "left": "cal-003-resize",
+      "right": "cal-006-crop",
+      "same_root": false
+    },
+    {
+      "distance": 0.014266748366013075,
+      "left": "cal-003-resize",
+      "right": "cal-007-png",
+      "same_root": false
+    },
+    {
+      "distance": 0.01446589052287582,
+      "left": "cal-003-resize",
+      "right": "cal-007-resize",
+      "same_root": false
+    },
+    {
+      "distance": 0.013117851307189565,
+      "left": "cal-003-resize",
+      "right": "cal-007-jpeg",
+      "same_root": false
+    },
+    {
+      "distance": 0.3471813725490196,
+      "left": "cal-003-resize",
+      "right": "cal-007-crop",
+      "same_root": false
+    },
+    {
+      "distance": 0.028431372549019618,
+      "left": "cal-003-resize",
+      "right": "cal-008-png",
+      "same_root": false
+    },
+    {
+      "distance": 0.02869689542483661,
+      "left": "cal-003-resize",
+      "right": "cal-008-resize",
+      "same_root": false
+    },
+    {
+      "distance": 0.027992238562091515,
+      "left": "cal-003-resize",
+      "right": "cal-008-jpeg",
+      "same_root": false
+    },
+    {
+      "distance": 0.34717116013071897,
+      "left": "cal-003-resize",
+      "right": "cal-008-crop",
+      "same_root": false
+    },
+    {
+      "distance": 0.002027165032679737,
+      "left": "cal-003-resize",
+      "right": "cal-009-png",
+      "same_root": false
+    },
+    {
+      "distance": 0.0,
+      "left": "cal-003-resize",
+      "right": "cal-009-resize",
+      "same_root": false
+    },
+    {
+      "distance": 0.004044117647058815,
+      "left": "cal-003-resize",
+      "right": "cal-009-jpeg",
+      "same_root": false
+    },
+    {
+      "distance": 0.34756944444444443,
+      "left": "cal-003-resize",
+      "right": "cal-009-crop",
+      "same_root": false
+    },
+    {
+      "distance": 0.014266748366013075,
+      "left": "cal-003-resize",
+      "right": "cal-010-png",
+      "same_root": false
+    },
+    {
+      "distance": 0.01446589052287582,
+      "left": "cal-003-resize",
+      "right": "cal-010-resize",
+      "same_root": false
+    },
+    {
+      "distance": 0.013117851307189565,
+      "left": "cal-003-resize",
+      "right": "cal-010-jpeg",
+      "same_root": false
+    },
+    {
+      "distance": 0.3471813725490196,
+      "left": "cal-003-resize",
+      "right": "cal-010-crop",
+      "same_root": false
+    },
+    {
+      "distance": 0.028431372549019618,
+      "left": "cal-003-resize",
+      "right": "cal-011-png",
+      "same_root": false
+    },
+    {
+      "distance": 0.02869689542483661,
+      "left": "cal-003-resize",
+      "right": "cal-011-resize",
+      "same_root": false
+    },
+    {
+      "distance": 0.027992238562091515,
+      "left": "cal-003-resize",
+      "right": "cal-011-jpeg",
+      "same_root": false
+    },
+    {
+      "distance": 0.34717116013071897,
+      "left": "cal-003-resize",
+      "right": "cal-011-crop",
+      "same_root": false
+    },
+    {
+      "distance": 0.34900939542483655,
+      "left": "cal-003-jpeg",
+      "right": "cal-003-crop",
+      "same_root": true
+    },
+    {
+      "distance": 0.017585784313725487,
+      "left": "cal-003-jpeg",
+      "right": "cal-004-png",
+      "same_root": false
+    },
+    {
+      "distance": 0.018254697712418295,
+      "left": "cal-003-jpeg",
+      "right": "cal-004-resize",
+      "same_root": false
+    },
+    {
+      "distance": 0.016028390522875833,
+      "left": "cal-003-jpeg",
+      "right": "cal-004-jpeg",
+      "same_root": false
+    },
+    {
+      "distance": 0.3486213235294118,
+      "left": "cal-003-jpeg",
+      "right": "cal-004-crop",
+      "same_root": false
+    },
+    {
+      "distance": 0.031617647058823535,
+      "left": "cal-003-jpeg",
+      "right": "cal-005-png",
+      "same_root": false
+    },
+    {
+      "distance": 0.032424428104575166,
+      "left": "cal-003-jpeg",
+      "right": "cal-005-resize",
+      "same_root": false
+    },
+    {
+      "distance": 0.031045751633986932,
+      "left": "cal-003-jpeg",
+      "right": "cal-005-jpeg",
+      "same_root": false
+    },
+    {
+      "distance": 0.3486213235294118,
+      "left": "cal-003-jpeg",
+      "right": "cal-005-crop",
+      "same_root": false
+    },
+    {
+      "distance": 0.00338541666666666,
+      "left": "cal-003-jpeg",
+      "right": "cal-006-png",
+      "same_root": false
+    },
+    {
+      "distance": 0.004044117647058815,
+      "left": "cal-003-jpeg",
+      "right": "cal-006-resize",
+      "same_root": false
+    },
+    {
+      "distance": 0.0,
+      "left": "cal-003-jpeg",
+      "right": "cal-006-jpeg",
+      "same_root": false
+    },
+    {
+      "distance": 0.34900939542483655,
+      "left": "cal-003-jpeg",
+      "right": "cal-006-crop",
+      "same_root": false
+    },
+    {
+      "distance": 0.017585784313725487,
+      "left": "cal-003-jpeg",
+      "right": "cal-007-png",
+      "same_root": false
+    },
+    {
+      "distance": 0.018254697712418295,
+      "left": "cal-003-jpeg",
+      "right": "cal-007-resize",
+      "same_root": false
+    },
+    {
+      "distance": 0.016028390522875833,
+      "left": "cal-003-jpeg",
+      "right": "cal-007-jpeg",
+      "same_root": false
+    },
+    {
+      "distance": 0.3486213235294118,
+      "left": "cal-003-jpeg",
+      "right": "cal-007-crop",
+      "same_root": false
+    },
+    {
+      "distance": 0.031617647058823535,
+      "left": "cal-003-jpeg",
+      "right": "cal-008-png",
+      "same_root": false
+    },
+    {
+      "distance": 0.032424428104575166,
+      "left": "cal-003-jpeg",
+      "right": "cal-008-resize",
+      "same_root": false
+    },
+    {
+      "distance": 0.031045751633986932,
+      "left": "cal-003-jpeg",
+      "right": "cal-008-jpeg",
+      "same_root": false
+    },
+    {
+      "distance": 0.3486213235294118,
+      "left": "cal-003-jpeg",
+      "right": "cal-008-crop",
+      "same_root": false
+    },
+    {
+      "distance": 0.00338541666666666,
+      "left": "cal-003-jpeg",
+      "right": "cal-009-png",
+      "same_root": false
+    },
+    {
+      "distance": 0.004044117647058815,
+      "left": "cal-003-jpeg",
+      "right": "cal-009-resize",
+      "same_root": false
+    },
+    {
+      "distance": 0.0,
+      "left": "cal-003-jpeg",
+      "right": "cal-009-jpeg",
+      "same_root": false
+    },
+    {
+      "distance": 0.34900939542483655,
+      "left": "cal-003-jpeg",
+      "right": "cal-009-crop",
+      "same_root": false
+    },
+    {
+      "distance": 0.017585784313725487,
+      "left": "cal-003-jpeg",
+      "right": "cal-010-png",
+      "same_root": false
+    },
+    {
+      "distance": 0.018254697712418295,
+      "left": "cal-003-jpeg",
+      "right": "cal-010-resize",
+      "same_root": false
+    },
+    {
+      "distance": 0.016028390522875833,
+      "left": "cal-003-jpeg",
+      "right": "cal-010-jpeg",
+      "same_root": false
+    },
+    {
+      "distance": 0.3486213235294118,
+      "left": "cal-003-jpeg",
+      "right": "cal-010-crop",
+      "same_root": false
+    },
+    {
+      "distance": 0.031617647058823535,
+      "left": "cal-003-jpeg",
+      "right": "cal-011-png",
+      "same_root": false
+    },
+    {
+      "distance": 0.032424428104575166,
+      "left": "cal-003-jpeg",
+      "right": "cal-011-resize",
+      "same_root": false
+    },
+    {
+      "distance": 0.031045751633986932,
+      "left": "cal-003-jpeg",
+      "right": "cal-011-jpeg",
+      "same_root": false
+    },
+    {
+      "distance": 0.3486213235294118,
+      "left": "cal-003-jpeg",
+      "right": "cal-011-crop",
+      "same_root": false
+    },
+    {
+      "distance": 0.344546568627451,
+      "left": "cal-003-crop",
+      "right": "cal-004-png",
+      "same_root": false
+    },
+    {
+      "distance": 0.3441227532679738,
+      "left": "cal-003-crop",
+      "right": "cal-004-resize",
+      "same_root": false
+    },
+    {
+      "distance": 0.34711499183006533,
+      "left": "cal-003-crop",
+      "right": "cal-004-jpeg",
+      "same_root": false
+    },
+    {
+      "distance": 0.002920751633986931,
+      "left": "cal-003-crop",
+      "right": "cal-004-crop",
+      "same_root": false
+    },
+    {
+      "distance": 0.3411151960784313,
+      "left": "cal-003-crop",
+      "right": "cal-005-png",
+      "same_root": false
+    },
+    {
+      "distance": 0.3408088235294118,
+      "left": "cal-003-crop",
+      "right": "cal-005-resize",
+      "same_root": false
+    },
+    {
+      "distance": 0.3423100490196078,
+      "left": "cal-003-crop",
+      "right": "cal-005-jpeg",
+      "same_root": false
+    },
+    {
+      "distance": 0.004605800653594775,
+      "left": "cal-003-crop",
+      "right": "cal-005-crop",
+      "same_root": false
+    },
+    {
+      "distance": 0.3479626225490196,
+      "left": "cal-003-crop",
+      "right": "cal-006-png",
+      "same_root": false
+    },
+    {
+      "distance": 0.34756944444444443,
+      "left": "cal-003-crop",
+      "right": "cal-006-resize",
+      "same_root": false
+    },
+    {
+      "distance": 0.34900939542483655,
+      "left": "cal-003-crop",
+      "right": "cal-006-jpeg",
+      "same_root": false
+    },
+    {
+      "distance": 0.0,
+      "left": "cal-003-crop",
+      "right": "cal-006-crop",
+      "same_root": false
+    },
+    {
+      "distance": 0.344546568627451,
+      "left": "cal-003-crop",
+      "right": "cal-007-png",
+      "same_root": false
+    },
+    {
+      "distance": 0.3441227532679738,
+      "left": "cal-003-crop",
+      "right": "cal-007-resize",
+      "same_root": false
+    },
+    {
+      "distance": 0.34711499183006533,
+      "left": "cal-003-crop",
+      "right": "cal-007-jpeg",
+      "same_root": false
+    },
+    {
+      "distance": 0.002920751633986931,
+      "left": "cal-003-crop",
+      "right": "cal-007-crop",
+      "same_root": false
+    },
+    {
+      "distance": 0.3411151960784313,
+      "left": "cal-003-crop",
+      "right": "cal-008-png",
+      "same_root": false
+    },
+    {
+      "distance": 0.3408088235294118,
+      "left": "cal-003-crop",
+      "right": "cal-008-resize",
+      "same_root": false
+    },
+    {
+      "distance": 0.3423100490196078,
+      "left": "cal-003-crop",
+      "right": "cal-008-jpeg",
+      "same_root": false
+    },
+    {
+      "distance": 0.004605800653594775,
+      "left": "cal-003-crop",
+      "right": "cal-008-crop",
+      "same_root": false
+    },
+    {
+      "distance": 0.3479626225490196,
+      "left": "cal-003-crop",
+      "right": "cal-009-png",
+      "same_root": false
+    },
+    {
+      "distance": 0.34756944444444443,
+      "left": "cal-003-crop",
+      "right": "cal-009-resize",
+      "same_root": false
+    },
+    {
+      "distance": 0.34900939542483655,
+      "left": "cal-003-crop",
+      "right": "cal-009-jpeg",
+      "same_root": false
+    },
+    {
+      "distance": 0.0,
+      "left": "cal-003-crop",
+      "right": "cal-009-crop",
+      "same_root": false
+    },
+    {
+      "distance": 0.344546568627451,
+      "left": "cal-003-crop",
+      "right": "cal-010-png",
+      "same_root": false
+    },
+    {
+      "distance": 0.3441227532679738,
+      "left": "cal-003-crop",
+      "right": "cal-010-resize",
+      "same_root": false
+    },
+    {
+      "distance": 0.34711499183006533,
+      "left": "cal-003-crop",
+      "right": "cal-010-jpeg",
+      "same_root": false
+    },
+    {
+      "distance": 0.002920751633986931,
+      "left": "cal-003-crop",
+      "right": "cal-010-crop",
+      "same_root": false
+    },
+    {
+      "distance": 0.3411151960784313,
+      "left": "cal-003-crop",
+      "right": "cal-011-png",
+      "same_root": false
+    },
+    {
+      "distance": 0.3408088235294118,
+      "left": "cal-003-crop",
+      "right": "cal-011-resize",
+      "same_root": false
+    },
+    {
+      "distance": 0.3423100490196078,
+      "left": "cal-003-crop",
+      "right": "cal-011-jpeg",
+      "same_root": false
+    },
+    {
+      "distance": 0.004605800653594775,
+      "left": "cal-003-crop",
+      "right": "cal-011-crop",
+      "same_root": false
+    },
+    {
+      "distance": 0.0011693218954248342,
+      "left": "cal-004-png",
+      "right": "cal-004-resize",
+      "same_root": true
+    },
+    {
+      "distance": 0.005969158496732026,
+      "left": "cal-004-png",
+      "right": "cal-004-jpeg",
+      "same_root": true
+    },
+    {
+      "distance": 0.3441482843137255,
+      "left": "cal-004-png",
+      "right": "cal-004-crop",
+      "same_root": true
+    },
+    {
+      "distance": 0.014266748366013077,
+      "left": "cal-004-png",
+      "right": "cal-005-png",
+      "same_root": false
+    },
+    {
+      "distance": 0.015349264705882356,
+      "left": "cal-004-png",
+      "right": "cal-005-resize",
+      "same_root": false
+    },
+    {
+      "distance": 0.014225898692810464,
+      "left": "cal-004-png",
+      "right": "cal-005-jpeg",
+      "same_root": false
+    },
+    {
+      "distance": 0.3440972222222222,
+      "left": "cal-004-png",
+      "right": "cal-005-crop",
+      "same_root": false
+    },
+    {
+      "distance": 0.01537479575163399,
+      "left": "cal-004-png",
+      "right": "cal-006-png",
+      "same_root": false
+    },
+    {
+      "distance": 0.014266748366013075,
+      "left": "cal-004-png",
+      "right": "cal-006-resize",
+      "same_root": false
+    },
+    {
+      "distance": 0.017585784313725487,
+      "left": "cal-004-png",
+      "right": "cal-006-jpeg",
+      "same_root": false
+    },
+    {
+      "distance": 0.344546568627451,
+      "left": "cal-004-png",
+      "right": "cal-006-crop",
+      "same_root": false
+    },
+    {
+      "distance": 0.0,
+      "left": "cal-004-png",
+      "right": "cal-007-png",
+      "same_root": false
+    },
+    {
+      "distance": 0.0011693218954248342,
+      "left": "cal-004-png",
+      "right": "cal-007-resize",
+      "same_root": false
+    },
+    {
+      "distance": 0.005969158496732026,
+      "left": "cal-004-png",
+      "right": "cal-007-jpeg",
+      "same_root": false
+    },
+    {
+      "distance": 0.3441482843137255,
+      "left": "cal-004-png",
+      "right": "cal-007-crop",
+      "same_root": false
+    },
+    {
+      "distance": 0.014266748366013077,
+      "left": "cal-004-png",
+      "right": "cal-008-png",
+      "same_root": false
+    },
+    {
+      "distance": 0.015349264705882356,
+      "left": "cal-004-png",
+      "right": "cal-008-resize",
+      "same_root": false
+    },
+    {
+      "distance": 0.014225898692810464,
+      "left": "cal-004-png",
+      "right": "cal-008-jpeg",
+      "same_root": false
+    },
+    {
+      "distance": 0.3440972222222222,
+      "left": "cal-004-png",
+      "right": "cal-008-crop",
+      "same_root": false
+    },
+    {
+      "distance": 0.01537479575163399,
+      "left": "cal-004-png",
+      "right": "cal-009-png",
+      "same_root": false
+    },
+    {
+      "distance": 0.014266748366013075,
+      "left": "cal-004-png",
+      "right": "cal-009-resize",
+      "same_root": false
+    },
+    {
+      "distance": 0.017585784313725487,
+      "left": "cal-004-png",
+      "right": "cal-009-jpeg",
+      "same_root": false
+    },
+    {
+      "distance": 0.344546568627451,
+      "left": "cal-004-png",
+      "right": "cal-009-crop",
+      "same_root": false
+    },
+    {
+      "distance": 0.0,
+      "left": "cal-004-png",
+      "right": "cal-010-png",
+      "same_root": false
+    },
+    {
+      "distance": 0.0011693218954248342,
+      "left": "cal-004-png",
+      "right": "cal-010-resize",
+      "same_root": false
+    },
+    {
+      "distance": 0.005969158496732026,
+      "left": "cal-004-png",
+      "right": "cal-010-jpeg",
+      "same_root": false
+    },
+    {
+      "distance": 0.3441482843137255,
+      "left": "cal-004-png",
+      "right": "cal-010-crop",
+      "same_root": false
+    },
+    {
+      "distance": 0.014266748366013077,
+      "left": "cal-004-png",
+      "right": "cal-011-png",
+      "same_root": false
+    },
+    {
+      "distance": 0.015349264705882356,
+      "left": "cal-004-png",
+      "right": "cal-011-resize",
+      "same_root": false
+    },
+    {
+      "distance": 0.014225898692810464,
+      "left": "cal-004-png",
+      "right": "cal-011-jpeg",
+      "same_root": false
+    },
+    {
+      "distance": 0.3440972222222222,
+      "left": "cal-004-png",
+      "right": "cal-011-crop",
+      "same_root": false
+    },
+    {
+      "distance": 0.006352124183006534,
+      "left": "cal-004-resize",
+      "right": "cal-004-jpeg",
+      "same_root": true
+    },
+    {
+      "distance": 0.3437244689542484,
+      "left": "cal-004-resize",
+      "right": "cal-004-crop",
+      "same_root": true
+    },
+    {
+      "distance": 0.013965482026143797,
+      "left": "cal-004-resize",
+      "right": "cal-005-png",
+      "same_root": false
+    },
+    {
+      "distance": 0.01423100490196079,
+      "left": "cal-004-resize",
+      "right": "cal-005-resize",
+      "same_root": false
+    },
+    {
+      "distance": 0.013556985294117656,
+      "left": "cal-004-resize",
+      "right": "cal-005-jpeg",
+      "same_root": false
+    },
+    {
+      "distance": 0.34366319444444443,
+      "left": "cal-004-resize",
+      "right": "cal-005-crop",
+      "same_root": false
+    },
+    {
+      "distance": 0.016493055555555556,
+      "left": "cal-004-resize",
+      "right": "cal-006-png",
+      "same_root": false
+    },
+    {
+      "distance": 0.01446589052287582,
+      "left": "cal-004-resize",
+      "right": "cal-006-resize",
+      "same_root": false
+    },
+    {
+      "distance": 0.018254697712418295,
+      "left": "cal-004-resize",
+      "right": "cal-006-jpeg",
+      "same_root": false
+    },
+    {
+      "distance": 0.3441227532679738,
+      "left": "cal-004-resize",
+      "right": "cal-006-crop",
+      "same_root": false
+    },
+    {
+      "distance": 0.0011693218954248342,
+      "left": "cal-004-resize",
+      "right": "cal-007-png",
+      "same_root": false
+    },
+    {
+      "distance": 0.0,
+      "left": "cal-004-resize",
+      "right": "cal-007-resize",
+      "same_root": false
+    },
+    {
+      "distance": 0.006352124183006534,
+      "left": "cal-004-resize",
+      "right": "cal-007-jpeg",
+      "same_root": false
+    },
+    {
+      "distance": 0.3437244689542484,
+      "left": "cal-004-resize",
+      "right": "cal-007-crop",
+      "same_root": false
+    },
+    {
+      "distance": 0.013965482026143797,
+      "left": "cal-004-resize",
+      "right": "cal-008-png",
+      "same_root": false
+    },
+    {
+      "distance": 0.01423100490196079,
+      "left": "cal-004-resize",
+      "right": "cal-008-resize",
+      "same_root": false
+    },
+    {
+      "distance": 0.013556985294117656,
+      "left": "cal-004-resize",
+      "right": "cal-008-jpeg",
+      "same_root": false
+    },
+    {
+      "distance": 0.34366319444444443,
+      "left": "cal-004-resize",
+      "right": "cal-008-crop",
+      "same_root": false
+    },
+    {
+      "distance": 0.016493055555555556,
+      "left": "cal-004-resize",
+      "right": "cal-009-png",
+      "same_root": false
+    },
+    {
+      "distance": 0.01446589052287582,
+      "left": "cal-004-resize",
+      "right": "cal-009-resize",
+      "same_root": false
+    },
+    {
+      "distance": 0.018254697712418295,
+      "left": "cal-004-resize",
+      "right": "cal-009-jpeg",
+      "same_root": false
+    },
+    {
+      "distance": 0.3441227532679738,
+      "left": "cal-004-resize",
+      "right": "cal-009-crop",
+      "same_root": false
+    },
+    {
+      "distance": 0.0011693218954248342,
+      "left": "cal-004-resize",
+      "right": "cal-010-png",
+      "same_root": false
+    },
+    {
+      "distance": 0.0,
+      "left": "cal-004-resize",
+      "right": "cal-010-resize",
+      "same_root": false
+    },
+    {
+      "distance": 0.006352124183006534,
+      "left": "cal-004-resize",
+      "right": "cal-010-jpeg",
+      "same_root": false
+    },
+    {
+      "distance": 0.3437244689542484,
+      "left": "cal-004-resize",
+      "right": "cal-010-crop",
+      "same_root": false
+    },
+    {
+      "distance": 0.013965482026143797,
+      "left": "cal-004-resize",
+      "right": "cal-011-png",
+      "same_root": false
+    },
+    {
+      "distance": 0.01423100490196079,
+      "left": "cal-004-resize",
+      "right": "cal-011-resize",
+      "same_root": false
+    },
+    {
+      "distance": 0.013556985294117656,
+      "left": "cal-004-resize",
+      "right": "cal-011-jpeg",
+      "same_root": false
+    },
+    {
+      "distance": 0.34366319444444443,
+      "left": "cal-004-resize",
+      "right": "cal-011-crop",
+      "same_root": false
+    },
+    {
+      "distance": 0.3467167075163398,
+      "left": "cal-004-jpeg",
+      "right": "cal-004-crop",
+      "same_root": true
+    },
+    {
+      "distance": 0.019429125816993468,
+      "left": "cal-004-jpeg",
+      "right": "cal-005-png",
+      "same_root": false
+    },
+    {
+      "distance": 0.0202359068627451,
+      "left": "cal-004-jpeg",
+      "right": "cal-005-resize",
+      "same_root": false
+    },
+    {
+      "distance": 0.017693014705882363,
+      "left": "cal-004-jpeg",
+      "right": "cal-005-jpeg",
+      "same_root": false
+    },
+    {
+      "distance": 0.34666564542483663,
+      "left": "cal-004-jpeg",
+      "right": "cal-005-crop",
+      "same_root": false
+    },
+    {
+      "distance": 0.014542483660130742,
+      "left": "cal-004-jpeg",
+      "right": "cal-006-png",
+      "same_root": false
+    },
+    {
+      "distance": 0.013117851307189565,
+      "left": "cal-004-jpeg",
+      "right": "cal-006-resize",
+      "same_root": false
+    },
+    {
+      "distance": 0.016028390522875833,
+      "left": "cal-004-jpeg",
+      "right": "cal-006-jpeg",
+      "same_root": false
+    },
+    {
+      "distance": 0.34711499183006533,
+      "left": "cal-004-jpeg",
+      "right": "cal-006-crop",
+      "same_root": false
+    },
+    {
+      "distance": 0.005969158496732026,
+      "left": "cal-004-jpeg",
+      "right": "cal-007-png",
+      "same_root": false
+    },
+    {
+      "distance": 0.006352124183006534,
+      "left": "cal-004-jpeg",
+      "right": "cal-007-resize",
+      "same_root": false
+    },
+    {
+      "distance": 0.0,
+      "left": "cal-004-jpeg",
+      "right": "cal-007-jpeg",
+      "same_root": false
+    },
+    {
+      "distance": 0.3467167075163398,
+      "left": "cal-004-jpeg",
+      "right": "cal-007-crop",
+      "same_root": false
+    },
+    {
+      "distance": 0.019429125816993468,
+      "left": "cal-004-jpeg",
+      "right": "cal-008-png",
+      "same_root": false
+    },
+    {
+      "distance": 0.0202359068627451,
+      "left": "cal-004-jpeg",
+      "right": "cal-008-resize",
+      "same_root": false
+    },
+    {
+      "distance": 0.017693014705882363,
+      "left": "cal-004-jpeg",
+      "right": "cal-008-jpeg",
+      "same_root": false
+    },
+    {
+      "distance": 0.34666564542483663,
+      "left": "cal-004-jpeg",
+      "right": "cal-008-crop",
+      "same_root": false
+    },
+    {
+      "distance": 0.014542483660130742,
+      "left": "cal-004-jpeg",
+      "right": "cal-009-png",
+      "same_root": false
+    },
+    {
+      "distance": 0.013117851307189565,
+      "left": "cal-004-jpeg",
+      "right": "cal-009-resize",
+      "same_root": false
+    },
+    {
+      "distance": 0.016028390522875833,
+      "left": "cal-004-jpeg",
+      "right": "cal-009-jpeg",
+      "same_root": false
+    },
+    {
+      "distance": 0.34711499183006533,
+      "left": "cal-004-jpeg",
+      "right": "cal-009-crop",
+      "same_root": false
+    },
+    {
+      "distance": 0.005969158496732026,
+      "left": "cal-004-jpeg",
+      "right": "cal-010-png",
+      "same_root": false
+    },
+    {
+      "distance": 0.006352124183006534,
+      "left": "cal-004-jpeg",
+      "right": "cal-010-resize",
+      "same_root": false
+    },
+    {
+      "distance": 0.0,
+      "left": "cal-004-jpeg",
+      "right": "cal-010-jpeg",
+      "same_root": false
+    },
+    {
+      "distance": 0.3467167075163398,
+      "left": "cal-004-jpeg",
+      "right": "cal-010-crop",
+      "same_root": false
+    },
+    {
+      "distance": 0.019429125816993468,
+      "left": "cal-004-jpeg",
+      "right": "cal-011-png",
+      "same_root": false
+    },
+    {
+      "distance": 0.0202359068627451,
+      "left": "cal-004-jpeg",
+      "right": "cal-011-resize",
+      "same_root": false
+    },
+    {
+      "distance": 0.017693014705882363,
+      "left": "cal-004-jpeg",
+      "right": "cal-011-jpeg",
+      "same_root": false
+    },
+    {
+      "distance": 0.34666564542483663,
+      "left": "cal-004-jpeg",
+      "right": "cal-011-crop",
+      "same_root": false
+    },
+    {
+      "distance": 0.3407169117647058,
+      "left": "cal-004-crop",
+      "right": "cal-005-png",
+      "same_root": false
+    },
+    {
+      "distance": 0.34041053921568626,
+      "left": "cal-004-crop",
+      "right": "cal-005-resize",
+      "same_root": false
+    },
+    {
+      "distance": 0.3419117647058823,
+      "left": "cal-004-crop",
+      "right": "cal-005-jpeg",
+      "same_root": false
+    },
+    {
+      "distance": 0.003227124183006543,
+      "left": "cal-004-crop",
+      "right": "cal-005-crop",
+      "same_root": false
+    },
+    {
+      "distance": 0.34757455065359477,
+      "left": "cal-004-crop",
+      "right": "cal-006-png",
+      "same_root": false
+    },
+    {
+      "distance": 0.3471813725490196,
+      "left": "cal-004-crop",
+      "right": "cal-006-resize",
+      "same_root": false
+    },
+    {
+      "distance": 0.3486213235294118,
+      "left": "cal-004-crop",
+      "right": "cal-006-jpeg",
+      "same_root": false
+    },
+    {
+      "distance": 0.002920751633986931,
+      "left": "cal-004-crop",
+      "right": "cal-006-crop",
+      "same_root": false
+    },
+    {
+      "distance": 0.3441482843137255,
+      "left": "cal-004-crop",
+      "right": "cal-007-png",
+      "same_root": false
+    },
+    {
+      "distance": 0.3437244689542484,
+      "left": "cal-004-crop",
+      "right": "cal-007-resize",
+      "same_root": false
+    },
+    {
+      "distance": 0.3467167075163398,
+      "left": "cal-004-crop",
+      "right": "cal-007-jpeg",
+      "same_root": false
+    },
+    {
+      "distance": 0.0,
+      "left": "cal-004-crop",
+      "right": "cal-007-crop",
+      "same_root": false
+    },
+    {
+      "distance": 0.3407169117647058,
+      "left": "cal-004-crop",
+      "right": "cal-008-png",
+      "same_root": false
+    },
+    {
+      "distance": 0.34041053921568626,
+      "left": "cal-004-crop",
+      "right": "cal-008-resize",
+      "same_root": false
+    },
+    {
+      "distance": 0.3419117647058823,
+      "left": "cal-004-crop",
+      "right": "cal-008-jpeg",
+      "same_root": false
+    },
+    {
+      "distance": 0.003227124183006543,
+      "left": "cal-004-crop",
+      "right": "cal-008-crop",
+      "same_root": false
+    },
+    {
+      "distance": 0.34757455065359477,
+      "left": "cal-004-crop",
+      "right": "cal-009-png",
+      "same_root": false
+    },
+    {
+      "distance": 0.3471813725490196,
+      "left": "cal-004-crop",
+      "right": "cal-009-resize",
+      "same_root": false
+    },
+    {
+      "distance": 0.3486213235294118,
+      "left": "cal-004-crop",
+      "right": "cal-009-jpeg",
+      "same_root": false
+    },
+    {
+      "distance": 0.002920751633986931,
+      "left": "cal-004-crop",
+      "right": "cal-009-crop",
+      "same_root": false
+    },
+    {
+      "distance": 0.3441482843137255,
+      "left": "cal-004-crop",
+      "right": "cal-010-png",
+      "same_root": false
+    },
+    {
+      "distance": 0.3437244689542484,
+      "left": "cal-004-crop",
+      "right": "cal-010-resize",
+      "same_root": false
+    },
+    {
+      "distance": 0.3467167075163398,
+      "left": "cal-004-crop",
+      "right": "cal-010-jpeg",
+      "same_root": false
+    },
+    {
+      "distance": 0.0,
+      "left": "cal-004-crop",
+      "right": "cal-010-crop",
+      "same_root": false
+    },
+    {
+      "distance": 0.3407169117647058,
+      "left": "cal-004-crop",
+      "right": "cal-011-png",
+      "same_root": false
+    },
+    {
+      "distance": 0.34041053921568626,
+      "left": "cal-004-crop",
+      "right": "cal-011-resize",
+      "same_root": false
+    },
+    {
+      "distance": 0.3419117647058823,
+      "left": "cal-004-crop",
+      "right": "cal-011-jpeg",
+      "same_root": false
+    },
+    {
+      "distance": 0.003227124183006543,
+      "left": "cal-004-crop",
+      "right": "cal-011-crop",
+      "same_root": false
+    },
+    {
+      "distance": 0.001133578431372547,
+      "left": "cal-005-png",
+      "right": "cal-005-resize",
+      "same_root": true
+    },
+    {
+      "distance": 0.003257761437908489,
+      "left": "cal-005-png",
+      "right": "cal-005-jpeg",
+      "same_root": true
+    },
+    {
+      "distance": 0.3406352124183006,
+      "left": "cal-005-png",
+      "right": "cal-005-crop",
+      "same_root": true
+    },
+    {
+      "distance": 0.029641544117647068,
+      "left": "cal-005-png",
+      "right": "cal-006-png",
+      "same_root": false
+    },
+    {
+      "distance": 0.028431372549019618,
+      "left": "cal-005-png",
+      "right": "cal-006-resize",
+      "same_root": false
+    },
+    {
+      "distance": 0.031617647058823535,
+      "left": "cal-005-png",
+      "right": "cal-006-jpeg",
+      "same_root": false
+    },
+    {
+      "distance": 0.3411151960784313,
+      "left": "cal-005-png",
+      "right": "cal-006-crop",
+      "same_root": false
+    },
+    {
+      "distance": 0.014266748366013077,
+      "left": "cal-005-png",
+      "right": "cal-007-png",
+      "same_root": false
+    },
+    {
+      "distance": 0.013965482026143797,
+      "left": "cal-005-png",
+      "right": "cal-007-resize",
+      "same_root": false
+    },
+    {
+      "distance": 0.019429125816993468,
+      "left": "cal-005-png",
+      "right": "cal-007-jpeg",
+      "same_root": false
+    },
+    {
+      "distance": 0.3407169117647058,
+      "left": "cal-005-png",
+      "right": "cal-007-crop",
+      "same_root": false
+    },
+    {
+      "distance": 0.0,
+      "left": "cal-005-png",
+      "right": "cal-008-png",
+      "same_root": false
+    },
+    {
+      "distance": 0.001133578431372547,
+      "left": "cal-005-png",
+      "right": "cal-008-resize",
+      "same_root": false
+    },
+    {
+      "distance": 0.003257761437908489,
+      "left": "cal-005-png",
+      "right": "cal-008-jpeg",
+      "same_root": false
+    },
+    {
+      "distance": 0.3406352124183006,
+      "left": "cal-005-png",
+      "right": "cal-008-crop",
+      "same_root": false
+    },
+    {
+      "distance": 0.029641544117647068,
+      "left": "cal-005-png",
+      "right": "cal-009-png",
+      "same_root": false
+    },
+    {
+      "distance": 0.028431372549019618,
+      "left": "cal-005-png",
+      "right": "cal-009-resize",
+      "same_root": false
+    },
+    {
+      "distance": 0.031617647058823535,
+      "left": "cal-005-png",
+      "right": "cal-009-jpeg",
+      "same_root": false
+    },
+    {
+      "distance": 0.3411151960784313,
+      "left": "cal-005-png",
+      "right": "cal-009-crop",
+      "same_root": false
+    },
+    {
+      "distance": 0.014266748366013077,
+      "left": "cal-005-png",
+      "right": "cal-010-png",
+      "same_root": false
+    },
+    {
+      "distance": 0.013965482026143797,
+      "left": "cal-005-png",
+      "right": "cal-010-resize",
+      "same_root": false
+    },
+    {
+      "distance": 0.019429125816993468,
+      "left": "cal-005-png",
+      "right": "cal-010-jpeg",
+      "same_root": false
+    },
+    {
+      "distance": 0.3407169117647058,
+      "left": "cal-005-png",
+      "right": "cal-010-crop",
+      "same_root": false
+    },
+    {
+      "distance": 0.0,
+      "left": "cal-005-png",
+      "right": "cal-011-png",
+      "same_root": false
+    },
+    {
+      "distance": 0.001133578431372547,
+      "left": "cal-005-png",
+      "right": "cal-011-resize",
+      "same_root": false
+    },
+    {
+      "distance": 0.003257761437908489,
+      "left": "cal-005-png",
+      "right": "cal-011-jpeg",
+      "same_root": false
+    },
+    {
+      "distance": 0.3406352124183006,
+      "left": "cal-005-png",
+      "right": "cal-011-crop",
+      "same_root": false
+    },
+    {
+      "distance": 0.003237336601307181,
+      "left": "cal-005-resize",
+      "right": "cal-005-jpeg",
+      "same_root": true
+    },
+    {
+      "distance": 0.34032883986928103,
+      "left": "cal-005-resize",
+      "right": "cal-005-crop",
+      "same_root": true
+    },
+    {
+      "distance": 0.030724060457516345,
+      "left": "cal-005-resize",
+      "right": "cal-006-png",
+      "same_root": false
+    },
+    {
+      "distance": 0.02869689542483661,
+      "left": "cal-005-resize",
+      "right": "cal-006-resize",
+      "same_root": false
+    },
+    {
+      "distance": 0.032424428104575166,
+      "left": "cal-005-resize",
+      "right": "cal-006-jpeg",
+      "same_root": false
+    },
+    {
+      "distance": 0.3408088235294118,
+      "left": "cal-005-resize",
+      "right": "cal-006-crop",
+      "same_root": false
+    },
+    {
+      "distance": 0.015349264705882356,
+      "left": "cal-005-resize",
+      "right": "cal-007-png",
+      "same_root": false
+    },
+    {
+      "distance": 0.01423100490196079,
+      "left": "cal-005-resize",
+      "right": "cal-007-resize",
+      "same_root": false
+    },
+    {
+      "distance": 0.0202359068627451,
+      "left": "cal-005-resize",
+      "right": "cal-007-jpeg",
+      "same_root": false
+    },
+    {
+      "distance": 0.34041053921568626,
+      "left": "cal-005-resize",
+      "right": "cal-007-crop",
+      "same_root": false
+    },
+    {
+      "distance": 0.001133578431372547,
+      "left": "cal-005-resize",
+      "right": "cal-008-png",
+      "same_root": false
+    },
+    {
+      "distance": 0.0,
+      "left": "cal-005-resize",
+      "right": "cal-008-resize",
+      "same_root": false
+    },
+    {
+      "distance": 0.003237336601307181,
+      "left": "cal-005-resize",
+      "right": "cal-008-jpeg",
+      "same_root": false
+    },
+    {
+      "distance": 0.34032883986928103,
+      "left": "cal-005-resize",
+      "right": "cal-008-crop",
+      "same_root": false
+    },
+    {
+      "distance": 0.030724060457516345,
+      "left": "cal-005-resize",
+      "right": "cal-009-png",
+      "same_root": false
+    },
+    {
+      "distance": 0.02869689542483661,
+      "left": "cal-005-resize",
+      "right": "cal-009-resize",
+      "same_root": false
+    },
+    {
+      "distance": 0.032424428104575166,
+      "left": "cal-005-resize",
+      "right": "cal-009-jpeg",
+      "same_root": false
+    },
+    {
+      "distance": 0.3408088235294118,
+      "left": "cal-005-resize",
+      "right": "cal-009-crop",
+      "same_root": false
+    },
+    {
+      "distance": 0.015349264705882356,
+      "left": "cal-005-resize",
+      "right": "cal-010-png",
+      "same_root": false
+    },
+    {
+      "distance": 0.01423100490196079,
+      "left": "cal-005-resize",
+      "right": "cal-010-resize",
+      "same_root": false
+    },
+    {
+      "distance": 0.0202359068627451,
+      "left": "cal-005-resize",
+      "right": "cal-010-jpeg",
+      "same_root": false
+    },
+    {
+      "distance": 0.34041053921568626,
+      "left": "cal-005-resize",
+      "right": "cal-010-crop",
+      "same_root": false
+    },
+    {
+      "distance": 0.001133578431372547,
+      "left": "cal-005-resize",
+      "right": "cal-011-png",
+      "same_root": false
+    },
+    {
+      "distance": 0.0,
+      "left": "cal-005-resize",
+      "right": "cal-011-resize",
+      "same_root": false
+    },
+    {
+      "distance": 0.003237336601307181,
+      "left": "cal-005-resize",
+      "right": "cal-011-jpeg",
+      "same_root": false
+    },
+    {
+      "distance": 0.34032883986928103,
+      "left": "cal-005-resize",
+      "right": "cal-011-crop",
+      "same_root": false
+    },
+    {
+      "distance": 0.3418300653594771,
+      "left": "cal-005-jpeg",
+      "right": "cal-005-crop",
+      "same_root": true
+    },
+    {
+      "distance": 0.029580269607843147,
+      "left": "cal-005-jpeg",
+      "right": "cal-006-png",
+      "same_root": false
+    },
+    {
+      "distance": 0.027992238562091515,
+      "left": "cal-005-jpeg",
+      "right": "cal-006-resize",
+      "same_root": false
+    },
+    {
+      "distance": 0.031045751633986932,
+      "left": "cal-005-jpeg",
+      "right": "cal-006-jpeg",
+      "same_root": false
+    },
+    {
+      "distance": 0.3423100490196078,
+      "left": "cal-005-jpeg",
+      "right": "cal-006-crop",
+      "same_root": false
+    },
+    {
+      "distance": 0.014225898692810464,
+      "left": "cal-005-jpeg",
+      "right": "cal-007-png",
+      "same_root": false
+    },
+    {
+      "distance": 0.013556985294117656,
+      "left": "cal-005-jpeg",
+      "right": "cal-007-resize",
+      "same_root": false
+    },
+    {
+      "distance": 0.017693014705882363,
+      "left": "cal-005-jpeg",
+      "right": "cal-007-jpeg",
+      "same_root": false
+    },
+    {
+      "distance": 0.3419117647058823,
+      "left": "cal-005-jpeg",
+      "right": "cal-007-crop",
+      "same_root": false
+    },
+    {
+      "distance": 0.003257761437908489,
+      "left": "cal-005-jpeg",
+      "right": "cal-008-png",
+      "same_root": false
+    },
+    {
+      "distance": 0.003237336601307181,
+      "left": "cal-005-jpeg",
+      "right": "cal-008-resize",
+      "same_root": false
+    },
+    {
+      "distance": 0.0,
+      "left": "cal-005-jpeg",
+      "right": "cal-008-jpeg",
+      "same_root": false
+    },
+    {
+      "distance": 0.3418300653594771,
+      "left": "cal-005-jpeg",
+      "right": "cal-008-crop",
+      "same_root": false
+    },
+    {
+      "distance": 0.029580269607843147,
+      "left": "cal-005-jpeg",
+      "right": "cal-009-png",
+      "same_root": false
+    },
+    {
+      "distance": 0.027992238562091515,
+      "left": "cal-005-jpeg",
+      "right": "cal-009-resize",
+      "same_root": false
+    },
+    {
+      "distance": 0.031045751633986932,
+      "left": "cal-005-jpeg",
+      "right": "cal-009-jpeg",
+      "same_root": false
+    },
+    {
+      "distance": 0.3423100490196078,
+      "left": "cal-005-jpeg",
+      "right": "cal-009-crop",
+      "same_root": false
+    },
+    {
+      "distance": 0.014225898692810464,
+      "left": "cal-005-jpeg",
+      "right": "cal-010-png",
+      "same_root": false
+    },
+    {
+      "distance": 0.013556985294117656,
+      "left": "cal-005-jpeg",
+      "right": "cal-010-resize",
+      "same_root": false
+    },
+    {
+      "distance": 0.017693014705882363,
+      "left": "cal-005-jpeg",
+      "right": "cal-010-jpeg",
+      "same_root": false
+    },
+    {
+      "distance": 0.3419117647058823,
+      "left": "cal-005-jpeg",
+      "right": "cal-010-crop",
+      "same_root": false
+    },
+    {
+      "distance": 0.003257761437908489,
+      "left": "cal-005-jpeg",
+      "right": "cal-011-png",
+      "same_root": false
+    },
+    {
+      "distance": 0.003237336601307181,
+      "left": "cal-005-jpeg",
+      "right": "cal-011-resize",
+      "same_root": false
+    },
+    {
+      "distance": 0.0,
+      "left": "cal-005-jpeg",
+      "right": "cal-011-jpeg",
+      "same_root": false
+    },
+    {
+      "distance": 0.3418300653594771,
+      "left": "cal-005-jpeg",
+      "right": "cal-011-crop",
+      "same_root": false
+    },
+    {
+      "distance": 0.34757455065359477,
+      "left": "cal-005-crop",
+      "right": "cal-006-png",
+      "same_root": false
+    },
+    {
+      "distance": 0.34717116013071897,
+      "left": "cal-005-crop",
+      "right": "cal-006-resize",
+      "same_root": false
+    },
+    {
+      "distance": 0.3486213235294118,
+      "left": "cal-005-crop",
+      "right": "cal-006-jpeg",
+      "same_root": false
+    },
+    {
+      "distance": 0.004605800653594775,
+      "left": "cal-005-crop",
+      "right": "cal-006-crop",
+      "same_root": false
+    },
+    {
+      "distance": 0.3440972222222222,
+      "left": "cal-005-crop",
+      "right": "cal-007-png",
+      "same_root": false
+    },
+    {
+      "distance": 0.34366319444444443,
+      "left": "cal-005-crop",
+      "right": "cal-007-resize",
+      "same_root": false
+    },
+    {
+      "distance": 0.34666564542483663,
+      "left": "cal-005-crop",
+      "right": "cal-007-jpeg",
+      "same_root": false
+    },
+    {
+      "distance": 0.003227124183006543,
+      "left": "cal-005-crop",
+      "right": "cal-007-crop",
+      "same_root": false
+    },
+    {
+      "distance": 0.3406352124183006,
+      "left": "cal-005-crop",
+      "right": "cal-008-png",
+      "same_root": false
+    },
+    {
+      "distance": 0.34032883986928103,
+      "left": "cal-005-crop",
+      "right": "cal-008-resize",
+      "same_root": false
+    },
+    {
+      "distance": 0.3418300653594771,
+      "left": "cal-005-crop",
+      "right": "cal-008-jpeg",
+      "same_root": false
+    },
+    {
+      "distance": 0.0,
+      "left": "cal-005-crop",
+      "right": "cal-008-crop",
+      "same_root": false
+    },
+    {
+      "distance": 0.34757455065359477,
+      "left": "cal-005-crop",
+      "right": "cal-009-png",
+      "same_root": false
+    },
+    {
+      "distance": 0.34717116013071897,
+      "left": "cal-005-crop",
+      "right": "cal-009-resize",
+      "same_root": false
+    },
+    {
+      "distance": 0.3486213235294118,
+      "left": "cal-005-crop",
+      "right": "cal-009-jpeg",
+      "same_root": false
+    },
+    {
+      "distance": 0.004605800653594775,
+      "left": "cal-005-crop",
+      "right": "cal-009-crop",
+      "same_root": false
+    },
+    {
+      "distance": 0.3440972222222222,
+      "left": "cal-005-crop",
+      "right": "cal-010-png",
+      "same_root": false
+    },
+    {
+      "distance": 0.34366319444444443,
+      "left": "cal-005-crop",
+      "right": "cal-010-resize",
+      "same_root": false
+    },
+    {
+      "distance": 0.34666564542483663,
+      "left": "cal-005-crop",
+      "right": "cal-010-jpeg",
+      "same_root": false
+    },
+    {
+      "distance": 0.003227124183006543,
+      "left": "cal-005-crop",
+      "right": "cal-010-crop",
+      "same_root": false
+    },
+    {
+      "distance": 0.3406352124183006,
+      "left": "cal-005-crop",
+      "right": "cal-011-png",
+      "same_root": false
+    },
+    {
+      "distance": 0.34032883986928103,
+      "left": "cal-005-crop",
+      "right": "cal-011-resize",
+      "same_root": false
+    },
+    {
+      "distance": 0.3418300653594771,
+      "left": "cal-005-crop",
+      "right": "cal-011-jpeg",
+      "same_root": false
+    },
+    {
+      "distance": 0.0,
+      "left": "cal-005-crop",
+      "right": "cal-011-crop",
+      "same_root": false
+    },
+    {
+      "distance": 0.002027165032679737,
+      "left": "cal-006-png",
+      "right": "cal-006-resize",
+      "same_root": true
+    },
+    {
+      "distance": 0.00338541666666666,
+      "left": "cal-006-png",
+      "right": "cal-006-jpeg",
+      "same_root": true
+    },
+    {
+      "distance": 0.3479626225490196,
+      "left": "cal-006-png",
+      "right": "cal-006-crop",
+      "same_root": true
+    },
+    {
+      "distance": 0.01537479575163399,
+      "left": "cal-006-png",
+      "right": "cal-007-png",
+      "same_root": false
+    },
+    {
+      "distance": 0.016493055555555556,
+      "left": "cal-006-png",
+      "right": "cal-007-resize",
+      "same_root": false
+    },
+    {
+      "distance": 0.014542483660130742,
+      "left": "cal-006-png",
+      "right": "cal-007-jpeg",
+      "same_root": false
+    },
+    {
+      "distance": 0.34757455065359477,
+      "left": "cal-006-png",
+      "right": "cal-007-crop",
+      "same_root": false
+    },
+    {
+      "distance": 0.029641544117647068,
+      "left": "cal-006-png",
+      "right": "cal-008-png",
+      "same_root": false
+    },
+    {
+      "distance": 0.030724060457516345,
+      "left": "cal-006-png",
+      "right": "cal-008-resize",
+      "same_root": false
+    },
+    {
+      "distance": 0.029580269607843147,
+      "left": "cal-006-png",
+      "right": "cal-008-jpeg",
+      "same_root": false
+    },
+    {
+      "distance": 0.34757455065359477,
+      "left": "cal-006-png",
+      "right": "cal-008-crop",
+      "same_root": false
+    },
+    {
+      "distance": 0.0,
+      "left": "cal-006-png",
+      "right": "cal-009-png",
+      "same_root": false
+    },
+    {
+      "distance": 0.002027165032679737,
+      "left": "cal-006-png",
+      "right": "cal-009-resize",
+      "same_root": false
+    },
+    {
+      "distance": 0.00338541666666666,
+      "left": "cal-006-png",
+      "right": "cal-009-jpeg",
+      "same_root": false
+    },
+    {
+      "distance": 0.3479626225490196,
+      "left": "cal-006-png",
+      "right": "cal-009-crop",
+      "same_root": false
+    },
+    {
+      "distance": 0.01537479575163399,
+      "left": "cal-006-png",
+      "right": "cal-010-png",
+      "same_root": false
+    },
+    {
+      "distance": 0.016493055555555556,
+      "left": "cal-006-png",
+      "right": "cal-010-resize",
+      "same_root": false
+    },
+    {
+      "distance": 0.014542483660130742,
+      "left": "cal-006-png",
+      "right": "cal-010-jpeg",
+      "same_root": false
+    },
+    {
+      "distance": 0.34757455065359477,
+      "left": "cal-006-png",
+      "right": "cal-010-crop",
+      "same_root": false
+    },
+    {
+      "distance": 0.029641544117647068,
+      "left": "cal-006-png",
+      "right": "cal-011-png",
+      "same_root": false
+    },
+    {
+      "distance": 0.030724060457516345,
+      "left": "cal-006-png",
+      "right": "cal-011-resize",
+      "same_root": false
+    },
+    {
+      "distance": 0.029580269607843147,
+      "left": "cal-006-png",
+      "right": "cal-011-jpeg",
+      "same_root": false
+    },
+    {
+      "distance": 0.34757455065359477,
+      "left": "cal-006-png",
+      "right": "cal-011-crop",
+      "same_root": false
+    },
+    {
+      "distance": 0.004044117647058815,
+      "left": "cal-006-resize",
+      "right": "cal-006-jpeg",
+      "same_root": true
+    },
+    {
+      "distance": 0.34756944444444443,
+      "left": "cal-006-resize",
+      "right": "cal-006-crop",
+      "same_root": true
+    },
+    {
+      "distance": 0.014266748366013075,
+      "left": "cal-006-resize",
+      "right": "cal-007-png",
+      "same_root": false
+    },
+    {
+      "distance": 0.01446589052287582,
+      "left": "cal-006-resize",
+      "right": "cal-007-resize",
+      "same_root": false
+    },
+    {
+      "distance": 0.013117851307189565,
+      "left": "cal-006-resize",
+      "right": "cal-007-jpeg",
+      "same_root": false
+    },
+    {
+      "distance": 0.3471813725490196,
+      "left": "cal-006-resize",
+      "right": "cal-007-crop",
+      "same_root": false
+    },
+    {
+      "distance": 0.028431372549019618,
+      "left": "cal-006-resize",
+      "right": "cal-008-png",
+      "same_root": false
+    },
+    {
+      "distance": 0.02869689542483661,
+      "left": "cal-006-resize",
+      "right": "cal-008-resize",
+      "same_root": false
+    },
+    {
+      "distance": 0.027992238562091515,
+      "left": "cal-006-resize",
+      "right": "cal-008-jpeg",
+      "same_root": false
+    },
+    {
+      "distance": 0.34717116013071897,
+      "left": "cal-006-resize",
+      "right": "cal-008-crop",
+      "same_root": false
+    },
+    {
+      "distance": 0.002027165032679737,
+      "left": "cal-006-resize",
+      "right": "cal-009-png",
+      "same_root": false
+    },
+    {
+      "distance": 0.0,
+      "left": "cal-006-resize",
+      "right": "cal-009-resize",
+      "same_root": false
+    },
+    {
+      "distance": 0.004044117647058815,
+      "left": "cal-006-resize",
+      "right": "cal-009-jpeg",
+      "same_root": false
+    },
+    {
+      "distance": 0.34756944444444443,
+      "left": "cal-006-resize",
+      "right": "cal-009-crop",
+      "same_root": false
+    },
+    {
+      "distance": 0.014266748366013075,
+      "left": "cal-006-resize",
+      "right": "cal-010-png",
+      "same_root": false
+    },
+    {
+      "distance": 0.01446589052287582,
+      "left": "cal-006-resize",
+      "right": "cal-010-resize",
+      "same_root": false
+    },
+    {
+      "distance": 0.013117851307189565,
+      "left": "cal-006-resize",
+      "right": "cal-010-jpeg",
+      "same_root": false
+    },
+    {
+      "distance": 0.3471813725490196,
+      "left": "cal-006-resize",
+      "right": "cal-010-crop",
+      "same_root": false
+    },
+    {
+      "distance": 0.028431372549019618,
+      "left": "cal-006-resize",
+      "right": "cal-011-png",
+      "same_root": false
+    },
+    {
+      "distance": 0.02869689542483661,
+      "left": "cal-006-resize",
+      "right": "cal-011-resize",
+      "same_root": false
+    },
+    {
+      "distance": 0.027992238562091515,
+      "left": "cal-006-resize",
+      "right": "cal-011-jpeg",
+      "same_root": false
+    },
+    {
+      "distance": 0.34717116013071897,
+      "left": "cal-006-resize",
+      "right": "cal-011-crop",
+      "same_root": false
+    },
+    {
+      "distance": 0.34900939542483655,
+      "left": "cal-006-jpeg",
+      "right": "cal-006-crop",
+      "same_root": true
+    },
+    {
+      "distance": 0.017585784313725487,
+      "left": "cal-006-jpeg",
+      "right": "cal-007-png",
+      "same_root": false
+    },
+    {
+      "distance": 0.018254697712418295,
+      "left": "cal-006-jpeg",
+      "right": "cal-007-resize",
+      "same_root": false
+    },
+    {
+      "distance": 0.016028390522875833,
+      "left": "cal-006-jpeg",
+      "right": "cal-007-jpeg",
+      "same_root": false
+    },
+    {
+      "distance": 0.3486213235294118,
+      "left": "cal-006-jpeg",
+      "right": "cal-007-crop",
+      "same_root": false
+    },
+    {
+      "distance": 0.031617647058823535,
+      "left": "cal-006-jpeg",
+      "right": "cal-008-png",
+      "same_root": false
+    },
+    {
+      "distance": 0.032424428104575166,
+      "left": "cal-006-jpeg",
+      "right": "cal-008-resize",
+      "same_root": false
+    },
+    {
+      "distance": 0.031045751633986932,
+      "left": "cal-006-jpeg",
+      "right": "cal-008-jpeg",
+      "same_root": false
+    },
+    {
+      "distance": 0.3486213235294118,
+      "left": "cal-006-jpeg",
+      "right": "cal-008-crop",
+      "same_root": false
+    },
+    {
+      "distance": 0.00338541666666666,
+      "left": "cal-006-jpeg",
+      "right": "cal-009-png",
+      "same_root": false
+    },
+    {
+      "distance": 0.004044117647058815,
+      "left": "cal-006-jpeg",
+      "right": "cal-009-resize",
+      "same_root": false
+    },
+    {
+      "distance": 0.0,
+      "left": "cal-006-jpeg",
+      "right": "cal-009-jpeg",
+      "same_root": false
+    },
+    {
+      "distance": 0.34900939542483655,
+      "left": "cal-006-jpeg",
+      "right": "cal-009-crop",
+      "same_root": false
+    },
+    {
+      "distance": 0.017585784313725487,
+      "left": "cal-006-jpeg",
+      "right": "cal-010-png",
+      "same_root": false
+    },
+    {
+      "distance": 0.018254697712418295,
+      "left": "cal-006-jpeg",
+      "right": "cal-010-resize",
+      "same_root": false
+    },
+    {
+      "distance": 0.016028390522875833,
+      "left": "cal-006-jpeg",
+      "right": "cal-010-jpeg",
+      "same_root": false
+    },
+    {
+      "distance": 0.3486213235294118,
+      "left": "cal-006-jpeg",
+      "right": "cal-010-crop",
+      "same_root": false
+    },
+    {
+      "distance": 0.031617647058823535,
+      "left": "cal-006-jpeg",
+      "right": "cal-011-png",
+      "same_root": false
+    },
+    {
+      "distance": 0.032424428104575166,
+      "left": "cal-006-jpeg",
+      "right": "cal-011-resize",
+      "same_root": false
+    },
+    {
+      "distance": 0.031045751633986932,
+      "left": "cal-006-jpeg",
+      "right": "cal-011-jpeg",
+      "same_root": false
+    },
+    {
+      "distance": 0.3486213235294118,
+      "left": "cal-006-jpeg",
+      "right": "cal-011-crop",
+      "same_root": false
+    },
+    {
+      "distance": 0.344546568627451,
+      "left": "cal-006-crop",
+      "right": "cal-007-png",
+      "same_root": false
+    },
+    {
+      "distance": 0.3441227532679738,
+      "left": "cal-006-crop",
+      "right": "cal-007-resize",
+      "same_root": false
+    },
+    {
+      "distance": 0.34711499183006533,
+      "left": "cal-006-crop",
+      "right": "cal-007-jpeg",
+      "same_root": false
+    },
+    {
+      "distance": 0.002920751633986931,
+      "left": "cal-006-crop",
+      "right": "cal-007-crop",
+      "same_root": false
+    },
+    {
+      "distance": 0.3411151960784313,
+      "left": "cal-006-crop",
+      "right": "cal-008-png",
+      "same_root": false
+    },
+    {
+      "distance": 0.3408088235294118,
+      "left": "cal-006-crop",
+      "right": "cal-008-resize",
+      "same_root": false
+    },
+    {
+      "distance": 0.3423100490196078,
+      "left": "cal-006-crop",
+      "right": "cal-008-jpeg",
+      "same_root": false
+    },
+    {
+      "distance": 0.004605800653594775,
+      "left": "cal-006-crop",
+      "right": "cal-008-crop",
+      "same_root": false
+    },
+    {
+      "distance": 0.3479626225490196,
+      "left": "cal-006-crop",
+      "right": "cal-009-png",
+      "same_root": false
+    },
+    {
+      "distance": 0.34756944444444443,
+      "left": "cal-006-crop",
+      "right": "cal-009-resize",
+      "same_root": false
+    },
+    {
+      "distance": 0.34900939542483655,
+      "left": "cal-006-crop",
+      "right": "cal-009-jpeg",
+      "same_root": false
+    },
+    {
+      "distance": 0.0,
+      "left": "cal-006-crop",
+      "right": "cal-009-crop",
+      "same_root": false
+    },
+    {
+      "distance": 0.344546568627451,
+      "left": "cal-006-crop",
+      "right": "cal-010-png",
+      "same_root": false
+    },
+    {
+      "distance": 0.3441227532679738,
+      "left": "cal-006-crop",
+      "right": "cal-010-resize",
+      "same_root": false
+    },
+    {
+      "distance": 0.34711499183006533,
+      "left": "cal-006-crop",
+      "right": "cal-010-jpeg",
+      "same_root": false
+    },
+    {
+      "distance": 0.002920751633986931,
+      "left": "cal-006-crop",
+      "right": "cal-010-crop",
+      "same_root": false
+    },
+    {
+      "distance": 0.3411151960784313,
+      "left": "cal-006-crop",
+      "right": "cal-011-png",
+      "same_root": false
+    },
+    {
+      "distance": 0.3408088235294118,
+      "left": "cal-006-crop",
+      "right": "cal-011-resize",
+      "same_root": false
+    },
+    {
+      "distance": 0.3423100490196078,
+      "left": "cal-006-crop",
+      "right": "cal-011-jpeg",
+      "same_root": false
+    },
+    {
+      "distance": 0.004605800653594775,
+      "left": "cal-006-crop",
+      "right": "cal-011-crop",
+      "same_root": false
+    },
+    {
+      "distance": 0.0011693218954248342,
+      "left": "cal-007-png",
+      "right": "cal-007-resize",
+      "same_root": true
+    },
+    {
+      "distance": 0.005969158496732026,
+      "left": "cal-007-png",
+      "right": "cal-007-jpeg",
+      "same_root": true
+    },
+    {
+      "distance": 0.3441482843137255,
+      "left": "cal-007-png",
+      "right": "cal-007-crop",
+      "same_root": true
+    },
+    {
+      "distance": 0.014266748366013077,
+      "left": "cal-007-png",
+      "right": "cal-008-png",
+      "same_root": false
+    },
+    {
+      "distance": 0.015349264705882356,
+      "left": "cal-007-png",
+      "right": "cal-008-resize",
+      "same_root": false
+    },
+    {
+      "distance": 0.014225898692810464,
+      "left": "cal-007-png",
+      "right": "cal-008-jpeg",
+      "same_root": false
+    },
+    {
+      "distance": 0.3440972222222222,
+      "left": "cal-007-png",
+      "right": "cal-008-crop",
+      "same_root": false
+    },
+    {
+      "distance": 0.01537479575163399,
+      "left": "cal-007-png",
+      "right": "cal-009-png",
+      "same_root": false
+    },
+    {
+      "distance": 0.014266748366013075,
+      "left": "cal-007-png",
+      "right": "cal-009-resize",
+      "same_root": false
+    },
+    {
+      "distance": 0.017585784313725487,
+      "left": "cal-007-png",
+      "right": "cal-009-jpeg",
+      "same_root": false
+    },
+    {
+      "distance": 0.344546568627451,
+      "left": "cal-007-png",
+      "right": "cal-009-crop",
+      "same_root": false
+    },
+    {
+      "distance": 0.0,
+      "left": "cal-007-png",
+      "right": "cal-010-png",
+      "same_root": false
+    },
+    {
+      "distance": 0.0011693218954248342,
+      "left": "cal-007-png",
+      "right": "cal-010-resize",
+      "same_root": false
+    },
+    {
+      "distance": 0.005969158496732026,
+      "left": "cal-007-png",
+      "right": "cal-010-jpeg",
+      "same_root": false
+    },
+    {
+      "distance": 0.3441482843137255,
+      "left": "cal-007-png",
+      "right": "cal-010-crop",
+      "same_root": false
+    },
+    {
+      "distance": 0.014266748366013077,
+      "left": "cal-007-png",
+      "right": "cal-011-png",
+      "same_root": false
+    },
+    {
+      "distance": 0.015349264705882356,
+      "left": "cal-007-png",
+      "right": "cal-011-resize",
+      "same_root": false
+    },
+    {
+      "distance": 0.014225898692810464,
+      "left": "cal-007-png",
+      "right": "cal-011-jpeg",
+      "same_root": false
+    },
+    {
+      "distance": 0.3440972222222222,
+      "left": "cal-007-png",
+      "right": "cal-011-crop",
+      "same_root": false
+    },
+    {
+      "distance": 0.006352124183006534,
+      "left": "cal-007-resize",
+      "right": "cal-007-jpeg",
+      "same_root": true
+    },
+    {
+      "distance": 0.3437244689542484,
+      "left": "cal-007-resize",
+      "right": "cal-007-crop",
+      "same_root": true
+    },
+    {
+      "distance": 0.013965482026143797,
+      "left": "cal-007-resize",
+      "right": "cal-008-png",
+      "same_root": false
+    },
+    {
+      "distance": 0.01423100490196079,
+      "left": "cal-007-resize",
+      "right": "cal-008-resize",
+      "same_root": false
+    },
+    {
+      "distance": 0.013556985294117656,
+      "left": "cal-007-resize",
+      "right": "cal-008-jpeg",
+      "same_root": false
+    },
+    {
+      "distance": 0.34366319444444443,
+      "left": "cal-007-resize",
+      "right": "cal-008-crop",
+      "same_root": false
+    },
+    {
+      "distance": 0.016493055555555556,
+      "left": "cal-007-resize",
+      "right": "cal-009-png",
+      "same_root": false
+    },
+    {
+      "distance": 0.01446589052287582,
+      "left": "cal-007-resize",
+      "right": "cal-009-resize",
+      "same_root": false
+    },
+    {
+      "distance": 0.018254697712418295,
+      "left": "cal-007-resize",
+      "right": "cal-009-jpeg",
+      "same_root": false
+    },
+    {
+      "distance": 0.3441227532679738,
+      "left": "cal-007-resize",
+      "right": "cal-009-crop",
+      "same_root": false
+    },
+    {
+      "distance": 0.0011693218954248342,
+      "left": "cal-007-resize",
+      "right": "cal-010-png",
+      "same_root": false
+    },
+    {
+      "distance": 0.0,
+      "left": "cal-007-resize",
+      "right": "cal-010-resize",
+      "same_root": false
+    },
+    {
+      "distance": 0.006352124183006534,
+      "left": "cal-007-resize",
+      "right": "cal-010-jpeg",
+      "same_root": false
+    },
+    {
+      "distance": 0.3437244689542484,
+      "left": "cal-007-resize",
+      "right": "cal-010-crop",
+      "same_root": false
+    },
+    {
+      "distance": 0.013965482026143797,
+      "left": "cal-007-resize",
+      "right": "cal-011-png",
+      "same_root": false
+    },
+    {
+      "distance": 0.01423100490196079,
+      "left": "cal-007-resize",
+      "right": "cal-011-resize",
+      "same_root": false
+    },
+    {
+      "distance": 0.013556985294117656,
+      "left": "cal-007-resize",
+      "right": "cal-011-jpeg",
+      "same_root": false
+    },
+    {
+      "distance": 0.34366319444444443,
+      "left": "cal-007-resize",
+      "right": "cal-011-crop",
+      "same_root": false
+    },
+    {
+      "distance": 0.3467167075163398,
+      "left": "cal-007-jpeg",
+      "right": "cal-007-crop",
+      "same_root": true
+    },
+    {
+      "distance": 0.019429125816993468,
+      "left": "cal-007-jpeg",
+      "right": "cal-008-png",
+      "same_root": false
+    },
+    {
+      "distance": 0.0202359068627451,
+      "left": "cal-007-jpeg",
+      "right": "cal-008-resize",
+      "same_root": false
+    },
+    {
+      "distance": 0.017693014705882363,
+      "left": "cal-007-jpeg",
+      "right": "cal-008-jpeg",
+      "same_root": false
+    },
+    {
+      "distance": 0.34666564542483663,
+      "left": "cal-007-jpeg",
+      "right": "cal-008-crop",
+      "same_root": false
+    },
+    {
+      "distance": 0.014542483660130742,
+      "left": "cal-007-jpeg",
+      "right": "cal-009-png",
+      "same_root": false
+    },
+    {
+      "distance": 0.013117851307189565,
+      "left": "cal-007-jpeg",
+      "right": "cal-009-resize",
+      "same_root": false
+    },
+    {
+      "distance": 0.016028390522875833,
+      "left": "cal-007-jpeg",
+      "right": "cal-009-jpeg",
+      "same_root": false
+    },
+    {
+      "distance": 0.34711499183006533,
+      "left": "cal-007-jpeg",
+      "right": "cal-009-crop",
+      "same_root": false
+    },
+    {
+      "distance": 0.005969158496732026,
+      "left": "cal-007-jpeg",
+      "right": "cal-010-png",
+      "same_root": false
+    },
+    {
+      "distance": 0.006352124183006534,
+      "left": "cal-007-jpeg",
+      "right": "cal-010-resize",
+      "same_root": false
+    },
+    {
+      "distance": 0.0,
+      "left": "cal-007-jpeg",
+      "right": "cal-010-jpeg",
+      "same_root": false
+    },
+    {
+      "distance": 0.3467167075163398,
+      "left": "cal-007-jpeg",
+      "right": "cal-010-crop",
+      "same_root": false
+    },
+    {
+      "distance": 0.019429125816993468,
+      "left": "cal-007-jpeg",
+      "right": "cal-011-png",
+      "same_root": false
+    },
+    {
+      "distance": 0.0202359068627451,
+      "left": "cal-007-jpeg",
+      "right": "cal-011-resize",
+      "same_root": false
+    },
+    {
+      "distance": 0.017693014705882363,
+      "left": "cal-007-jpeg",
+      "right": "cal-011-jpeg",
+      "same_root": false
+    },
+    {
+      "distance": 0.34666564542483663,
+      "left": "cal-007-jpeg",
+      "right": "cal-011-crop",
+      "same_root": false
+    },
+    {
+      "distance": 0.3407169117647058,
+      "left": "cal-007-crop",
+      "right": "cal-008-png",
+      "same_root": false
+    },
+    {
+      "distance": 0.34041053921568626,
+      "left": "cal-007-crop",
+      "right": "cal-008-resize",
+      "same_root": false
+    },
+    {
+      "distance": 0.3419117647058823,
+      "left": "cal-007-crop",
+      "right": "cal-008-jpeg",
+      "same_root": false
+    },
+    {
+      "distance": 0.003227124183006543,
+      "left": "cal-007-crop",
+      "right": "cal-008-crop",
+      "same_root": false
+    },
+    {
+      "distance": 0.34757455065359477,
+      "left": "cal-007-crop",
+      "right": "cal-009-png",
+      "same_root": false
+    },
+    {
+      "distance": 0.3471813725490196,
+      "left": "cal-007-crop",
+      "right": "cal-009-resize",
+      "same_root": false
+    },
+    {
+      "distance": 0.3486213235294118,
+      "left": "cal-007-crop",
+      "right": "cal-009-jpeg",
+      "same_root": false
+    },
+    {
+      "distance": 0.002920751633986931,
+      "left": "cal-007-crop",
+      "right": "cal-009-crop",
+      "same_root": false
+    },
+    {
+      "distance": 0.3441482843137255,
+      "left": "cal-007-crop",
+      "right": "cal-010-png",
+      "same_root": false
+    },
+    {
+      "distance": 0.3437244689542484,
+      "left": "cal-007-crop",
+      "right": "cal-010-resize",
+      "same_root": false
+    },
+    {
+      "distance": 0.3467167075163398,
+      "left": "cal-007-crop",
+      "right": "cal-010-jpeg",
+      "same_root": false
+    },
+    {
+      "distance": 0.0,
+      "left": "cal-007-crop",
+      "right": "cal-010-crop",
+      "same_root": false
+    },
+    {
+      "distance": 0.3407169117647058,
+      "left": "cal-007-crop",
+      "right": "cal-011-png",
+      "same_root": false
+    },
+    {
+      "distance": 0.34041053921568626,
+      "left": "cal-007-crop",
+      "right": "cal-011-resize",
+      "same_root": false
+    },
+    {
+      "distance": 0.3419117647058823,
+      "left": "cal-007-crop",
+      "right": "cal-011-jpeg",
+      "same_root": false
+    },
+    {
+      "distance": 0.003227124183006543,
+      "left": "cal-007-crop",
+      "right": "cal-011-crop",
+      "same_root": false
+    },
+    {
+      "distance": 0.001133578431372547,
+      "left": "cal-008-png",
+      "right": "cal-008-resize",
+      "same_root": true
+    },
+    {
+      "distance": 0.003257761437908489,
+      "left": "cal-008-png",
+      "right": "cal-008-jpeg",
+      "same_root": true
+    },
+    {
+      "distance": 0.3406352124183006,
+      "left": "cal-008-png",
+      "right": "cal-008-crop",
+      "same_root": true
+    },
+    {
+      "distance": 0.029641544117647068,
+      "left": "cal-008-png",
+      "right": "cal-009-png",
+      "same_root": false
+    },
+    {
+      "distance": 0.028431372549019618,
+      "left": "cal-008-png",
+      "right": "cal-009-resize",
+      "same_root": false
+    },
+    {
+      "distance": 0.031617647058823535,
+      "left": "cal-008-png",
+      "right": "cal-009-jpeg",
+      "same_root": false
+    },
+    {
+      "distance": 0.3411151960784313,
+      "left": "cal-008-png",
+      "right": "cal-009-crop",
+      "same_root": false
+    },
+    {
+      "distance": 0.014266748366013077,
+      "left": "cal-008-png",
+      "right": "cal-010-png",
+      "same_root": false
+    },
+    {
+      "distance": 0.013965482026143797,
+      "left": "cal-008-png",
+      "right": "cal-010-resize",
+      "same_root": false
+    },
+    {
+      "distance": 0.019429125816993468,
+      "left": "cal-008-png",
+      "right": "cal-010-jpeg",
+      "same_root": false
+    },
+    {
+      "distance": 0.3407169117647058,
+      "left": "cal-008-png",
+      "right": "cal-010-crop",
+      "same_root": false
+    },
+    {
+      "distance": 0.0,
+      "left": "cal-008-png",
+      "right": "cal-011-png",
+      "same_root": false
+    },
+    {
+      "distance": 0.001133578431372547,
+      "left": "cal-008-png",
+      "right": "cal-011-resize",
+      "same_root": false
+    },
+    {
+      "distance": 0.003257761437908489,
+      "left": "cal-008-png",
+      "right": "cal-011-jpeg",
+      "same_root": false
+    },
+    {
+      "distance": 0.3406352124183006,
+      "left": "cal-008-png",
+      "right": "cal-011-crop",
+      "same_root": false
+    },
+    {
+      "distance": 0.003237336601307181,
+      "left": "cal-008-resize",
+      "right": "cal-008-jpeg",
+      "same_root": true
+    },
+    {
+      "distance": 0.34032883986928103,
+      "left": "cal-008-resize",
+      "right": "cal-008-crop",
+      "same_root": true
+    },
+    {
+      "distance": 0.030724060457516345,
+      "left": "cal-008-resize",
+      "right": "cal-009-png",
+      "same_root": false
+    },
+    {
+      "distance": 0.02869689542483661,
+      "left": "cal-008-resize",
+      "right": "cal-009-resize",
+      "same_root": false
+    },
+    {
+      "distance": 0.032424428104575166,
+      "left": "cal-008-resize",
+      "right": "cal-009-jpeg",
+      "same_root": false
+    },
+    {
+      "distance": 0.3408088235294118,
+      "left": "cal-008-resize",
+      "right": "cal-009-crop",
+      "same_root": false
+    },
+    {
+      "distance": 0.015349264705882356,
+      "left": "cal-008-resize",
+      "right": "cal-010-png",
+      "same_root": false
+    },
+    {
+      "distance": 0.01423100490196079,
+      "left": "cal-008-resize",
+      "right": "cal-010-resize",
+      "same_root": false
+    },
+    {
+      "distance": 0.0202359068627451,
+      "left": "cal-008-resize",
+      "right": "cal-010-jpeg",
+      "same_root": false
+    },
+    {
+      "distance": 0.34041053921568626,
+      "left": "cal-008-resize",
+      "right": "cal-010-crop",
+      "same_root": false
+    },
+    {
+      "distance": 0.001133578431372547,
+      "left": "cal-008-resize",
+      "right": "cal-011-png",
+      "same_root": false
+    },
+    {
+      "distance": 0.0,
+      "left": "cal-008-resize",
+      "right": "cal-011-resize",
+      "same_root": false
+    },
+    {
+      "distance": 0.003237336601307181,
+      "left": "cal-008-resize",
+      "right": "cal-011-jpeg",
+      "same_root": false
+    },
+    {
+      "distance": 0.34032883986928103,
+      "left": "cal-008-resize",
+      "right": "cal-011-crop",
+      "same_root": false
+    },
+    {
+      "distance": 0.3418300653594771,
+      "left": "cal-008-jpeg",
+      "right": "cal-008-crop",
+      "same_root": true
+    },
+    {
+      "distance": 0.029580269607843147,
+      "left": "cal-008-jpeg",
+      "right": "cal-009-png",
+      "same_root": false
+    },
+    {
+      "distance": 0.027992238562091515,
+      "left": "cal-008-jpeg",
+      "right": "cal-009-resize",
+      "same_root": false
+    },
+    {
+      "distance": 0.031045751633986932,
+      "left": "cal-008-jpeg",
+      "right": "cal-009-jpeg",
+      "same_root": false
+    },
+    {
+      "distance": 0.3423100490196078,
+      "left": "cal-008-jpeg",
+      "right": "cal-009-crop",
+      "same_root": false
+    },
+    {
+      "distance": 0.014225898692810464,
+      "left": "cal-008-jpeg",
+      "right": "cal-010-png",
+      "same_root": false
+    },
+    {
+      "distance": 0.013556985294117656,
+      "left": "cal-008-jpeg",
+      "right": "cal-010-resize",
+      "same_root": false
+    },
+    {
+      "distance": 0.017693014705882363,
+      "left": "cal-008-jpeg",
+      "right": "cal-010-jpeg",
+      "same_root": false
+    },
+    {
+      "distance": 0.3419117647058823,
+      "left": "cal-008-jpeg",
+      "right": "cal-010-crop",
+      "same_root": false
+    },
+    {
+      "distance": 0.003257761437908489,
+      "left": "cal-008-jpeg",
+      "right": "cal-011-png",
+      "same_root": false
+    },
+    {
+      "distance": 0.003237336601307181,
+      "left": "cal-008-jpeg",
+      "right": "cal-011-resize",
+      "same_root": false
+    },
+    {
+      "distance": 0.0,
+      "left": "cal-008-jpeg",
+      "right": "cal-011-jpeg",
+      "same_root": false
+    },
+    {
+      "distance": 0.3418300653594771,
+      "left": "cal-008-jpeg",
+      "right": "cal-011-crop",
+      "same_root": false
+    },
+    {
+      "distance": 0.34757455065359477,
+      "left": "cal-008-crop",
+      "right": "cal-009-png",
+      "same_root": false
+    },
+    {
+      "distance": 0.34717116013071897,
+      "left": "cal-008-crop",
+      "right": "cal-009-resize",
+      "same_root": false
+    },
+    {
+      "distance": 0.3486213235294118,
+      "left": "cal-008-crop",
+      "right": "cal-009-jpeg",
+      "same_root": false
+    },
+    {
+      "distance": 0.004605800653594775,
+      "left": "cal-008-crop",
+      "right": "cal-009-crop",
+      "same_root": false
+    },
+    {
+      "distance": 0.3440972222222222,
+      "left": "cal-008-crop",
+      "right": "cal-010-png",
+      "same_root": false
+    },
+    {
+      "distance": 0.34366319444444443,
+      "left": "cal-008-crop",
+      "right": "cal-010-resize",
+      "same_root": false
+    },
+    {
+      "distance": 0.34666564542483663,
+      "left": "cal-008-crop",
+      "right": "cal-010-jpeg",
+      "same_root": false
+    },
+    {
+      "distance": 0.003227124183006543,
+      "left": "cal-008-crop",
+      "right": "cal-010-crop",
+      "same_root": false
+    },
+    {
+      "distance": 0.3406352124183006,
+      "left": "cal-008-crop",
+      "right": "cal-011-png",
+      "same_root": false
+    },
+    {
+      "distance": 0.34032883986928103,
+      "left": "cal-008-crop",
+      "right": "cal-011-resize",
+      "same_root": false
+    },
+    {
+      "distance": 0.3418300653594771,
+      "left": "cal-008-crop",
+      "right": "cal-011-jpeg",
+      "same_root": false
+    },
+    {
+      "distance": 0.0,
+      "left": "cal-008-crop",
+      "right": "cal-011-crop",
+      "same_root": false
+    },
+    {
+      "distance": 0.002027165032679737,
+      "left": "cal-009-png",
+      "right": "cal-009-resize",
+      "same_root": true
+    },
+    {
+      "distance": 0.00338541666666666,
+      "left": "cal-009-png",
+      "right": "cal-009-jpeg",
+      "same_root": true
+    },
+    {
+      "distance": 0.3479626225490196,
+      "left": "cal-009-png",
+      "right": "cal-009-crop",
+      "same_root": true
+    },
+    {
+      "distance": 0.01537479575163399,
+      "left": "cal-009-png",
+      "right": "cal-010-png",
+      "same_root": false
+    },
+    {
+      "distance": 0.016493055555555556,
+      "left": "cal-009-png",
+      "right": "cal-010-resize",
+      "same_root": false
+    },
+    {
+      "distance": 0.014542483660130742,
+      "left": "cal-009-png",
+      "right": "cal-010-jpeg",
+      "same_root": false
+    },
+    {
+      "distance": 0.34757455065359477,
+      "left": "cal-009-png",
+      "right": "cal-010-crop",
+      "same_root": false
+    },
+    {
+      "distance": 0.029641544117647068,
+      "left": "cal-009-png",
+      "right": "cal-011-png",
+      "same_root": false
+    },
+    {
+      "distance": 0.030724060457516345,
+      "left": "cal-009-png",
+      "right": "cal-011-resize",
+      "same_root": false
+    },
+    {
+      "distance": 0.029580269607843147,
+      "left": "cal-009-png",
+      "right": "cal-011-jpeg",
+      "same_root": false
+    },
+    {
+      "distance": 0.34757455065359477,
+      "left": "cal-009-png",
+      "right": "cal-011-crop",
+      "same_root": false
+    },
+    {
+      "distance": 0.004044117647058815,
+      "left": "cal-009-resize",
+      "right": "cal-009-jpeg",
+      "same_root": true
+    },
+    {
+      "distance": 0.34756944444444443,
+      "left": "cal-009-resize",
+      "right": "cal-009-crop",
+      "same_root": true
+    },
+    {
+      "distance": 0.014266748366013075,
+      "left": "cal-009-resize",
+      "right": "cal-010-png",
+      "same_root": false
+    },
+    {
+      "distance": 0.01446589052287582,
+      "left": "cal-009-resize",
+      "right": "cal-010-resize",
+      "same_root": false
+    },
+    {
+      "distance": 0.013117851307189565,
+      "left": "cal-009-resize",
+      "right": "cal-010-jpeg",
+      "same_root": false
+    },
+    {
+      "distance": 0.3471813725490196,
+      "left": "cal-009-resize",
+      "right": "cal-010-crop",
+      "same_root": false
+    },
+    {
+      "distance": 0.028431372549019618,
+      "left": "cal-009-resize",
+      "right": "cal-011-png",
+      "same_root": false
+    },
+    {
+      "distance": 0.02869689542483661,
+      "left": "cal-009-resize",
+      "right": "cal-011-resize",
+      "same_root": false
+    },
+    {
+      "distance": 0.027992238562091515,
+      "left": "cal-009-resize",
+      "right": "cal-011-jpeg",
+      "same_root": false
+    },
+    {
+      "distance": 0.34717116013071897,
+      "left": "cal-009-resize",
+      "right": "cal-011-crop",
+      "same_root": false
+    },
+    {
+      "distance": 0.34900939542483655,
+      "left": "cal-009-jpeg",
+      "right": "cal-009-crop",
+      "same_root": true
+    },
+    {
+      "distance": 0.017585784313725487,
+      "left": "cal-009-jpeg",
+      "right": "cal-010-png",
+      "same_root": false
+    },
+    {
+      "distance": 0.018254697712418295,
+      "left": "cal-009-jpeg",
+      "right": "cal-010-resize",
+      "same_root": false
+    },
+    {
+      "distance": 0.016028390522875833,
+      "left": "cal-009-jpeg",
+      "right": "cal-010-jpeg",
+      "same_root": false
+    },
+    {
+      "distance": 0.3486213235294118,
+      "left": "cal-009-jpeg",
+      "right": "cal-010-crop",
+      "same_root": false
+    },
+    {
+      "distance": 0.031617647058823535,
+      "left": "cal-009-jpeg",
+      "right": "cal-011-png",
+      "same_root": false
+    },
+    {
+      "distance": 0.032424428104575166,
+      "left": "cal-009-jpeg",
+      "right": "cal-011-resize",
+      "same_root": false
+    },
+    {
+      "distance": 0.031045751633986932,
+      "left": "cal-009-jpeg",
+      "right": "cal-011-jpeg",
+      "same_root": false
+    },
+    {
+      "distance": 0.3486213235294118,
+      "left": "cal-009-jpeg",
+      "right": "cal-011-crop",
+      "same_root": false
+    },
+    {
+      "distance": 0.344546568627451,
+      "left": "cal-009-crop",
+      "right": "cal-010-png",
+      "same_root": false
+    },
+    {
+      "distance": 0.3441227532679738,
+      "left": "cal-009-crop",
+      "right": "cal-010-resize",
+      "same_root": false
+    },
+    {
+      "distance": 0.34711499183006533,
+      "left": "cal-009-crop",
+      "right": "cal-010-jpeg",
+      "same_root": false
+    },
+    {
+      "distance": 0.002920751633986931,
+      "left": "cal-009-crop",
+      "right": "cal-010-crop",
+      "same_root": false
+    },
+    {
+      "distance": 0.3411151960784313,
+      "left": "cal-009-crop",
+      "right": "cal-011-png",
+      "same_root": false
+    },
+    {
+      "distance": 0.3408088235294118,
+      "left": "cal-009-crop",
+      "right": "cal-011-resize",
+      "same_root": false
+    },
+    {
+      "distance": 0.3423100490196078,
+      "left": "cal-009-crop",
+      "right": "cal-011-jpeg",
+      "same_root": false
+    },
+    {
+      "distance": 0.004605800653594775,
+      "left": "cal-009-crop",
+      "right": "cal-011-crop",
+      "same_root": false
+    },
+    {
+      "distance": 0.0011693218954248342,
+      "left": "cal-010-png",
+      "right": "cal-010-resize",
+      "same_root": true
+    },
+    {
+      "distance": 0.005969158496732026,
+      "left": "cal-010-png",
+      "right": "cal-010-jpeg",
+      "same_root": true
+    },
+    {
+      "distance": 0.3441482843137255,
+      "left": "cal-010-png",
+      "right": "cal-010-crop",
+      "same_root": true
+    },
+    {
+      "distance": 0.014266748366013077,
+      "left": "cal-010-png",
+      "right": "cal-011-png",
+      "same_root": false
+    },
+    {
+      "distance": 0.015349264705882356,
+      "left": "cal-010-png",
+      "right": "cal-011-resize",
+      "same_root": false
+    },
+    {
+      "distance": 0.014225898692810464,
+      "left": "cal-010-png",
+      "right": "cal-011-jpeg",
+      "same_root": false
+    },
+    {
+      "distance": 0.3440972222222222,
+      "left": "cal-010-png",
+      "right": "cal-011-crop",
+      "same_root": false
+    },
+    {
+      "distance": 0.006352124183006534,
+      "left": "cal-010-resize",
+      "right": "cal-010-jpeg",
+      "same_root": true
+    },
+    {
+      "distance": 0.3437244689542484,
+      "left": "cal-010-resize",
+      "right": "cal-010-crop",
+      "same_root": true
+    },
+    {
+      "distance": 0.013965482026143797,
+      "left": "cal-010-resize",
+      "right": "cal-011-png",
+      "same_root": false
+    },
+    {
+      "distance": 0.01423100490196079,
+      "left": "cal-010-resize",
+      "right": "cal-011-resize",
+      "same_root": false
+    },
+    {
+      "distance": 0.013556985294117656,
+      "left": "cal-010-resize",
+      "right": "cal-011-jpeg",
+      "same_root": false
+    },
+    {
+      "distance": 0.34366319444444443,
+      "left": "cal-010-resize",
+      "right": "cal-011-crop",
+      "same_root": false
+    },
+    {
+      "distance": 0.3467167075163398,
+      "left": "cal-010-jpeg",
+      "right": "cal-010-crop",
+      "same_root": true
+    },
+    {
+      "distance": 0.019429125816993468,
+      "left": "cal-010-jpeg",
+      "right": "cal-011-png",
+      "same_root": false
+    },
+    {
+      "distance": 0.0202359068627451,
+      "left": "cal-010-jpeg",
+      "right": "cal-011-resize",
+      "same_root": false
+    },
+    {
+      "distance": 0.017693014705882363,
+      "left": "cal-010-jpeg",
+      "right": "cal-011-jpeg",
+      "same_root": false
+    },
+    {
+      "distance": 0.34666564542483663,
+      "left": "cal-010-jpeg",
+      "right": "cal-011-crop",
+      "same_root": false
+    },
+    {
+      "distance": 0.3407169117647058,
+      "left": "cal-010-crop",
+      "right": "cal-011-png",
+      "same_root": false
+    },
+    {
+      "distance": 0.34041053921568626,
+      "left": "cal-010-crop",
+      "right": "cal-011-resize",
+      "same_root": false
+    },
+    {
+      "distance": 0.3419117647058823,
+      "left": "cal-010-crop",
+      "right": "cal-011-jpeg",
+      "same_root": false
+    },
+    {
+      "distance": 0.003227124183006543,
+      "left": "cal-010-crop",
+      "right": "cal-011-crop",
+      "same_root": false
+    },
+    {
+      "distance": 0.001133578431372547,
+      "left": "cal-011-png",
+      "right": "cal-011-resize",
+      "same_root": true
+    },
+    {
+      "distance": 0.003257761437908489,
+      "left": "cal-011-png",
+      "right": "cal-011-jpeg",
+      "same_root": true
+    },
+    {
+      "distance": 0.3406352124183006,
+      "left": "cal-011-png",
+      "right": "cal-011-crop",
+      "same_root": true
+    },
+    {
+      "distance": 0.003237336601307181,
+      "left": "cal-011-resize",
+      "right": "cal-011-jpeg",
+      "same_root": true
+    },
+    {
+      "distance": 0.34032883986928103,
+      "left": "cal-011-resize",
+      "right": "cal-011-crop",
+      "same_root": true
+    },
+    {
+      "distance": 0.3418300653594771,
+      "left": "cal-011-jpeg",
+      "right": "cal-011-crop",
+      "same_root": true
+    }
+  ],
+  "root_ids": [
+    "cal-000",
+    "cal-001",
+    "cal-002",
+    "cal-003",
+    "cal-004",
+    "cal-005",
+    "cal-006",
+    "cal-007",
+    "cal-008",
+    "cal-009",
+    "cal-010",
+    "cal-011"
+  ],
+  "same_root_pairs": 72,
+  "threshold": 0.006352124183006534
+}

@@ -28,10 +28,10 @@ def validate_config(c):
         raise ValueError('invalid reliability or threshold')
 
 
-def summarize(rows):
+def summarize(rows, conditions=('single', 'replay', 'independent'), methods=METHODS):
     summaries = []
-    for condition in ('single', 'replay', 'independent'):
-        for method in METHODS:
+    for condition in conditions:
+        for method in methods:
             subset = [r for r in rows if r['condition'] == condition and r['method'] == method]
             valid = [r for r in subset if r['probability'] is not None]
             s = {'condition': condition, 'method': method, 'n': len(subset), 'valid_probabilities': len(valid)}
