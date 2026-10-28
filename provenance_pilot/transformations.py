@@ -8,7 +8,7 @@ from hashlib import sha256
 from itertools import combinations
 from pathlib import Path
 
-from .core import Evidence, Registry, Report, estimate, oracle, approve
+from .core import Evidence, Registry, Report, Estimate, estimate, oracle, approve
 from .data import generate
 from .run import write_json, jsonl, summarize, validate_config
 
@@ -89,9 +89,16 @@ def score(base_id, condition, ids, assignments, y, registry, payloads, readings,
     rows = []
     modalities = [registry.nodes[eid].modality for eid in ids]
     for method in METHODS:
-        result = perceptual_estimate(reports, modalities, threshold, config['prior'], config['q']) if method == 'perceptual' else estimate(
-            method, reports, registry if method == 'lineage' else None, config['prior'], config['q'])
+        try:
+            result = perceptual_estimate(reports, modalities, threshold, config['prior'], config['q']) if method == 'perceptual' else estimate(
+                method, reports, registry if method == 'lineage' else None, config['prior'], config['q'])
+        except (OSError, ValueError) as exc:
+            # Expected decoding/validation failures remain attempted evaluations.
+            # Programming errors still propagate and mark the entire run failed.
+            result = Estimate(None, [], f'failure: {type(exc).__name__}: {exc}')
         p = result.probability
+        members = [i for group in result.groups for i in group]
+        grouping_valid = sorted(members) == list(range(len(reports))) and all(result.groups)
         merged = {pair for group in result.groups for pair in combinations(group,2)}
         approved, eligible = approve(p,config['threshold']), approve(reference,config['threshold'])
         rows.append({'mode': MODE, 'split': split, 'base_id': base_id, 'condition': condition, 'method': method,
@@ -104,8 +111,9 @@ def score(base_id, condition, ids, assignments, y, registry, payloads, readings,
                      'confidence_inflation': p-reference if p is not None else None,
                      'absolute_confidence_error': abs(p-reference) if p is not None else None,
                      'brier': (p-y)**2 if p is not None and y is not None else None,
-                     'false_merge_pairs': len(merged & independent), 'independent_report_pairs': len(independent),
-                     'false_split_pairs': len(shared-merged), 'same_root_report_pairs': len(shared),
+                     'grouping_valid': grouping_valid,
+                     'false_merge_pairs': len(merged & independent) if grouping_valid else None, 'independent_report_pairs': len(independent),
+                     'false_split_pairs': len(shared-merged) if grouping_valid else None, 'same_root_report_pairs': len(shared),
                      'unsupported_modality_pairs': sum(not all(modalities[k] in ('image/png','image/jpeg') for k in pair) for pair in all_pairs) if method == 'perceptual' else 0})
     inputs = {'mode': MODE, 'base_id': base_id, 'condition': condition, 'reports': [
         {'evidence_id': r.evidence_id, 'worker_id': r.worker_id, 'artifact_id': eid,
@@ -113,7 +121,30 @@ def score(base_id, condition, ids, assignments, y, registry, payloads, readings,
     return rows, inputs
 
 
-def run(config, output):
+def summarize_results(rows):
+    """Attempted-case decision denominators; matching rates require a valid partition."""
+    summaries = summarize(rows, CONDITIONS, METHODS)
+    for summary in summaries:
+        subset = [r for r in rows if r['condition']==summary['condition'] and r['method']==summary['method']]
+        grouped = [r for r in subset if r['grouping_valid']]
+        summary['mode'] = MODE
+        summary['oracle_posterior_denominator'] = len(subset)
+        summary['probability_coverage'] = summary['valid_probabilities']/len(subset) if subset else None
+        summary['grouping_valid_cases'] = len(grouped)
+        summary['grouping_unavailable_cases'] = len(subset)-len(grouped)
+        summary['attempted_independent_report_pairs'] = sum(r['independent_report_pairs'] for r in subset)
+        summary['attempted_same_root_report_pairs'] = sum(r['same_root_report_pairs'] for r in subset)
+        summary['false_split_pairs'] = sum(r['false_split_pairs'] for r in grouped)
+        summary['same_root_report_pairs'] = sum(r['same_root_report_pairs'] for r in grouped)
+        summary['false_split_rate'] = summary['false_split_pairs']/summary['same_root_report_pairs'] if summary['same_root_report_pairs'] else None
+        summary['abstentions'] = sum(r['status'].startswith('abstain:') for r in subset)
+        summary['failures'] = sum(r['status'].startswith('failure:') for r in subset)
+        summary['non_probability_cases'] = sum(r['probability'] is None for r in subset)
+        summary['unsupported_modality_pairs'] = sum(r['unsupported_modality_pairs'] for r in subset)
+    return summaries
+
+
+def _run(config, output):
     # Optional import means the original pilot remains dependency-free.
     import PIL
     from PIL import features
@@ -121,8 +152,6 @@ def run(config, output):
     from .matching import calibrate
     base_config = validate_settings(config)
     output = Path(output)
-    if output.exists() and any(output.iterdir()):
-        raise ValueError('use an empty output directory to prevent stale artifacts')
     output.mkdir(parents=True, exist_ok=True)
     evidence = output/'evidence'
     evidence.mkdir()
@@ -143,7 +172,8 @@ def run(config, output):
     calibration_items = [(eid, next(iter(calibration_registry.validate(eid))),r.payload) for eid,r in calibration_rasters.items()]
     calibration = calibrate(calibration_items)
     evaluation_roots = set(truth)
-    assert evaluation_roots.isdisjoint(calibration['root_ids'])
+    if not evaluation_roots.isdisjoint(calibration['root_ids']):
+        raise ValueError('calibration and evaluation acquisition roots overlap')
     # Threshold is frozen before any evaluation method is invoked.
     write_json(output/'calibration.json', calibration)
     cal_dir = output/'calibration_evidence'
@@ -206,15 +236,7 @@ def run(config, output):
     jsonl(output/'controls.jsonl',controls)
     write_json(output/'evaluator_truth.json',{'mode':MODE,'acquisition_values':truth,'evaluation_assignments':assignments,
                                            'note':'Constructed controls have no sampled hidden state and no Brier or incorrect-approval metric.'})
-    summaries = summarize(rows, CONDITIONS, METHODS)
-    for summary in summaries:
-        subset = [r for r in rows if r['condition']==summary['condition'] and r['method']==summary['method']]
-        summary['mode'] = MODE
-        summary['false_split_pairs'] = sum(r['false_split_pairs'] for r in subset)
-        summary['same_root_report_pairs'] = sum(r['same_root_report_pairs'] for r in subset)
-        summary['false_split_rate'] = summary['false_split_pairs']/summary['same_root_report_pairs'] if summary['same_root_report_pairs'] else None
-        summary['abstentions'] = sum(r['probability'] is None for r in subset)
-        summary['unsupported_modality_pairs'] = sum(r['unsupported_modality_pairs'] for r in subset)
+    summaries = summarize_results(rows)
     write_json(output/'summary.json',summaries)
     with (output/'summary.csv').open('w',newline='') as handle:
         writer = csv.DictWriter(handle,fieldnames=list(summaries[0]))
@@ -227,9 +249,29 @@ def run(config, output):
         'Worker fixture readings are observations, not hidden states. Evaluator truth and signal checks are not worker inputs.\n'
         'PNG/JPEG crops may omit visible mock labels; all files belong to this synthetic fixture dataset.\n'
         'Calibration roots and constructed controls are separate from the ten evaluation instances.\n')
+    write_json(output/'run_status.json', {'mode': MODE, 'status': 'complete', 'attempted_evaluations': len(rows),
+                                        'method_failures': sum(r['status'].startswith('failure:') for r in rows),
+                                        'abstentions': sum(r['status'].startswith('abstain:') for r in rows),
+                                        'signal_checks': len(checks)+len(calibration_checks)})
     write_json(output/'manifest.json',{str(p.relative_to(output)):sha256(p.read_bytes()).hexdigest()
                                     for p in sorted(output.rglob('*')) if p.is_file() and p.name!='manifest.json'})
     return rows
+
+
+def run(config, output):
+    """A failed generation cannot masquerade as a completed benchmark."""
+    output = Path(output)
+    if output.exists() and any(output.iterdir()):
+        raise ValueError('use an empty output directory to prevent stale artifacts')
+    output.mkdir(parents=True, exist_ok=True)
+    write_json(output/'run_status.json', {'mode': MODE, 'status': 'running'})
+    try:
+        return _run(config, output)
+    except Exception as exc:
+        write_json(output/'run_status.json', {'mode': MODE, 'status': 'failed',
+                   'error_type': type(exc).__name__, 'error': str(exc),
+                   'note': 'Incomplete run: do not treat partial files as benchmark results.'})
+        raise
 
 
 def main():

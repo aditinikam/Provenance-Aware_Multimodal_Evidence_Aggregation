@@ -80,7 +80,7 @@ Pillow **12.3.0** is the sole optional image dependency (`images` extra in `pypr
 
 Choose a new or empty output directory on each run. The transformation command refuses nonempty directories to prevent stale output files. The delivered run is under `artifacts/transformations/`.
 
-On another machine, use an existing Python environment containing Pillow 12.3.0, then run `python -m provenance_pilot.transformations`. If needed, provision Pillow from a local wheelhouse with `python -m pip install --no-index --find-links /path/to/wheels Pillow==12.3.0`. No runtime network access is used. The `.venv` is local and not portable or committed. Without Pillow, the original pilot/tests remain usable; unittest discovery explicitly skips the optional transformation module. Use the Pillow environment to run all **18 tests**.
+On another machine, use an existing Python environment containing Pillow 12.3.0, then run `python -m provenance_pilot.transformations`. If needed, provision Pillow from a local wheelhouse with `python -m pip install --no-index --find-links /path/to/wheels Pillow==12.3.0`. No runtime network access is used. The `.venv` is local and not portable or committed. Without Pillow, the original pilot/tests remain usable; unittest discovery explicitly skips the optional transformation module. Use the Pillow environment to run all **23 tests**.
 
 Files: `imaging.py` handles raster rendering/validation, `matching.py` handles perceptual calibration and inference, and `transformations.py` orchestrates this experiment. `configs/transformations.json` fixes seeds and operation parameters. The original oracle, lineage logic, and metric definitions are shared.
 
@@ -129,6 +129,19 @@ Independent controls are analytic assignments of three positive observations, no
 
 `artifacts/transformations/` includes raster/SVG/JSON evidence, contact sheets, `artifacts.jsonl` with paths and payload hashes, `provenance.jsonl`, worker inputs, separate evaluator truth, signal audits, frozen calibration and its evidence, 240 per-instance evaluations, 12 control evaluations, 24 summary rows, configuration/environment records, and a SHA-256 manifest. Every summary is a mock diagnostic. New matching metrics count false-split pairs among same-root report pairs, false-merge pairs among independent report pairs, abstentions, and unsupported-modality pairs. Empty pair denominators are null, as with the original decision metrics.
 
-Verified locally: both CLI commands run; all 18 tests pass; the original pilot's tracked output artifacts are unchanged; the new output tree reproduces byte-for-byte across two fresh directories; all 144 evaluation/control and 48 calibration raster checks pass; corrected contact sheets were visually inspected.
+Verified locally: both CLI commands run; all 23 tests pass; the original pilot's tracked output artifacts are unchanged; the new output tree reproduces byte-for-byte across two fresh directories; all 144 evaluation/control and 48 calibration raster checks pass; corrected contact sheets were visually inspected.
 
 With this seed, lineage matches the oracle throughout. Hashing leaves all transformed representations separate. Perceptual matching consolidates the resize/JPEG condition, misses crop and cross-modal relationships, and merges identical independent observations. These are behaviors of explicit software rules, not evidence about LLMs or robust multimodal matching. Actual perception, instruction following, reconciliation, natural-image generalization, and statistical efficacy remain untested. Stop here for design review before expanding scope.
+
+
+### Review: failure and abstention accounting
+
+The implementation review and actual verification are recorded in `docs/review-offline-transformations.md`. The full suite now has 23 tests, including failure-path regressions.
+
+Transformation summaries distinguish `abstentions`, `failures`, and `non_probability_cases`. Both abstentions and method failures are non-approvals and remain in all applicable decision denominators. Probability/Brier/error means use available probabilities (`valid_probabilities` and `probability_coverage`); the oracle mean uses **all attempted cases**, with `oracle_posterior_denominator`.
+
+An interpretation conflict retains its valid grouping so matching mistakes are still measured. An unavailable grouping has null row-level matching errors and contributes no evaluated pairs to false-merge/false-split rates. `grouping_valid_cases`, `grouping_unavailable_cases`, `attempted_independent_report_pairs`, and `attempted_same_root_report_pairs` make exclusions explicit. In summaries, `independent_report_pairs` and `same_root_report_pairs` are the **evaluated** matching denominators. Undefined rates remain null.
+
+A corrupt raster encountered by a method produces a deterministic failure row; other methods still run. Generation/configuration failures abort the entire run and write `run_status.json` with `status: failed`; such a directory must not be analyzed as a completed benchmark. A completed run records its attempt/failure/abstention totals. This review's completed run has 240 evaluations, zero method failures/abstentions, and 192 passing signal checks. Tests inject failures separately; they are not included in benchmark metrics.
+
+The current implementation remains intentionally ten-only. A 100-instance milestone still needs the size guard/contact-sheet loop parameterized and output-coverage tests; no scaling was performed during review.

@@ -36,7 +36,8 @@ def summarize(rows, conditions=('single', 'replay', 'independent'), methods=METH
             valid = [r for r in subset if r['probability'] is not None]
             s = {'condition': condition, 'method': method, 'n': len(subset), 'valid_probabilities': len(valid)}
             for field in ('probability', 'oracle_posterior', 'confidence_inflation', 'absolute_confidence_error', 'brier'):
-                s['mean_' + field] = sum(r[field] for r in valid) / len(valid) if valid else None
+                population = subset if field == 'oracle_posterior' else valid
+                s['mean_' + field] = sum(r[field] for r in population) / len(population) if population else None
             for metric, eligible, event in [
                 ('premature_approval', lambda r: not r['oracle_approved'], lambda r: r['approved']),
                 ('incorrect_approval', lambda r: r['y'] == 0, lambda r: r['approved']),
@@ -46,8 +47,9 @@ def summarize(rows, conditions=('single', 'replay', 'independent'), methods=METH
                 s[metric + '_numerator'] = count
                 s[metric + '_denominator'] = len(population)
                 s[metric + '_rate'] = count / len(population) if population else None
-            s['false_merge_pairs'] = sum(r['false_merge_pairs'] for r in subset)
-            s['independent_report_pairs'] = sum(r['independent_report_pairs'] for r in subset)
+            grouped = [r for r in subset if r['false_merge_pairs'] is not None]
+            s['false_merge_pairs'] = sum(r['false_merge_pairs'] for r in grouped)
+            s['independent_report_pairs'] = sum(r['independent_report_pairs'] for r in grouped)
             s['false_merge_rate'] = s['false_merge_pairs'] / s['independent_report_pairs'] if s['independent_report_pairs'] else None
             summaries.append(s)
     return summaries

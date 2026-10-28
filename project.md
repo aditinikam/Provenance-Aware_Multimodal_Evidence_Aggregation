@@ -6,7 +6,7 @@ Last updated: 2026-10-28 (America/Chicago).
 
 UIUC CS 562: **Provenance-Aware Multimodal Evidence Aggregation in Multi-Agent Systems**. Investigate false corroboration from repeated/transformed observations and whether trusted acquisition lineage preserves genuine independent corroboration. The intended contribution is an empirical multimodal extension, not provenance or source counting itself.
 
-Current milestone: offline raster transformation and matching validation implemented; awaiting review before further expansion. No model API access, GPU, model downloads, or paid services are required. Mock agents validate software only.
+Current milestone: ten-instance offline transformation implementation reviewed and repaired; ready for a separately authorized scaling implementation, not yet runnable at 100 instances unchanged. No model API access, GPU, model downloads, or paid services are required. Mock agents validate software only.
 
 ## Persistent user preferences
 
@@ -70,7 +70,7 @@ Offline raster transformations, synthetic record conversions, and calibrated pix
 
 Next: user reviews the transformation milestone, its contact sheets and matching limitations, then explicitly requests another expansion stage from `docs/expansion.md`. Do not silently scale to 100 instances or add live-model experiments.
 
-## Latest task: offline-multimodal-transformations
+## Transformation implementation milestone (historical)
 
 Branch: `offline-multimodal-transformations` (no prefix). Verified the supplied GitHub repository HEAD matches local commit `1010c2f`; updated origin to `https://github.com/aditinikam/Provenance-Aware_Multimodal_Evidence_Aggregation.git`. No push or remote publication performed.
 
@@ -97,3 +97,30 @@ Environment: system `python3` lacks Pillow. An ignored local `.venv` uses the al
 Observed mock diagnostics: lineage equals the oracle across all evaluation cases. Hashing fails to consolidate transformed bytes. Pixel matching consolidates resize/JPEG, misses crop/cross-modal relationships, and falsely merges identical independent images. The nuisance-style independent control is separated by this threshold; identical-independent controls produce three pairwise false merges under hash/perceptual matching. These are fixture behavior, not research efficacy findings.
 
 Next: review this milestone. Do not scale to 100 instances or integrate real models without the next user request. Uncommitted changes are retained on the task branch.
+
+
+## Latest task: review offline-multimodal-transformations
+
+Continued on the user-specified `offline-multimodal-transformations` branch, reviewing clean commit `84e6eab`. Read actual code/tests and saved artifacts rather than relying on earlier summaries. No new branch, scale-up, model integration, commit, or push during review. Fixes remain uncommitted.
+
+Fixed substantive accounting gaps:
+- Expected image decode/validation failures now remain explicit non-approving method failure rows; error messages are deterministic. Modality/report length mismatch is checked.
+- Hash/lineage conflicts retain completed groupings for matching-error scoring. Unavailable groupings produce null pair errors and explicit evaluated/attempted pair denominators instead of fabricated matching success/failure.
+- Oracle summary means include all attempted cases, not only successful method outputs. Summaries expose probability coverage, abstentions, failures, and unavailable grouping counts. Decision denominators retain abstentions/failures.
+- Generation failures persist `run_status.json` as failed and re-raise; partial output cannot be mistaken for a completed benchmark. Complete run status reports attempt/check/failure totals.
+- Replaced calibration/evaluation disjointness assertion with an explicit error guard.
+
+Added five focused regression tests: conflict grouping/error counts; corrupt-image failure counts and reproducibility; oracle/decision denominators with abstentions; failed-generation status; evaluator-label changes cannot change worker arguments or method outputs.
+
+Verification actually performed in this review:
+- Original CLI executed successfully; eight original tests pass under system Python. `git diff --exit-code -- artifacts/pilot` shows no tracked artifact changes after rerunning.
+- Full `.venv/bin/python -m unittest discover -s tests -v`: **23 tests passed** after fixes.
+- Transformation CLI executed in a fresh temporary directory: 240 evaluations at ten instances. Updated saved transformation artifacts from that run; all existing result field values and both contact-sheet PNG byte streams remain unchanged.
+- Audited saved manifest/provenance and 169 worker reports; checked actual payload hashes for 240 result rows and independently recomputed Bayes odds over unique assigned acquisitions.
+- Recomputed calibration from saved bytes/roots: threshold unchanged at 0.006352124183006534; root sets disjoint. Checked all 24 decision-summary denominators against per-instance rows.
+- Rechecked 144 saved evaluation/control image signal checks; generated/test runs also pass 48 calibration checks (192 total). Visually inspected both contact sheets; transformed digits readable.
+- Full-output reproducibility tests compare every byte across two fresh runs. Updated artifact tree has 389 files, with all **388 manifest entries** verified and no unlisted files. `run_status.json` reports complete, 240 attempts, zero method failures/abstentions, 192 checks.
+
+See `docs/review-offline-transformations.md` for the review and limitations; README documents corrected metric denominators and failed-run handling.
+
+Readiness: verified foundation for the next offline scaling milestone, **not yet executable at 100 instances unchanged**. The ten-only validation guard and ten-row contact-sheet loop remain deliberately intact. Next authorized work should parameterize them, test full-size output coverage, and freeze the larger-run design without evaluation-driven tuning. Scaling still cannot establish real-model behavior. Other limits: two synthetic glyphs, shared appearance templates across disjoint roots, simple crop-sensitive image-only matching, segment-center signal checks, trusted metadata, no reconciliation or uncertainty analysis. Do not scale or add real models until requested.

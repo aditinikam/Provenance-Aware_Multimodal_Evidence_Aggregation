@@ -7,7 +7,11 @@ from .core import Estimate, posterior
 def feature(payload):
     # Full-frame color thumbnail; intentionally not a semantic or cross-modal matcher.
     from PIL import Image
-    image = decode(payload).resize((16,16), Image.Resampling.BILINEAR)
+    try:
+        image = decode(payload).resize((16,16), Image.Resampling.BILINEAR)
+    except OSError as exc:
+        # Pillow's error may contain a BytesIO memory address; keep failure rows stable.
+        raise ValueError('raster payload cannot be decoded') from exc
     return tuple(component/255 for pixel in image.get_flattened_data() for component in pixel)
 
 
@@ -40,6 +44,8 @@ def calibrate(items):
 
 
 def perceptual_estimate(reports, modalities, threshold, prior=.5, q=.75):
+    if len(reports) != len(modalities):
+        raise ValueError('one modality is required per report')
     features = [feature(r.payload) if m in ('image/png','image/jpeg') else None for r,m in zip(reports,modalities)]
     groups = [{i} for i in range(len(reports))]
     for i,j in combinations(range(len(reports)),2):

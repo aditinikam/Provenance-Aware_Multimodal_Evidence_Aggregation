@@ -66,7 +66,7 @@
   "calibration_signal_checks.jsonl": "645d143f2f59afc53236785784ea215b4100c7fff0cd124fd9126daff8f6e22c",
   "config.json": "38034cb700e9393c8c93e8f1dd064c3b1760cf958fccc91d359e7d3d88900f0d",
   "contact_sheet.png": "7924da7e26807d03890107809992419fe86aa91270b3f230364784f69c71ba8d",
-  "controls.jsonl": "6e7f00e1fbf5403682bc3b6434fea00d0021804c0791a0e5d668d134bffd4e55",
+  "controls.jsonl": "a6e2caeebc246039bcf8e0ecd40d1db8fd59ec3b0a382ea9238c899f6270fa3a",
   "controls_contact_sheet.png": "aaefef9f13a878a77ca72f1fcd92a3b113e6539e528c30833281f231135d7b72",
   "environment.json": "4288dff09ecfbae02ebee1b28164aa31ec38cb97616f26f4daf32881300b5a74",
   "evaluator_truth.json": "a1c6d2a5577c000fb791aa8ba294c76f0a32d6207fe6a886cc90971bfceb890d",
@@ -381,9 +381,10 @@
   "evidence/control-similar_independent-2-resize.png": "d2fffb67f042354537111456ecee1c7b6b1cf525fe6cb5c0e5076b492ce44ca4",
   "evidence/control-similar_independent-2-synthetic-record.json": "4d77471ee339b26626cfcecc9ac0cffe888fe64c1cf410c790430f7c93594b61",
   "provenance.jsonl": "b926df03837c1b87ccb0a2e9ddf9065c42a96ba082032b6fb46439661eb2e8e6",
-  "results.jsonl": "9dc2eae8d3b3e69201e468f30a50cee9638875522437d09aa16b475193bbf5dd",
+  "results.jsonl": "9015e0bf3606d093ff2e80a7a610bd148f6922a8e41d6b1590834b5ade58de31",
+  "run_status.json": "2b63828c4ddfc967faaca42b2e128f5076ac89db49fbabc8f86fe8285c6406f7",
   "signal_checks.jsonl": "2040d411acf4b018cbd3d558d3c645c6bda230d68f860756c58f7451cde96479",
-  "summary.csv": "9245d156db8e4345c6f164c66b15d8809ef1b920d848fda942c25338b8ba5bb3",
-  "summary.json": "185739e7f79e541d72ac906ad370af15e75f529123df93a62a3f8f778f672d96",
+  "summary.csv": "72045b8c099423c6a64873f0249183be7b2928fea4cc39c64ce67a468b27d446",
+  "summary.json": "d4cfec6ed41ccee9ef0e3d9f8e94ccaf4b0e559f7291889e1c96fb2637d87952",
   "worker_inputs.jsonl": "c80893d1e20c4551df4c738401f678dcc13df6bbc875d01edf3d956e27050f4d"
 }

@@ -153,7 +153,8 @@ def estimate(method, reports, registry=None, prior=0.5, q=0.75):
         for group in groups.values():
             claims = {reports[i].value for i in group}
             if len(claims) != 1:
-                raise ProvenanceError('conflicting interpretations require reconciliation')
+                # Grouping succeeded: retain it even when interpretation abstains.
+                return Estimate(None, list(groups.values()), 'abstain: conflicting interpretations require reconciliation')
             values.append(claims.pop())
         return Estimate(posterior(values, prior, q), list(groups.values()))
     except ProvenanceError as exc:

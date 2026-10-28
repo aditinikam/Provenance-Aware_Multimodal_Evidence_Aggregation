@@ -1,0 +1,8 @@
+{
+  "abstentions": 0,
+  "attempted_evaluations": 240,
+  "method_failures": 0,
+  "mode": "mock_software_diagnostic_no_vision_extraction",
+  "signal_checks": 192,
+  "status": "complete"
+}
