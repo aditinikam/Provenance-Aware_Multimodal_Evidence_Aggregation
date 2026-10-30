@@ -1,0 +1,1 @@
+{"attempted_evaluations":2,"billing_disabled_user_confirmed":true,"failures":36,"instances":2,"mode":"real_gemini_responses_on_synthetic_sensor_images","paid_fallback":false,"scheduled_evaluations":36,"spending_cap_usd":0,"status":"stopped","stop_reason":"HTTP 503; no retries or fallback (429 means quota/rate exhausted)","valid_outputs":0}

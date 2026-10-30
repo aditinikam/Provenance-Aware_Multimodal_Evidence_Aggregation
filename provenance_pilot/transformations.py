@@ -33,8 +33,6 @@ def synthetic_record(fixture_reading):
 def validate_settings(config):
     base = {k: config[k] for k in ('seed','instances','prior','q','threshold','workers')}
     validate_config(base)
-    if config['instances'] != 10:
-        raise ValueError('this milestone is restricted to ten evaluation instances')
     if type(config['calibration_roots']) is not int or config['calibration_roots'] < 2:
         raise ValueError('at least two calibration roots required')
     if type(config['calibration_seed']) is not int or config['calibration_seed'] == config['seed']:
@@ -144,12 +142,13 @@ def summarize_results(rows):
     return summaries
 
 
-def _run(config, output):
+def _run(config, output, executor=None):
     # Optional import means the original pilot remains dependency-free.
     import PIL
     from PIL import features
     from .imaging import contact_sheet
     from .matching import calibrate
+    evaluate = executor or score
     base_config = validate_settings(config)
     output = Path(output)
     output.mkdir(parents=True, exist_ok=True)
@@ -195,7 +194,7 @@ def _run(config, output):
             'cross_modal': ([root+'-png',root+'-crop',root+'-synthetic-record'], [root]*3),
             'independent_raster': ([r+'-png' for r in (root,r1,r2)], [root,r1,r2])}
         for condition,(ids,roots) in variants.items():
-            result, worker_input = score(case['base_id'],condition,ids,roots,case['y'],registry,payloads,readings,truth,calibration['threshold'],config,'evaluation')
+            result, worker_input = evaluate(case['base_id'],condition,ids,roots,case['y'],registry,payloads,readings,truth,calibration['threshold'],config,'evaluation')
             rows += result
             inputs.append(worker_input)
             assignments.append({'base_id':case['base_id'],'condition':condition,'acquisitions':roots,'y':case['y']})
@@ -207,11 +206,11 @@ def _run(config, output):
         for i,root in enumerate(roots):
             truth[root] = 1
             checks += add_family(registry,payloads,rasters,readings,root,1,config,style=i if kind=='similar_independent' else 0)
-        result, worker_input = score('control',kind,[r+'-png' for r in roots],roots,None,registry,payloads,readings,truth,calibration['threshold'],config,'constructed_control')
+        result, worker_input = evaluate('control',kind,[r+'-png' for r in roots],roots,None,registry,payloads,readings,truth,calibration['threshold'],config,'constructed_control')
         controls += result
         inputs.append(worker_input)
     root = 'b000-a0'
-    result, worker_input = score('control','different_looking_shared_root',[root+'-png',root+'-resize',root+'-crop'],[root]*3,None,registry,payloads,readings,truth,calibration['threshold'],config,'constructed_control')
+    result, worker_input = evaluate('control','different_looking_shared_root',[root+'-png',root+'-resize',root+'-crop'],[root]*3,None,registry,payloads,readings,truth,calibration['threshold'],config,'constructed_control')
     controls += result
     inputs.append(worker_input)
 
@@ -224,8 +223,13 @@ def _run(config, output):
         artifact_index.append({'mode':MODE,'evidence_id':eid,'path':str(file.relative_to(output)),
                                'modality':modality,'sha256':sha256(payload).hexdigest()})
     sheet_rows = [(f'b{i:03d}',[(name,rasters[f'b{i:03d}-a0-{suffix}']) for name,suffix in
-                              [('original PNG','png'),('resized PNG','resize'),('compressed JPEG','jpeg'),('crop of JPEG','crop')]]) for i in range(10)]
-    contact_sheet(output/'contact_sheet.png',sheet_rows)
+                              [('original PNG','png'),('resized PNG','resize'),('compressed JPEG','jpeg'),('crop of JPEG','crop')]]) for i in range(config['instances'])]
+    pages = []
+    for start in range(0, len(sheet_rows), 10):
+        name = 'contact_sheet.png' if start == 0 else f'contact_sheet_{start//10+1:03d}.png'
+        contact_sheet(output/name, sheet_rows[start:start+10])
+        pages.append({'path': name, 'base_ids': [label for label,_ in sheet_rows[start:start+10]]})
+    write_json(output/'contact_sheets.json', {'mode': MODE, 'policy': 'first acquisition of every base; ten rows per page', 'pages': pages})
     control_rows = [(kind, [(f'acquisition {i}',rasters[f'control-{kind}-{i}-png']) for i in range(3)]) for kind in ('similar_independent','identical_independent')]
     contact_sheet(output/'controls_contact_sheet.png',control_rows, 'Each row contains THREE DISTINCT acquisition roots with positive fixture readings.')
     jsonl(output/'provenance.jsonl',registry.export())
@@ -248,7 +252,7 @@ def _run(config, output):
     (output/'README.txt').write_text('MOCK SOFTWARE DIAGNOSTICS ONLY. No vision extraction or LLM calls.\n'
         'Worker fixture readings are observations, not hidden states. Evaluator truth and signal checks are not worker inputs.\n'
         'PNG/JPEG crops may omit visible mock labels; all files belong to this synthetic fixture dataset.\n'
-        'Calibration roots and constructed controls are separate from the ten evaluation instances.\n')
+        'Calibration roots and constructed controls are separate from the evaluation instances.\n')
     write_json(output/'run_status.json', {'mode': MODE, 'status': 'complete', 'attempted_evaluations': len(rows),
                                         'method_failures': sum(r['status'].startswith('failure:') for r in rows),
                                         'abstentions': sum(r['status'].startswith('abstain:') for r in rows),

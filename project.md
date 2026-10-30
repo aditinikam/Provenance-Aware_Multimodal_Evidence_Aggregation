@@ -1,126 +1,145 @@
 # Project memory
 
-Last updated: 2026-10-28 (America/Chicago).
+Updated October 30, 2026 (America/Chicago). Branch: `real-vision-preliminary-results`.
 
-## Objective and scope
+## Persistent instructions
 
-UIUC CS 562: **Provenance-Aware Multimodal Evidence Aggregation in Multi-Agent Systems**. Investigate false corroboration from repeated/transformed observations and whether trusted acquisition lineage preserves genuine independent corroboration. The intended contribution is an empirical multimodal extension, not provenance or source counting itself.
+Read this file at each task. Update it after changes with actual verification,
+limitations, and next steps. Use lowercase task-named branches, never `codex/`.
+Preserve uncommitted work; no implicit commit/push/publication. Maintain default
+offline execution without credentials, paid services, GPU, or model downloads.
+Truth/oracle values must stay outside worker/model inputs. Unknown ancestry and
+unresolved conflicting root interpretations must not become independent support.
+Mock diagnostics are never empirical LLM findings.
 
-Current milestone: ten-instance offline transformation implementation reviewed and repaired; ready for a separately authorized scaling implementation, not yet runnable at 100 instances unchanged. No model API access, GPU, model downloads, or paid services are required. Mock agents validate software only.
+## Objective and current status
 
-## Persistent user preferences
+UIUC CS 562: provenance-aware multimodal evidence aggregation. Distinguish extra
+representations of one acquisition from genuinely independent acquisitions.
 
-- Read this file at the start of each chat; update it after every project change.
-- Name branches after the current task using lowercase hyphen-separated words. **No `codex/` prefix.** Continue an existing task on its branch; use a new task branch for new work.
-- Preserve uncommitted work. Do not assume permission to push or publish.
-- Complete authorized implementation and focused verification; ask only when a decision materially changes the research design.
+The user authorized real vision extraction, actual model-produced cross-modal
+records, LLM aggregation with matched cached workers, failure/cost logging, and
+preliminary results for the PDF. Latest explicit constraints: free-tier-eligible
+Gemini Flash, exact $0 cap, no paid fallback, stop on quota exhaustion, first two
+instances then ten. User confirmed free-tier project with billing disabled; key
+is saved outside the repository. Never display it or put it in Git.
 
-These instructions are also in `AGENTS.md` for future agents.
+**Live pilot is incomplete. Do not start ten yet.** Google authenticated model
+lookup succeeded, but generation encountered timeout and HTTP 503 high demand.
+There is no successful vision extraction or valid aggregation comparison.
+The PDF addendum reports software diagnostics and the incomplete live status,
+not invented empirical findings. No 100-instance run was performed.
 
-## Implemented state
+## Current implementation
 
-Dependency-free Python 3.10+ package with CLI and JSON configuration. Ten seeded, shuffled, balanced hidden states (five of each class), prior .5, sensor reliability .75, three mock workers, and a simulated .90 approval gate.
+- Original dependency-free offline pilot: ten balanced seeded instances, prior .5,
+  sensor reliability .75, three workers, approval gate .90. Three conditions and
+  naive/hash/lineage policies; truth separated, exact rational evaluator oracle.
+- Reviewed transformations: six paired conditions, four policies, 240 evaluations.
+  PNG, 192x108 resize, JPEG quality45, crop [100,45,220,158], explicitly synthetic
+  image-to-record fixture copy. Offline workers do not perceive pixels.
+- Every derivative inherits parent roots. Hashing uses actual bytes. Perceptual
+  baseline uses16x16 RGB distance, threshold .006352124183006534 calibrated on12
+  disjoint roots (seed1562). Appearance templates overlap evaluation; no claim of
+  new-appearance generalization or image/JSON semantic matching.
+- Unknown ancestry/conflicts abstain. Summary decision denominators retain
+  failures/abstentions; oracle means include all cases. Missing partitions yield
+  undefined matching errors. Review: `docs/review-offline-transformations.md`.
+- Separate opt-in `provenance_pilot/vision/` accepts actual image bytes, no fixture
+  reading. Gemini-produced structured records inherit crop parent/root in trusted
+  code. Three methods: naive LLM, instruction LLM, trusted-lineage preprocessing
+  plus same LLM; cached worker content is paired across methods. All methods see
+  root metadata; naive is not forced to count sources or ignore ancestry.
+- `gemini-3.8-flash` image and structured-output support/free pricing verified in
+  official Google docs October30; authenticated model lookup also succeeded.
+  Google's OpenAI-compatible endpoint, low reasoning, max2048 completion tokens,
+  provider-default sampling, minimum7s request spacing. No OpenAI service calls.
+- Cache stores request/raw response, returned model, usage, latency and free-tier
+  cost estimate. The $0 guarantee relies on user-confirmed billing-disabled
+  account; no provider billing inspection API was used. No retries/fallback.
+  HTTP/quota errors persist a stop latch. Interrupted unknown calls are not resent.
+- Source/config/evidence changes reject resume. Atomic checksummed result
+  checkpoints, request/response cache, process lock, prefix expansion, paired
+  whole-base bootstrap, summaries, plots and contact sheets are implemented.
+  Final audit fixed stopped replay losing previously attempted failure rows.
+- Prior unfinished offline100 work remains: count parameterization, paginated
+  contact sheets, `analysis.py`, `checkpoint.py`, benchmark configs. Odd counts use
+  balanced pairs plus one seeded random class. No `benchmark.py` runner or full
+  100-instance acceptance verification exists; do not claim this milestone done.
 
-Paired conditions: single observation, exact replay through three workers, and three conditionally independent acquisitions. The first acquisition is shared across conditions; the other two appear only in the independent condition. Copies inherit values without resampling.
+## Actual live attempt
 
-Each acquisition has an SVG sensor card and a JSON record. Workers parse records; they do not perceive images. Trusted registry fields: evidence_id, root_ids, parent_ids, operation, modality. Validation checks ancestry and cycles. Routing preserves roots. Lineage abstains on invalid/unknown ancestry, multi-root inputs, and conflicting root interpretations.
+`artifacts/real-vision-two-stage`: sandbox network failure, no aggregation attempts.
+`artifacts/real-vision-gemini`: planned two original dataset bases b000/b001,36
+method-condition rows. First vision request timed out after90s. Read-only model
+lookup succeeded; a documented manual review cleared only that transport latch,
+preserving the cached failed call without resending it. Next aggregator response
+failed citation schema (empty citations with non-null probability); next returned
+HTTP503 high demand. Stopped immediately. No quota response and no paid fallback.
 
-Methods: naive report counting, SHA-256 payload deduplication, and trusted-lineage consolidation. The evaluator-only oracle counts unique acquisitions using exact rational Bayes updates. Methods never receive hidden states or oracle answers.
+Three generation requests: one unknown timeout, one received but invalid aggregator
+output, one503. Two attempted aggregation failures;34 not-attempted scheduled rows;
+0 valid probabilities,0 resolved extractions,0 completed base comparisons. These
+rows are operational failures, not evidence of defense effectiveness. No ten-run.
 
-Outputs include evidence artifacts, registry and worker-input JSONL, separate evaluator truth, 90 result rows, summary CSV/JSON, SVG comparison plot, a constructed identical-independent-payload diagnostic, and SHA-256 manifest. Rates expose denominators; empty denominators are undefined.
+Historical live code hashes are saved in `code_revision.json`; subsequent resume
+fixes changed source hashes, so execution under current code correctly rejects
+that historical run. Preserve it; a later service-available run needs an explicit
+new replicate or reviewed migration, not silent cache relabeling.
 
-## Commands and key files
+## Verification actually performed this task
 
-Run from repository root:
+- Final `.venv/bin/python -m unittest discover -s tests -v`: **30 tests passed**
+  (23 existing +7 vision tests using fake transports only).
+- New tests: free-only configuration/429 latch; strict schemas/conflict abstention;
+  matched reports/prefix extension/offline replay; interrupted call retention and
+  cache tamper rejection; evaluator-label intervention leaves requests unchanged;
+  stopped-run denominators; stopped replay preserves attempted failures.
+- `python3 -m provenance_pilot` runs; tracked pilot artifacts unchanged.
+- Transformation CLI to `/tmp/provenance-transforms-20261030` runs240 evaluations.
+  Its manifest and existing transformation manifest verify.
+- Audited live25-entry manifest, all36 result statuses, and request allowlist.
+  Confirmed credential bytes absent from both saved attempt trees and fixture/
+  evaluator keys absent from logged model requests. No secret contents printed.
+- Viewed transformation contact sheet: transformed glyphs readable. Existing and
+  regenerated signal checks pass through tests/CLI (192 including calibration).
+- PDF11 pages: original9 page texts preserved, two appended pages rendered and
+  visually inspected; no clipping/overlap. Source PDF unchanged. `git diff --check`
+  passes. No commit/push.
+
+## Files and commands
+
+- `docs/real-vision-pilot.md`: frozen design, limitations, execution/resume commands.
+- `configs/real-vision.example.json`: free-only, user-confirmed account configuration.
+- `artifacts/real-vision-gemini/`: preserved failed live attempt, not successful pilot.
+- `output/pdf/562-with-preliminary-status.pdf`: original report plus dated addendum.
+- `scripts/build_preliminary_report.py`: rebuild addendum from saved outputs.
 
 ```sh
 python3 -m provenance_pilot
-python3 -m unittest discover -s tests -v
+.venv/bin/python -m unittest discover -s tests -v
+.venv/bin/python -m provenance_pilot.transformations --output NEW_EMPTY_DIRECTORY
+.venv/bin/python scripts/build_preliminary_report.py
+# After service recovery and review; NEW output, first two, no paid fallback:
+.venv/bin/python -m provenance_pilot.vision.run --instances 2 --output artifacts/real-vision-next
+# Only after successful two-instance review: same directory with --instances 10.
 ```
 
-- `README.md`: setup, method behavior, metric definitions, limitations.
-- `configs/pilot.json`: seed 562 and pilot settings.
-- `provenance_pilot/core.py`: registry, worker interface, methods, oracle, gate.
-- `provenance_pilot/data.py`: paired data and artifact generation.
-- `provenance_pilot/run.py`: evaluation and outputs.
-- `tests/test_pilot.py`: research invariant tests.
-- `docs/references.md`: inspected references, license and reuse notes.
-- `docs/expansion.md`: staged next steps.
-- `artifacts/pilot/`: generated diagnostic outputs; truth/results are not model inputs.
+System Python lacks Pillow. Ignored `.venv` uses existing bundled Python3.12.14
+and Pillow12.3.0; no model or dependency downloads were required. PDF uses bundled
+ReportLab/pypdf/Poppler. `tmp/` contains ignored PDF previews/font cache.
 
-## Verification and interpretation
+## Limits and next steps
 
-The implementation task passed all eight unittest groups: hand-calculated oracle, replay/pairing/routing invariants, identical-independent hash false merges, invalid/cyclic provenance, derivation and multi-root abstention, conflicting-claim abstention, deterministic byte-for-byte reproduction/input separation, and gate/config validation. Plot and sample card were rendered locally and visually inspected.
+Service availability blocks empirical results. Review/resume operationally before
+any ten-instance live run. No actual cross-modal model record was successfully
+produced in this failed attempt, though injected-transport tests exercise the
+implementation. Do not substitute the offline fixture record in a live condition.
 
-Seed-562 diagnostics: naive replay prematurely approved 4/10 oracle-ineligible cases. Lineage matched the oracle in every evaluation and retained 2/2 oracle-approved independent cases. Hash deduplication retained 0/2 and falsely merged 18 independent report pairs. These are programmed fixture results, not empirical research findings.
-
-## Sources and design decisions
-
-Read the supplied `/Users/aditi/Downloads/562.pdf`. It describes the broader future study; the explicit user request limits current work to an offline pilot. Balanced hidden-state sampling follows the report. No material design contradiction was found.
-
-Inspected separately:
-- https://github.com/marcbara/epistemic-sybil-resistance — Gaussian root aggregation and reproducibility patterns; code MIT, experimental materials CC BY 4.0.
-- https://arxiv.org/html/2610.06192v1 — binary oracle, copy weight, controls and interventions; displayed license CC BY-NC-ND 4.0.
-
-No external code, data, prompts, or figures were copied. The implementation is original; attribution details are in `docs/references.md`.
-
-## Limitations and next steps
-
-Offline raster transformations, synthetic record conversions, and calibrated pixel matching are now implemented. Real vision perception, semantic captions, instruction-following baselines, reconciliation models, cost/latency studies, bootstrap uncertainty, and actual LLM behavior remain untested. Related views require an explicit dependence model. Different root IDs alone do not prove independence in real environments.
-
-Next: user reviews the transformation milestone, its contact sheets and matching limitations, then explicitly requests another expansion stage from `docs/expansion.md`. Do not silently scale to 100 instances or add live-model experiments.
-
-## Transformation implementation milestone (historical)
-
-Branch: `offline-multimodal-transformations` (no prefix). Verified the supplied GitHub repository HEAD matches local commit `1010c2f`; updated origin to `https://github.com/aditinikam/Provenance-Aware_Multimodal_Evidence_Aggregation.git`. No push or remote publication performed.
-
-Implemented `imaging.py`, `matching.py`, and `transformations.py`; added optional Pillow 12.3.0 dependency and `configs/transformations.json`. Added optional operation parameters to registry entries without changing old pilot serialization. Existing summary helper accepts condition/method lists; its defaults remain unchanged.
-
-New experiment: same ten base instances, six paired conditions (single raster, exact replay, resize/JPEG, cropped replay, synthetic cross-modal, independent raster), four methods (naive/hash/lineage/perceptual), 240 evaluations. Raster glyphs use observation fixtures, with 192x108 resizing, JPEG quality 45, and signal-preserving JPEG crops. Derivatives and routed reports inherit roots. Synthetic image-to-record conversion explicitly copies fixture readings and is not pixel extraction. Workers receive bytes plus observed fixture readings, never Y, oracle, calibration labels, or signal-check outcomes.
-
-Perceptual matcher uses full-frame 16x16 RGB mean absolute distance and connected components. It is image-only; JSON/image pairs remain unresolved and separately counted. Calibration uses 12 separate `cal-*` roots (seed 1562), excludes all evaluation roots, and freezes the threshold before scoring. Chosen threshold 0.006352124183006534 minimizes balanced pair error (0.306818), with low-threshold tie-breaking. No evaluation-driven tuning. Three constructed matching controls are excluded from sampled metrics; their hidden state and Brier score are undefined.
-
-Separate pixel audit checks tracked ROI bounds, minimum 24x36 ROI dimensions, and active/inactive seven-segment center luminance. This is a known-geometry signal check, not OCR or model readability proof. Main and control contact sheets were visually inspected after correcting label overlap and footer fragments. All 144 evaluation/control and 48 calibration image checks passed.
-
-New outputs: `artifacts/transformations/` (388 files), including raster and retained SVG/JSON artifacts, contact sheets, provenance, worker inputs, evaluator truth, results, summaries, matching errors, full calibration inputs/pairs, runtime versions, and manifest. Every dataset/output is labeled mock-only. Tight crops may omit visible labels, so keep the accompanying dataset description.
-
-Actual verification:
-- `python3 -m provenance_pilot` ran successfully; `git diff --exit-code -- artifacts/pilot` confirmed no tracked artifact changes.
-- `python3 -m unittest discover -s tests -p test_pilot.py -v`: 8 passed.
-- `.venv/bin/python -m unittest discover -s tests -v`: 18 passed (8 existing + 10 transformation tests).
-- `.venv/bin/python -m provenance_pilot.transformations`: generated the delivered 240-row experiment.
-- Verified all 387 manifest entries against file hashes, with no unlisted outputs; `git diff --check` found no whitespace errors.
-- Tests verify root/parameter inheritance, unchanged acquisition readings, real-byte hashes, signal checks and corruption rejection, invalid ancestry/conflict abstention, calibration disjointness/recomputation, matching errors, no evaluator labels in worker inputs, and whole-output byte-for-byte reproduction in fresh directories.
-
-Environment: system `python3` lacks Pillow. An ignored local `.venv` uses the already-installed bundled Python 3.12.14 with Pillow 12.3.0 (JPEG codec 6.2); no dependency/model downloads or live-model calls occurred. Run the new milestone with `.venv/bin/python -m provenance_pilot.transformations --output artifacts/transformations-review` (choose a fresh directory). A nonempty output directory is refused. Other machines need an existing Pillow environment or local wheelhouse; see README. Original pilot stays dependency-free. Optional tests explicitly skip if Pillow is absent; use `.venv` for the complete suite.
-
-Observed mock diagnostics: lineage equals the oracle across all evaluation cases. Hashing fails to consolidate transformed bytes. Pixel matching consolidates resize/JPEG, misses crop/cross-modal relationships, and falsely merges identical independent images. The nuisance-style independent control is separated by this threshold; identical-independent controls produce three pairwise false merges under hash/perceptual matching. These are fixture behavior, not research efficacy findings.
-
-Next: review this milestone. Do not scale to 100 instances or integrate real models without the next user request. Uncommitted changes are retained on the task branch.
-
-
-## Latest task: review offline-multimodal-transformations
-
-Continued on the user-specified `offline-multimodal-transformations` branch, reviewing clean commit `84e6eab`. Read actual code/tests and saved artifacts rather than relying on earlier summaries. No new branch, scale-up, model integration, commit, or push during review. Fixes remain uncommitted.
-
-Fixed substantive accounting gaps:
-- Expected image decode/validation failures now remain explicit non-approving method failure rows; error messages are deterministic. Modality/report length mismatch is checked.
-- Hash/lineage conflicts retain completed groupings for matching-error scoring. Unavailable groupings produce null pair errors and explicit evaluated/attempted pair denominators instead of fabricated matching success/failure.
-- Oracle summary means include all attempted cases, not only successful method outputs. Summaries expose probability coverage, abstentions, failures, and unavailable grouping counts. Decision denominators retain abstentions/failures.
-- Generation failures persist `run_status.json` as failed and re-raise; partial output cannot be mistaken for a completed benchmark. Complete run status reports attempt/check/failure totals.
-- Replaced calibration/evaluation disjointness assertion with an explicit error guard.
-
-Added five focused regression tests: conflict grouping/error counts; corrupt-image failure counts and reproducibility; oracle/decision denominators with abstentions; failed-generation status; evaluator-label changes cannot change worker arguments or method outputs.
-
-Verification actually performed in this review:
-- Original CLI executed successfully; eight original tests pass under system Python. `git diff --exit-code -- artifacts/pilot` shows no tracked artifact changes after rerunning.
-- Full `.venv/bin/python -m unittest discover -s tests -v`: **23 tests passed** after fixes.
-- Transformation CLI executed in a fresh temporary directory: 240 evaluations at ten instances. Updated saved transformation artifacts from that run; all existing result field values and both contact-sheet PNG byte streams remain unchanged.
-- Audited saved manifest/provenance and 169 worker reports; checked actual payload hashes for 240 result rows and independently recomputed Bayes odds over unique assigned acquisitions.
-- Recomputed calibration from saved bytes/roots: threshold unchanged at 0.006352124183006534; root sets disjoint. Checked all 24 decision-summary denominators against per-instance rows.
-- Rechecked 144 saved evaluation/control image signal checks; generated/test runs also pass 48 calibration checks (192 total). Visually inspected both contact sheets; transformed digits readable.
-- Full-output reproducibility tests compare every byte across two fresh runs. Updated artifact tree has 389 files, with all **388 manifest entries** verified and no unlisted files. `run_status.json` reports complete, 240 attempts, zero method failures/abstentions, 192 checks.
-
-See `docs/review-offline-transformations.md` for the review and limitations; README documents corrected metric denominators and failed-run handling.
-
-Readiness: verified foundation for the next offline scaling milestone, **not yet executable at 100 instances unchanged**. The ten-only validation guard and ten-row contact-sheet loop remain deliberately intact. Next authorized work should parameterize them, test full-size output coverage, and freeze the larger-run design without evaluation-driven tuning. Scaling still cannot establish real-model behavior. Other limits: two synthetic glyphs, shared appearance templates across disjoint roots, simple crop-sensitive image-only matching, segment-center signal checks, trusted metadata, no reconciliation or uncertainty analysis. Do not scale or add real models until requested.
+Only two synthetic glyphs, shared layouts, trusted ancestry and stipulated
+conditional independence; no adversarial prompts or reconciliation model.
+Citations do not expose LLM internal grouping, so naive/instruction matching
+errors are undefined. Intervals describe synthetic-base variability conditional
+on cached responses, not model-sampling uncertainty or broad defense performance.
+Do not tune on these cases and call them held-out evidence. After a successful
+small pilot, revisit the unfinished100-instance offline benchmark separately.

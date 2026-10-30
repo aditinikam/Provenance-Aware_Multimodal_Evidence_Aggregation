@@ -8,6 +8,8 @@ def generate(config):
     n = config['instances']
     # Stratified balanced fixture; each item has marginal prior 1/2.
     states = [0] * (n // 2) + [1] * (n // 2)
+    if n % 2:
+        states.append(rng.randrange(2))  # Seeded extra label; imbalance is at most one.
     rng.shuffle(states)
     registry, payloads, truth, cases = Registry(), {}, {}, []
     worker = MockWorker()

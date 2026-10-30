@@ -20,8 +20,8 @@ def jsonl(path, rows):
 def validate_config(c):
     if set(c) != {'seed', 'instances', 'prior', 'q', 'threshold', 'workers'}:
         raise ValueError('unexpected or missing config keys')
-    if type(c['seed']) is not int or type(c['instances']) is not int or c['instances'] < 2 or c['instances'] % 2:
-        raise ValueError('seed must be integer; instances must be positive even integer')
+    if type(c['seed']) is not int or type(c['instances']) is not int or c['instances'] < 1:
+        raise ValueError('seed must be integer; instances must be positive integer')
     if c['prior'] != 0.5 or c['workers'] != 3:
         raise ValueError('pilot requires prior 0.5 and three workers')
     if not .5 < c['q'] < 1 or not 0 < c['threshold'] <= 1:

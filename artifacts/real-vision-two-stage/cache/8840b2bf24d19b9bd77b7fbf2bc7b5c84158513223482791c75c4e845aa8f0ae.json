@@ -1,0 +1,1 @@
+{"call_id":"8840b2bf24d19b9bd77b7fbf2bc7b5c84158513223482791c75c4e845aa8f0ae","estimated_cost_usd":null,"latency_seconds":0.02539450000040233,"logical_id":"extract:b000-a0-png:worker0","parsed":null,"raw":null,"role":"worker","status":"failure: URLError","usage":null}

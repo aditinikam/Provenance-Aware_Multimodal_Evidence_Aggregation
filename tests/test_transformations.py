@@ -179,7 +179,7 @@ class TransformationTests(unittest.TestCase):
         right = {str(p.relative_to(other)):p.read_bytes() for p in other.rglob('*') if p.is_file()}
         self.assertEqual(left,right)
         with self.assertRaises(ValueError): run(CONFIG,other)
-        with self.assertRaises(ValueError): validate_settings(CONFIG | {'instances':100})
+        self.assertEqual(validate_settings(CONFIG | {'instances':100})['instances'],100)
         with self.assertRaises(ValueError): validate_settings(CONFIG | {'calibration_seed':CONFIG['seed']})
 
     def test_conflict_grouping_remains_available_for_matching_errors(self):

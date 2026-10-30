@@ -145,3 +145,34 @@ An interpretation conflict retains its valid grouping so matching mistakes are s
 A corrupt raster encountered by a method produces a deterministic failure row; other methods still run. Generation/configuration failures abort the entire run and write `run_status.json` with `status: failed`; such a directory must not be analyzed as a completed benchmark. A completed run records its attempt/failure/abstention totals. This review's completed run has 240 evaluations, zero method failures/abstentions, and 192 passing signal checks. Tests inject failures separately; they are not included in benchmark metrics.
 
 The current implementation remains intentionally ten-only. A 100-instance milestone still needs the size guard/contact-sheet loop parameterized and output-coverage tests; no scaling was performed during review.
+
+## Opt-in real vision pilot (Gemini free tier)
+
+`provenance_pilot.vision.run` sends actual PNG/JPEG bytes to Gemini and obtains
+structured observations and actual model probabilities. It never supplies fixture
+readings to the model. The cross-modal record is model-generated with trusted
+parent/root inheritance. Offline default commands remain unchanged.
+
+See [the frozen design and commands](docs/real-vision-pilot.md). Use the confirmed
+billing-disabled free-tier project only: exact $0 cap, no paid fallback, stop on
+quota exhaustion. Run two existing base instances before ten:
+
+```sh
+.venv/bin/python -m provenance_pilot.vision.run --instances 2 --output artifacts/real-vision-gemini
+.venv/bin/python -m provenance_pilot.vision.run --instances 10 --output artifacts/real-vision-gemini
+```
+
+The second command is conditional on a successful, reviewed two-instance stage.
+Repeating a compatible command resumes cached calls; `--replay-only` regenerates
+without allowing network. A failed/stopped run must not be described as empirical
+success. Responses are real only when a provider response was actually received;
+unit-test fake transports remain software diagnostics. No 100-instance real run
+or claim of general LLM defense effectiveness is made.
+
+Actual October30 check: **30 tests pass**, both offline commands run. The live
+attempt stopped on timeout/invalid citations/Google HTTP503 high demand, with zero
+resolved extractions and zero valid aggregation outputs. Ten instances were not
+run. See `project.md` for actual verification and limitations. Subsequent resume
+repairs changed the source digest, so preserve the historical attempt and use a
+new directory for a future reviewed replicate. The original PDF plus an honest
+software-results/live-status addendum is in `output/pdf/562-with-preliminary-status.pdf`.

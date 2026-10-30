@@ -1,0 +1,7 @@
+{
+  "seed": 562, "calibration_seed": 1562, "instances": 10,
+  "calibration_roots": 12, "prior": 0.5, "q": 0.75,
+  "threshold": 0.9, "workers": 3,
+  "resize": [192, 108], "jpeg_quality": 45, "crop_box": [100, 45, 220, 158],
+  "bootstrap_seed": 2562, "bootstrap_replicates": 1000
+}

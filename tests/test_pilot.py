@@ -107,7 +107,7 @@ class PilotTests(unittest.TestCase):
         self.assertTrue(approve(.90))
         self.assertFalse(approve(.8999))
         self.assertFalse(approve(None))
-        for patch in ({'instances':9},{'q':1},{'workers':4},{'prior':.4}):
+        for patch in ({'instances':0},{'q':1},{'workers':4},{'prior':.4}):
             with self.assertRaises(ValueError): validate_config(CONFIG | patch)
 
 
